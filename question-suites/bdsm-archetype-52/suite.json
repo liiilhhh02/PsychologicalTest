@@ -1,0 +1,9 @@
+{
+  "id": "bdsm-archetype-52",
+  "name": "BDSM 原型偏好测试（52题）",
+  "version": "2026.02.25",
+  "description": "参考公开 BDSM 原型框架整理的本地题库，13维度/52题，强调同意、边界与复盘。",
+  "source": "https://bdsmtest.org ; https://github.com/angelod1as/bdsmtest/blob/main/i18n/en.json ; https://en.wikipedia.org/wiki/Safe,_sane_and_consensual",
+  "adultContent": true,
+  "default": false
+}

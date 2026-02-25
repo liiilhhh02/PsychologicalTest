@@ -6,12 +6,24 @@
 - 支持手机/电脑双端展示
 - 支持可配置接入 Google 广告（默认关闭，占位不影响观感）
 - 支持导出 PDF 报告（浏览器打印为 PDF）
+- 已内置 3 套题：
+  - `milu-basic`（69题）
+  - `milu-pro-100`（100题详版）
+  - `bdsm-archetype-52`（BDSM 原型向，52题）
 
 ## 目录结构
 
 ```text
 question-suites/
   milu-basic/
+    suite.json
+    questions.json
+    dimension_descriptions.json
+  milu-pro-100/
+    suite.json
+    questions.json
+    dimension_descriptions.json
+  bdsm-archetype-52/
     suite.json
     questions.json
     dimension_descriptions.json
@@ -53,6 +65,20 @@ npm start
   "default": false
 }
 ```
+
+## 新增套题：BDSM 原型偏好（52题）
+
+- 套题 ID：`bdsm-archetype-52`
+- 维度数：13
+- 题量：52（每维度 4 题）
+- 量表：5级李克特（1~5）
+- 设计原则：强调同意、边界、安全词、事后复盘，不鼓励任何违法或非自愿行为
+
+参考来源（用于维度框架，不直接构成临床诊断量表）：
+
+- `https://bdsmtest.org`
+- `https://github.com/angelod1as/bdsmtest/blob/main/i18n/en.json`
+- `https://en.wikipedia.org/wiki/Safe,_sane_and_consensual`
 
 ## Git 管理
 
