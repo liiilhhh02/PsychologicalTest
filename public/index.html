@@ -30,13 +30,14 @@
             <p id="home-total-dimensions">-</p>
           </div>
           <div class="meta-item">
-            <h3>计分方式</h3>
-            <p class="meta-inline">维度归一化百分比</p>
+            <h3>报告版本</h3>
+            <p class="meta-inline">专业解读 + 关联分析</p>
           </div>
         </div>
 
         <div class="section home-actions">
           <button id="btn-start" class="btn btn-primary">开始测试</button>
+          <button id="btn-share-site" class="btn btn-secondary">分享此测试</button>
         </div>
 
         <div id="ad-home" class="ad-container" aria-label="广告位"></div>
@@ -106,7 +107,7 @@
           </div>
 
           <div id="bars-wrap" class="chart-wrap hidden">
-            <div id="rank-bars" class="rank-bars"></div>
+            <canvas id="bars-chart" aria-label="维度柱形统计图"></canvas>
           </div>
 
           <p id="viz-caption" class="viz-caption"></p>
@@ -115,6 +116,16 @@
         <div class="section">
           <h3 class="block-title">TOP 5 维度</h3>
           <div id="top-list" class="top-list"></div>
+        </div>
+
+        <div class="section">
+          <h3 class="block-title">重点维度深度解读</h3>
+          <div id="deep-analysis" class="deep-grid"></div>
+        </div>
+
+        <div class="section assoc-card">
+          <h3 class="block-title">维度关联洞察</h3>
+          <div id="association-list" class="assoc-list"></div>
         </div>
 
         <div class="section">
@@ -137,13 +148,11 @@
 
         <div id="ad-result" class="ad-container no-print" aria-label="广告位"></div>
 
-        <div class="notice">
-          分档说明（本地实现）：0-24 低偏好，25-49 中低偏好，50-74 中高偏好，75-100 高偏好。
-          该分档用于报告可读性增强，不代表官方医学或心理诊断标准。
-        </div>
+        <div class="notice">报告仅用于自我觉察与关系沟通，不替代医学评估或临床心理诊断。</div>
 
         <div class="toolbar no-print">
           <button id="btn-export-pdf" class="btn btn-secondary">导出 PDF</button>
+          <button id="btn-share-result" class="btn btn-secondary">分享本报告</button>
           <button id="btn-restart" class="btn btn-primary">重新测试</button>
           <button id="btn-view-home" class="btn btn-secondary">回到首页</button>
         </div>

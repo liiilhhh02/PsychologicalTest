@@ -37,22 +37,26 @@ const insightList = document.getElementById('insight-list');
 const radarWrap = document.getElementById('radar-wrap');
 const barsWrap = document.getElementById('bars-wrap');
 const radarCanvas = document.getElementById('radar-chart');
-const rankBars = document.getElementById('rank-bars');
+const barsCanvas = document.getElementById('bars-chart');
 const vizCaption = document.getElementById('viz-caption');
 
 const btnChartRadar = document.getElementById('btn-chart-radar');
 const btnChartBars = document.getElementById('btn-chart-bars');
 
 const topList = document.getElementById('top-list');
+const deepAnalysis = document.getElementById('deep-analysis');
+const associationList = document.getElementById('association-list');
 const reportMeta = document.getElementById('report-meta');
 const reportTableBody = document.getElementById('report-table-body');
 
 const btnStart = document.getElementById('btn-start');
+const btnShareSite = document.getElementById('btn-share-site');
 const btnPrev = document.getElementById('btn-prev');
 const btnHome = document.getElementById('btn-home');
 const btnRestart = document.getElementById('btn-restart');
 const btnViewHome = document.getElementById('btn-view-home');
 const btnExportPdf = document.getElementById('btn-export-pdf');
+const btnShareResult = document.getElementById('btn-share-result');
 
 const adHome = document.getElementById('ad-home');
 const adResult = document.getElementById('ad-result');
@@ -95,17 +99,17 @@ function levelClass(level) {
   return 'level-high';
 }
 
-function barToneClass(percentage) {
+function barColor(percentage) {
   if (percentage >= 75) {
-    return 'tone-high';
+    return '#c5533c';
   }
   if (percentage >= 50) {
-    return 'tone-mid-high';
+    return '#d08d2f';
   }
   if (percentage >= 25) {
-    return 'tone-mid-low';
+    return '#2f8e7d';
   }
-  return 'tone-low';
+  return '#547f6a';
 }
 
 function safeText(raw) {
@@ -275,15 +279,19 @@ function renderSummary(result, sortedDims) {
   summarySpread.textContent = `${spread}`;
 }
 
-function renderInsights(sortedDims) {
+function renderInsights(result, sortedDims) {
   const topThree = sortedDims.slice(0, 3);
   const lowThree = [...sortedDims].reverse().slice(0, 3).reverse();
   const highCount = sortedDims.filter((dim) => dim.percentage >= 75).length;
+  const topAssociation = (result.associationInsights || [])[0];
 
   const lines = [
-    `最突出的维度是 ${topThree.map((dim) => `${dim.name}(${dim.percentage}%)`).join('、')}。`,
-    `相对较低的维度是 ${lowThree.map((dim) => `${dim.name}(${dim.percentage}%)`).join('、')}。`,
-    `达到高偏好（>=75%）的维度数量：${highCount}。`,
+    `高激活重心集中在 ${topThree.map((dim) => `${dim.name}（${dim.percentage}%）`).join('、')}。`,
+    `低激活端主要是 ${lowThree.map((dim) => `${dim.name}（${dim.percentage}%）`).join('、')}，可作为边界优先讨论区。`,
+    `当前共有 ${highCount} 个维度达到高偏好区间，建议在高分项上先做规则和照护设计。`,
+    topAssociation
+      ? `最显著的联动为“${topAssociation.relation}”：${topAssociation.impact}`
+      : '关联模型未识别到显著联动，说明你的维度分布相对独立。',
     '建议将本报告用于自我了解与沟通参考，不应替代医学或临床心理诊断。',
   ];
 
@@ -311,33 +319,55 @@ function renderTopDimensions(dimensions) {
   });
 }
 
-function renderRankBars(dimensions) {
-  rankBars.innerHTML = '';
+function renderDeepAnalysis(dimensions) {
+  deepAnalysis.innerHTML = '';
+  const topSix = dimensions.slice(0, 6);
 
-  dimensions.forEach((dim, index) => {
-    const barItem = document.createElement('div');
-    barItem.className = 'rank-item';
-
-    const tone = barToneClass(dim.percentage);
-    barItem.innerHTML = `
-      <div class="rank-label-wrap">
-        <span class="rank-index">#${index + 1}</span>
-        <span class="rank-name">${safeText(dim.name)} (${safeText(dim.key)})</span>
-        <span class="rank-value">${dim.percentage}%</span>
-      </div>
-      <div class="rank-track">
-        <div class="rank-fill ${tone}" style="width:${dim.percentage}%"></div>
-      </div>
+  topSix.forEach((dim) => {
+    const analysis = dim.analysis || {};
+    const card = document.createElement('article');
+    card.className = 'deep-card';
+    card.innerHTML = `
+      <h4 class="deep-title">${safeText(dim.name)} (${safeText(dim.key)})</h4>
+      <p class="deep-meta">${dim.percentage}% · ${safeText(dim.level)}</p>
+      <p class="deep-text">${safeText(analysis.summary || dim.description)}</p>
+      <p class="deep-line"><strong>沟通建议</strong>${safeText(analysis.communication || '建议提前沟通边界和期待。')}</p>
+      <p class="deep-line"><strong>风险提示</strong>${safeText(analysis.risk || '请保持同意可撤回，并持续确认彼此状态。')}</p>
+      <p class="deep-line"><strong>发展建议</strong>${safeText(analysis.development || '建议在安全和尊重前提下逐步探索。')}</p>
+      <p class="deep-line"><strong>关联解读</strong>${safeText(analysis.associationHint || '该维度当前受关联项影响有限。')}</p>
     `;
-
-    rankBars.appendChild(barItem);
+    deepAnalysis.appendChild(card);
   });
 }
 
-function getCanvasContext(canvas) {
+function renderAssociationInsights(result) {
+  associationList.innerHTML = '';
+  const insights = result.associationInsights || [];
+
+  if (!insights.length) {
+    associationList.innerHTML = '<p class="assoc-empty">未识别到显著联动，当前画像主要由各维度独立驱动。</p>';
+    return;
+  }
+
+  insights.forEach((item) => {
+    const card = document.createElement('article');
+    card.className = 'assoc-item';
+    card.innerHTML = `
+      <h4 class="assoc-title">${safeText(item.relation || '维度联动')}</h4>
+      <p class="assoc-line">${safeText(item.impact || '')}</p>
+      <p class="assoc-line">${safeText(item.interpretation || '')}</p>
+      <p class="assoc-line"><strong>建议</strong>${safeText(item.suggestion || '')}</p>
+    `;
+    associationList.appendChild(card);
+  });
+}
+
+function getCanvasContext(canvas, options = {}) {
+  const minWidth = options.minWidth || 300;
+  const minHeight = options.minHeight || 320;
   const rect = canvas.getBoundingClientRect();
-  const width = Math.max(300, Math.floor(rect.width));
-  const height = Math.max(320, Math.floor(rect.height));
+  const width = Math.max(minWidth, Math.floor(rect.width));
+  const height = Math.max(minHeight, Math.floor(rect.height));
   const ratio = window.devicePixelRatio || 1;
 
   canvas.width = Math.floor(width * ratio);
@@ -348,6 +378,85 @@ function getCanvasContext(canvas) {
   ctx.clearRect(0, 0, width, height);
 
   return { ctx, width, height };
+}
+
+function drawBarsChart(dimensions) {
+  if (!dimensions.length) {
+    return;
+  }
+
+  const { ctx, width, height } = getCanvasContext(barsCanvas, { minHeight: 380 });
+  const margin = {
+    top: 24,
+    right: 16,
+    bottom: 74,
+    left: 44,
+  };
+  const chartWidth = width - margin.left - margin.right;
+  const chartHeight = height - margin.top - margin.bottom;
+  const baseY = margin.top + chartHeight;
+  const ticks = [0, 20, 40, 60, 80, 100];
+
+  ctx.strokeStyle = '#e4dbcf';
+  ctx.lineWidth = 1;
+  ctx.font = '11px "Noto Sans SC", "PingFang SC", sans-serif';
+  ctx.fillStyle = '#7a7166';
+  ctx.textAlign = 'right';
+  ctx.textBaseline = 'middle';
+
+  ticks.forEach((value) => {
+    const y = baseY - (value / 100) * chartHeight;
+    ctx.beginPath();
+    ctx.moveTo(margin.left, y);
+    ctx.lineTo(margin.left + chartWidth, y);
+    ctx.stroke();
+    ctx.fillText(`${value}`, margin.left - 8, y);
+  });
+
+  ctx.beginPath();
+  ctx.moveTo(margin.left, margin.top);
+  ctx.lineTo(margin.left, baseY);
+  ctx.lineTo(margin.left + chartWidth, baseY);
+  ctx.strokeStyle = '#d2c8ba';
+  ctx.stroke();
+
+  const count = dimensions.length;
+  const gap = Math.max(4, Math.floor(chartWidth / (count * 5)));
+  const estimatedBarWidth = (chartWidth - gap * (count + 1)) / count;
+  const barWidth = Math.max(8, Math.min(30, estimatedBarWidth));
+  const occupied = count * barWidth + (count - 1) * gap;
+  const startX = margin.left + Math.max(0, (chartWidth - occupied) / 2);
+
+  dimensions.forEach((dim, index) => {
+    const value = dim.percentage;
+    const barHeight = (value / 100) * chartHeight;
+    const x = startX + index * (barWidth + gap);
+    const y = baseY - barHeight;
+
+    ctx.fillStyle = barColor(value);
+    ctx.fillRect(x, y, barWidth, barHeight);
+
+    ctx.font = barWidth >= 12
+      ? '11px "Noto Sans SC", "PingFang SC", sans-serif'
+      : '10px "Noto Sans SC", "PingFang SC", sans-serif';
+    ctx.fillStyle = '#4f483f';
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'bottom';
+    ctx.fillText(`${value}`, x + barWidth / 2, y - 4);
+
+    ctx.font = '11px "Noto Sans SC", "PingFang SC", sans-serif';
+    ctx.textBaseline = 'top';
+    ctx.fillStyle = '#5f574d';
+    ctx.fillText(dim.key, x + barWidth / 2, baseY + 8);
+  });
+
+  ctx.save();
+  ctx.fillStyle = '#786f64';
+  ctx.font = '11px "Noto Sans SC", "PingFang SC", sans-serif';
+  ctx.textAlign = 'left';
+  ctx.textBaseline = 'alphabetic';
+  ctx.fillText('百分比（%）', 10, margin.top - 6);
+  ctx.restore();
 }
 
 function drawRadarChart(dimensions) {
@@ -446,6 +555,28 @@ function drawRadarChart(dimensions) {
   ctx.fillText('100', centerX, centerY - radius - 6);
 }
 
+function drawRadarChartWhenReady(dimensions, retry = 0) {
+  const rect = radarCanvas.getBoundingClientRect();
+  if ((rect.width < 120 || rect.height < 120) && retry < 12) {
+    window.setTimeout(() => {
+      drawRadarChartWhenReady(dimensions, retry + 1);
+    }, 30);
+    return;
+  }
+  drawRadarChart(dimensions);
+}
+
+function drawBarsChartWhenReady(dimensions, retry = 0) {
+  const rect = barsCanvas.getBoundingClientRect();
+  if ((rect.width < 120 || rect.height < 120) && retry < 12) {
+    window.setTimeout(() => {
+      drawBarsChartWhenReady(dimensions, retry + 1);
+    }, 30);
+    return;
+  }
+  drawBarsChart(dimensions);
+}
+
 function setChartMode(mode) {
   state.chartMode = mode;
   const isRadar = mode === 'radar';
@@ -471,13 +602,13 @@ function renderVisualization() {
 
   if (state.chartMode === 'radar') {
     const topTwelve = sortedDims.slice(0, 12);
-    drawRadarChart(topTwelve);
+    drawRadarChartWhenReady(topTwelve);
     vizCaption.textContent = '雷达图展示得分最高的12个维度，便于快速看出偏好轮廓。';
     return;
   }
 
-  renderRankBars(sortedDims);
-  vizCaption.textContent = '柱状图按百分比从高到低展示全部23个维度。';
+  drawBarsChartWhenReady(sortedDims);
+  vizCaption.textContent = '柱形统计图展示全部维度的百分比分布，纵轴为 0-100。';
 }
 
 function renderTableRows(dimensions) {
@@ -508,8 +639,10 @@ function renderResult() {
   reportMeta.textContent = `套题: ${result.suite?.name || state.suiteName} ｜ 结果ID: ${result.id} ｜ 综合分: ${result.totalScore} ｜ 时间: ${localTime}`;
 
   renderSummary(result, sortedDims);
-  renderInsights(sortedDims);
+  renderInsights(result, sortedDims);
   renderTopDimensions(topFive);
+  renderDeepAnalysis(sortedDims);
+  renderAssociationInsights(result);
   renderTableRows(sortedDims);
   setChartMode('radar');
 }
@@ -616,8 +749,10 @@ async function nextStep() {
 
     try {
       await submitAnswers();
-      renderResult();
       showView('result');
+      requestAnimationFrame(() => {
+        renderResult();
+      });
     } catch (error) {
       console.error(error);
       alert(`报告生成失败：${error.message}`);
@@ -642,7 +777,7 @@ function previousStep() {
 }
 
 function onResize() {
-  if (!state.result || state.chartMode !== 'radar' || resultView.classList.contains('hidden')) {
+  if (!state.result || resultView.classList.contains('hidden')) {
     return;
   }
 
@@ -650,6 +785,65 @@ function onResize() {
   resizeTimer = setTimeout(() => {
     renderVisualization();
   }, 120);
+}
+
+function buildShareUrl(includeResult = false) {
+  const url = new URL(window.location.href);
+  url.searchParams.set('suite', state.suiteId);
+  if (includeResult && state.result?.id) {
+    url.searchParams.set('resultId', state.result.id);
+  } else {
+    url.searchParams.delete('resultId');
+  }
+  return `${url.origin}${url.pathname}${url.search}`;
+}
+
+async function copyText(text) {
+  if (navigator.clipboard && window.isSecureContext) {
+    await navigator.clipboard.writeText(text);
+    return;
+  }
+
+  const textarea = document.createElement('textarea');
+  textarea.value = text;
+  textarea.style.position = 'fixed';
+  textarea.style.opacity = '0';
+  document.body.appendChild(textarea);
+  textarea.focus();
+  textarea.select();
+  const success = document.execCommand('copy');
+  document.body.removeChild(textarea);
+  if (!success) {
+    throw new Error('复制失败');
+  }
+}
+
+async function shareSite(includeResult = false) {
+  const url = buildShareUrl(includeResult);
+  const title = includeResult
+    ? `${state.suiteName} · 测评结果`
+    : `${state.suiteName} · 免费本地测评`;
+  const text = includeResult
+    ? `我刚完成了 ${state.suiteName}，这是我的结果链接。`
+    : `这是一个可本地运行的 ${state.suiteName}，支持手机和电脑测评。`;
+
+  if (navigator.share) {
+    try {
+      await navigator.share({ title, text, url });
+      return;
+    } catch (error) {
+      if (error && error.name === 'AbortError') {
+        return;
+      }
+    }
+  }
+
+  try {
+    await copyText(url);
+    alert('分享链接已复制，可直接粘贴到微信、微博或 X。');
+  } catch (error) {
+    window.prompt('浏览器未授予剪贴板权限，请手动复制该链接：', url);
+  }
 }
 
 function exportPdf() {
@@ -673,6 +867,10 @@ btnStart.addEventListener('click', () => {
   showView('test');
 });
 
+btnShareSite.addEventListener('click', async () => {
+  await shareSite(false);
+});
+
 btnPrev.addEventListener('click', () => {
   previousStep();
 });
@@ -693,6 +891,14 @@ btnViewHome.addEventListener('click', () => {
 
 btnExportPdf.addEventListener('click', () => {
   exportPdf();
+});
+
+btnShareResult.addEventListener('click', async () => {
+  if (!state.result) {
+    alert('请先完成测试，再分享报告。');
+    return;
+  }
+  await shareSite(true);
 });
 
 btnChartRadar.addEventListener('click', () => {

@@ -1,0 +1,2702 @@
+[
+  {
+    "id": 5002,
+    "dimension": "A",
+    "text": "在亲密关系里，角色设定会明显提升我的投入感。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5003,
+    "dimension": "A",
+    "text": "我会为某些特定剧情或身份设定提前构思细节。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5004,
+    "dimension": "A",
+    "text": "相比即兴互动，我更享受有脚本的情境推进。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5005,
+    "dimension": "A",
+    "text": "当双方进入角色时，我更容易进入状态。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5006,
+    "dimension": "B",
+    "text": "在信任关系里，我对强烈语言刺激有一定反应。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5007,
+    "dimension": "B",
+    "text": "在明确边界下，被贬抑语境会激发我的情绪波动。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5008,
+    "dimension": "B",
+    "text": "我会把部分自我价值交给对方的评价来强化体验。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5009,
+    "dimension": "B",
+    "text": "如果对方用强势语言引导，我可能更容易进入状态。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5010,
+    "dimension": "C",
+    "text": "在可控场景里，我会偏好强势主导式表达。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5011,
+    "dimension": "C",
+    "text": "我在互动中会主动拉开权力差来增强体验。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5012,
+    "dimension": "C",
+    "text": "相比温和表达，我更能从压迫式话术中获得刺激。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5013,
+    "dimension": "C",
+    "text": "在对方同意时，我会倾向用更直接的支配语言。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5014,
+    "dimension": "D",
+    "text": "我会被同性别对象的亲密特质吸引。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5015,
+    "dimension": "D",
+    "text": "在亲密想象中，我会出现同性别对象。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5016,
+    "dimension": "D",
+    "text": "我能想象并接受与同性别对象建立亲密关系。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5017,
+    "dimension": "D",
+    "text": "同性别互动会触发我真实的亲密兴趣。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5018,
+    "dimension": "E",
+    "text": "相比一对一，我对多方互动场景更有好奇心。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5019,
+    "dimension": "E",
+    "text": "我会设想多人协同或围观式的亲密氛围。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5020,
+    "dimension": "E",
+    "text": "关系里出现第三方并不一定削弱我的兴奋感。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5021,
+    "dimension": "E",
+    "text": "我对多方互动的规则设计有持续兴趣。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5022,
+    "dimension": "F",
+    "text": "我会对“被看见”这一感觉产生额外兴奋。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5023,
+    "dimension": "F",
+    "text": "在可控范围内，公开可见性会增强我的体验。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5024,
+    "dimension": "F",
+    "text": "我会在想象中加入外部目光来强化投入。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5025,
+    "dimension": "F",
+    "text": "比起完全私密，我对半公开氛围有更多好奇。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5026,
+    "dimension": "G",
+    "text": "在亲密互动中，我会主动交出主导权。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5027,
+    "dimension": "G",
+    "text": "被明确引导会让我更容易放松与投入。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5028,
+    "dimension": "G",
+    "text": "我会从顺从感中获得心理满足。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5029,
+    "dimension": "G",
+    "text": "在安全规则下，我乐于把决定权交给对方。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5030,
+    "dimension": "H",
+    "text": "我习惯在亲密互动中承担主导角色。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5031,
+    "dimension": "H",
+    "text": "我会通过制定节奏来获得掌控感。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5032,
+    "dimension": "H",
+    "text": "当对方跟随我的引导时，我会更有满足感。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5033,
+    "dimension": "H",
+    "text": "我在互动中常自然进入领导位置。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5034,
+    "dimension": "I",
+    "text": "我会因执行规则而感到安心与满足。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5035,
+    "dimension": "I",
+    "text": "被安排明确步骤时，我更容易进入状态。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5036,
+    "dimension": "I",
+    "text": "我能在既定框架中持续保持配合。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5037,
+    "dimension": "I",
+    "text": "“按规则进行”会提升我的体验质量。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5038,
+    "dimension": "J",
+    "text": "我希望互动过程尽量可预测、可控制。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5039,
+    "dimension": "J",
+    "text": "我会提前规划流程来降低不确定感。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5040,
+    "dimension": "J",
+    "text": "当场景脱离计划时，我会明显不适。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5041,
+    "dimension": "J",
+    "text": "我更偏好由我或双方共同掌控节奏。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5042,
+    "dimension": "K",
+    "text": "在信任前提下，轻微痛感可能增强我的体验。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5043,
+    "dimension": "K",
+    "text": "我对承受刺激有一定耐受和探索欲。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5044,
+    "dimension": "K",
+    "text": "“强度感”本身会成为我关注的体验部分。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5045,
+    "dimension": "K",
+    "text": "我能从适度不适中感受到某种释放。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5046,
+    "dimension": "L",
+    "text": "在同意框架中，我会对施加强刺激有兴趣。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5047,
+    "dimension": "L",
+    "text": "我会通过控制强度来获得主导满足感。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5048,
+    "dimension": "L",
+    "text": "相比温和互动，我对强势方式更有动力。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5049,
+    "dimension": "L",
+    "text": "我能从对方反馈中感到“我在主导过程”。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5050,
+    "dimension": "M",
+    "text": "我希望在关系里获得较强的排他确认。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5051,
+    "dimension": "M",
+    "text": "当对方与他人靠近时，我会明显不安。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5052,
+    "dimension": "M",
+    "text": "我会通过“归属感证明”来提升安全感。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5053,
+    "dimension": "M",
+    "text": "我倾向把亲密关系理解为高排他结构。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5054,
+    "dimension": "N",
+    "text": "情感连结会显著影响我的亲密体验质量。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5055,
+    "dimension": "N",
+    "text": "我更容易在稳定关系中产生持续投入。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5056,
+    "dimension": "N",
+    "text": "对我来说，亲密行为与情感承诺高度相关。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5057,
+    "dimension": "N",
+    "text": "如果缺少情绪连接，我会难以长期投入。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5058,
+    "dimension": "O",
+    "text": "涉及竞争或比较线索时，我会出现复杂兴奋感。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5059,
+    "dimension": "O",
+    "text": "嫉妒情绪有时会被我体验为刺激的一部分。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5060,
+    "dimension": "O",
+    "text": "我会在想象里引入第三方竞争情境。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5061,
+    "dimension": "O",
+    "text": "关系中的不安全线索会触发我更强烈反应。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5062,
+    "dimension": "P",
+    "text": "观察他人互动会激发我的好奇和兴奋。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5063,
+    "dimension": "P",
+    "text": "我会对细节性的行为线索保持高敏感度。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5064,
+    "dimension": "P",
+    "text": "“看见过程”比结果本身更能吸引我。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5065,
+    "dimension": "P",
+    "text": "我对旁观式信息输入有稳定兴趣。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5066,
+    "dimension": "Q",
+    "text": "我会从照顾和保护对方中获得满足感。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5067,
+    "dimension": "Q",
+    "text": "在关系中，我常主动承担支持性角色。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5068,
+    "dimension": "Q",
+    "text": "当对方依赖我时，我会更有价值感。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5069,
+    "dimension": "Q",
+    "text": "我愿意为对方建立更安全的情绪空间。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5070,
+    "dimension": "R",
+    "text": "我会被突破常规的体验显著吸引。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5071,
+    "dimension": "R",
+    "text": "规则越明确，我有时越想尝试打破它。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5072,
+    "dimension": "R",
+    "text": "新奇和反常规会提升我的参与意愿。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5073,
+    "dimension": "R",
+    "text": "我倾向在可控范围内挑战既有边界。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5074,
+    "dimension": "S",
+    "text": "我能接受与自己不同的亲密价值观。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5075,
+    "dimension": "S",
+    "text": "只要安全合意，我对多元亲密形式较开放。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5076,
+    "dimension": "S",
+    "text": "我愿意讨论并尝试超出传统脚本的方式。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5077,
+    "dimension": "S",
+    "text": "面对新型关系表达，我通常先理解再判断。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5078,
+    "dimension": "T",
+    "text": "在想象中，我会被“被动失控感”触发情绪。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5079,
+    "dimension": "T",
+    "text": "把主动权暂时交出会让我更容易投入。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5080,
+    "dimension": "T",
+    "text": "我对“被强势引导”的剧情有一定反应。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5081,
+    "dimension": "T",
+    "text": "在明确同意下，被动处境会增强我的体验。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5082,
+    "dimension": "U",
+    "text": "在想象层面，我会被强势推进的情境吸引。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5083,
+    "dimension": "U",
+    "text": "我对高压主导剧情有阶段性兴趣。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5084,
+    "dimension": "U",
+    "text": "当我拥有绝对主导位置时，会感到更强烈投入。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5085,
+    "dimension": "U",
+    "text": "我会从“我在推动过程”的感受中获得满足。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5086,
+    "dimension": "V",
+    "text": "我对性别表达的流动性保持好奇与开放。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5087,
+    "dimension": "V",
+    "text": "我会被非传统性别角色呈现所吸引。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5088,
+    "dimension": "V",
+    "text": "身份表达的变化会触发我新的亲密想象。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5089,
+    "dimension": "V",
+    "text": "我能接受并探索更灵活的性别气质互动。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5090,
+    "dimension": "W",
+    "text": "某些材质、服饰或物件会显著影响我的体验。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5091,
+    "dimension": "W",
+    "text": "我会主动关注感官锚点（触感/气味/视觉）细节。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5092,
+    "dimension": "W",
+    "text": "在亲密场景里，特定物件会提升我的投入度。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5093,
+    "dimension": "W",
+    "text": "我的兴奋有时会被具体物件快速触发。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5094,
+    "dimension": "A",
+    "text": "如果情境故事完整，我会更愿意持续投入较长时间。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5095,
+    "dimension": "H",
+    "text": "我会主动评估对方状态并调整主导强度。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5096,
+    "dimension": "J",
+    "text": "我更喜欢先对齐规则再开始互动。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5097,
+    "dimension": "K",
+    "text": "我会把强度变化视为体验节奏的重要组成。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5098,
+    "dimension": "M",
+    "text": "我需要较明确的关系确认来稳定情绪。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5099,
+    "dimension": "N",
+    "text": "长期信任关系会显著提高我的安全感和投入度。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5100,
+    "dimension": "P",
+    "text": "我会从观察对方细微反应中获得额外满足。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5101,
+    "dimension": "Q",
+    "text": "互动后进行情绪安抚和照护对我很重要。",
+    "options": [
+      {
+        "text": "非常不认同",
+        "score": 1
+      },
+      {
+        "text": "比较不认同",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "比较认同",
+        "score": 4
+      },
+      {
+        "text": "非常认同",
+        "score": 5
+      }
+    ]
+  }
+]
