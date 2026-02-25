@@ -1,9 +1,9 @@
 {
   "id": "milu-pro-100",
-  "name": "麋鹿性偏好测试（100题详版）",
-  "version": "2026.02.25-pro",
-  "description": "在23维度基础上扩展到100题，强调细分场景、边界沟通与关系感受。",
-  "source": "local expanded suite",
+  "name": "麋鹿性偏好测试（100题详细版）",
+  "version": "2026.02.25-100",
+  "description": "100题详细版，强调边界协商、情境差异与复盘能力。",
+  "source": "local upgraded suite",
   "adultContent": true,
   "default": false
 }

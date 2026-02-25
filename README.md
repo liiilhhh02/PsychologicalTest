@@ -7,9 +7,9 @@
 - 支持可配置接入 Google 广告（默认关闭，占位不影响观感）
 - 支持导出 PDF 报告（浏览器打印为 PDF）
 - 已内置 3 套题：
-  - `milu-basic`（69题）
-  - `milu-pro-100`（100题详版）
-  - `bdsm-archetype-52`（BDSM 原型向，52题）
+  - `milu-basic`（麋鹿 50 题简短版）
+  - `milu-pro-100`（麋鹿 100 题详细版）
+  - `bdsm-60`（BDSM 60 题专项版，含 SP/K9/滴蜡/捆绑等）
 
 ## 目录结构
 
@@ -23,7 +23,7 @@ question-suites/
     suite.json
     questions.json
     dimension_descriptions.json
-  bdsm-archetype-52/
+  bdsm-60/
     suite.json
     questions.json
     dimension_descriptions.json
@@ -66,13 +66,22 @@ npm start
 }
 ```
 
-## 新增套题：BDSM 原型偏好（52题）
+## 当前套题说明
 
-- 套题 ID：`bdsm-archetype-52`
-- 维度数：13
-- 题量：52（每维度 4 题）
-- 量表：5级李克特（1~5）
-- 设计原则：强调同意、边界、安全词、事后复盘，不鼓励任何违法或非自愿行为
+- `milu-basic`：
+  - 题量：50
+  - 定位：快速版，适合首次测评
+  - 特点：23维度全覆盖，题目去重
+
+- `milu-pro-100`：
+  - 题量：100
+  - 定位：详细版，适合深度自评
+  - 特点：强化边界协商、情境差异、复盘能力题项，题目去重
+
+- `bdsm-60`：
+  - 题量：60
+  - 定位：BDSM 专项版
+  - 特点：覆盖捆绑、SP、K9、滴蜡、感官剥夺、边缘控制、aftercare、安全协议等具体主题，题目去重
 
 参考来源（用于维度框架，不直接构成临床诊断量表）：
 

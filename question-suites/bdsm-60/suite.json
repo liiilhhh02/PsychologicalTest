@@ -1,0 +1,9 @@
+{
+  "id": "bdsm-60",
+  "name": "BDSM 专项偏好测试（60题）",
+  "version": "2026.02.25-60",
+  "description": "60题专项版，覆盖捆绑、SP、K9、滴蜡、边缘控制、aftercare与安全协议。",
+  "source": "local bdsm-specific suite",
+  "adultContent": true,
+  "default": false
+}
