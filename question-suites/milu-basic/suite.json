@@ -1,0 +1,9 @@
+{
+  "id": "milu-basic",
+  "name": "麋鹿性偏好测试",
+  "version": "2026.02.25",
+  "description": "公开题库快照的本地可运行版，69题/23维度。",
+  "source": "xph.miluceshi.cn public API snapshot",
+  "adultContent": true,
+  "default": true
+}

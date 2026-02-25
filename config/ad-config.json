@@ -1,0 +1,16 @@
+{
+  "provider": "google-adsense",
+  "enabled": false,
+  "client": "",
+  "slots": {
+    "home_inline": "",
+    "result_inline": ""
+  },
+  "style": {
+    "layout": "in-article",
+    "format": "fluid",
+    "responsive": true
+  },
+  "showPlaceholderWhenDisabled": true,
+  "notes": "启用前请先填写 client 和 slot 并确保域名已在 Google AdSense 审核通过。"
+}

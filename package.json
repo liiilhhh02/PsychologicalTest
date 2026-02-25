@@ -1,0 +1,13 @@
+{
+  "name": "milu-preference-test",
+  "version": "1.1.0",
+  "private": true,
+  "description": "麋鹿性偏好测试本地原型（含可视化报告与一键部署配置）",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js 3000"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
