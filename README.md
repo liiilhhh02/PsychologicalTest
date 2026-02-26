@@ -45,6 +45,12 @@ npm start
 
 访问：[http://localhost:3000](http://localhost:3000)
 
+## GitHub Pages
+
+- 仓库已内置工作流：`.github/workflows/deploy-pages.yml`
+- 推送到 `main` 后会自动发布到 GitHub Pages
+- Pages 环境会自动启用前端静态模式（直接读取 `question-suites/*.json` 并在浏览器内计算结果）
+
 ## 套题管理（以后新增套题）
 
 1. 在 `question-suites/` 下新建文件夹，例如 `question-suites/new-pack/`。

@@ -2,7 +2,9 @@ const state = {
   suites: [],
   suiteId: '',
   suiteName: '',
+  runtimeMode: 'server',
   questions: [],
+  dimensionDetails: [],
   metadata: null,
   adConfig: null,
   answers: new Map(),
@@ -71,6 +73,7 @@ const adResult = document.getElementById('ad-result');
 
 let resizeTimer = null;
 let adScriptLoadPromise = null;
+const STATIC_SUITE_IDS = ['milu-basic', 'milu-pro-100', 'bdsm-60'];
 
 function showView(target) {
   homeView.classList.add('hidden');
@@ -129,25 +132,272 @@ function safeText(raw) {
     .replaceAll("'", '&#39;');
 }
 
+function appUrl(path) {
+  const cleaned = String(path || '').replace(/^\/+/, '');
+  return new URL(cleaned, window.location.href).toString();
+}
+
+function levelFromPercentage(percentage) {
+  if (percentage <= 24) {
+    return '低偏好';
+  }
+  if (percentage <= 49) {
+    return '中低偏好';
+  }
+  if (percentage <= 74) {
+    return '中高偏好';
+  }
+  return '高偏好';
+}
+
 async function fetchJson(url) {
-  const resp = await fetch(url);
+  const resp = await fetch(appUrl(url));
   if (!resp.ok) {
     throw new Error(`${url} 请求失败 (${resp.status})`);
   }
   return resp.json();
 }
 
-async function fetchSuites() {
-  const payload = await fetchJson('/api/suites');
-  state.suites = payload.data || [];
+async function loadStaticSuites() {
+  const suites = await Promise.all(
+    STATIC_SUITE_IDS.map(async (id) => {
+      const [suiteMeta, questions, dimensionDetails] = await Promise.all([
+        fetchJson(`question-suites/${id}/suite.json`),
+        fetchJson(`question-suites/${id}/questions.json`),
+        fetchJson(`question-suites/${id}/dimension_descriptions.json`),
+      ]);
 
-  if (!state.suites.length) {
-    throw new Error('未发现可用套题');
+      const dimensionMap = new Map(dimensionDetails.map((item) => [item.key, item]));
+      const dimensionOrder = [...new Set(questions.map((item) => item.dimension))];
+      const dimensionMeta = dimensionOrder.map((key) => ({
+        key,
+        name: dimensionMap.get(key)?.name || key,
+        questionCount: questions.filter((item) => item.dimension === key).length,
+        description: dimensionMap.get(key)?.description || '暂无维度说明。',
+      }));
+
+      return {
+        id: suiteMeta.id || id,
+        name: suiteMeta.name || id,
+        version: suiteMeta.version || '0.0.0',
+        description: suiteMeta.description || '',
+        source: suiteMeta.source || 'static local mode',
+        adultContent: Boolean(suiteMeta.adultContent),
+        totalQuestions: questions.length,
+        dimensionCount: dimensionMeta.length,
+        _questions: questions,
+        _dimensionDetails: dimensionDetails,
+        _dimensionMeta: dimensionMeta,
+      };
+    })
+  );
+
+  return suites;
+}
+
+function hashString(input) {
+  let hash = 0;
+  const str = String(input || '');
+  for (let i = 0; i < str.length; i += 1) {
+    hash = ((hash << 5) - hash) + str.charCodeAt(i);
+    hash |= 0;
+  }
+  return Math.abs(hash);
+}
+
+function pickBySeed(items, seed, fallback = '') {
+  if (!Array.isArray(items) || items.length === 0) {
+    return fallback;
+  }
+  return items[hashString(seed) % items.length];
+}
+
+function bandKeyFromPercentage(percentage) {
+  if (percentage <= 24) {
+    return 'low';
+  }
+  if (percentage <= 49) {
+    return 'midLow';
+  }
+  if (percentage <= 74) {
+    return 'midHigh';
+  }
+  return 'high';
+}
+
+function makeStaticAnalysis(dim, percentage) {
+  const band = bandKeyFromPercentage(percentage);
+  const summaryByBand = {
+    low: [
+      '当前处于低激活位，你更重视边界完整与节奏稳定。',
+      '这个维度暂不承担核心驱动，你以可控体验为主。',
+    ],
+    midLow: [
+      '当前进入中低激活区，你保持兴趣并保留审慎判断。',
+      '该维度已有探索意愿，适合小步试验。',
+    ],
+    midHigh: [
+      '当前处于中高激活区，已经成为常用体验模块。',
+      '该维度具备稳定影响力，建议纳入固定协商流程。',
+    ],
+    high: [
+      '当前位于高激活核心区，会直接影响体验满意度。',
+      '该维度是高权重主轴，建议保持闭环协作。',
+    ],
+  };
+
+  const styleByBand = {
+    low: ['边界先行', '稳态执行'],
+    midLow: ['谨慎探索', '节奏控制'],
+    midHigh: ['稳定驱动', '结构协作'],
+    high: ['核心驱动', '高权重偏好'],
+  };
+
+  const summary = pickBySeed(summaryByBand[band], `${dim.key}-summary`);
+  const style = pickBySeed(styleByBand[band], `${dim.key}-style`);
+
+  return {
+    summary: `${dim.name}当前得分 ${percentage}%（${levelFromPercentage(percentage)}）。${summary} ${dim.description || ''}`.trim(),
+    personality: `人格侧写：你在“${dim.name}”议题呈现${style}特征。`,
+    communication: `沟通建议：先确认目标、边界、退出条件，再推进互动细节。`,
+    risk: '风险提示：忽略中途确认会扩大预期偏差，影响体验质量。',
+    development: '发展建议：采用小步迭代策略，每次只增加一个变量并复盘。',
+    associationHint: '关联解读：静态模式下未启用联动模型，当前结果以维度直接得分为主。',
+  };
+}
+
+function buildStaticPersona(sortedDims) {
+  const top = sortedDims.slice(0, 3);
+  const low = [...sortedDims].reverse().slice(0, 2).reverse();
+  return {
+    title: `${top[0]?.name || '综合'}主导的平衡探索画像`,
+    summary: `你的核心驱动集中在 ${top.map((item) => item.name).join('、')}，同时对 ${low.map((item) => item.name).join('、')} 保持稳态边界。你呈现“规则协作 + 渐进探索”的行为风格。`,
+    tags: ['结构协作型', '边界清晰', '可持续探索'],
+    strengths: [
+      `你在 ${top[0]?.name || '高分维度'} 上进入状态快，执行稳定。`,
+      `你能把 ${top[1]?.name || '次高维度'} 与关系节奏协同起来。`,
+      `你愿意通过复盘优化 ${top[2]?.name || '关键维度'} 的体验质量。`,
+    ],
+    growth: [
+      `把 ${low.map((item) => item.name).join('、')} 作为低压训练区，采用短时试验。`,
+      '高强度场景后固定恢复窗口，并做次日状态回访。',
+      '持续更新边界清单，减少沟通成本。',
+    ],
+    explorationPlan: [
+      '第1步：先固化当前高分维度的流程模板。',
+      '第2步：每次仅增加一个新变量并记录反馈。',
+      '第3步：每三次体验做一次规则复盘并更新条款。',
+    ],
+  };
+}
+
+function computeStaticResult() {
+  const detailMap = new Map((state.dimensionDetails || []).map((item) => [item.key, item]));
+  const grouped = new Map();
+
+  state.questions.forEach((question) => {
+    const score = Number(state.answers.get(question.id));
+    if (!Number.isInteger(score) || score < 1 || score > 5) {
+      throw new Error(`题目 ${question.id} 评分缺失或无效`);
+    }
+
+    if (!grouped.has(question.dimension)) {
+      grouped.set(question.dimension, {
+        key: question.dimension,
+        name: detailMap.get(question.dimension)?.name || question.dimension,
+        description: detailMap.get(question.dimension)?.description || '暂无维度说明。',
+        score: 0,
+        maxScore: 0,
+        minScore: 0,
+      });
+    }
+
+    const bucket = grouped.get(question.dimension);
+    bucket.score += score;
+    bucket.maxScore += 5;
+    bucket.minScore += 1;
+  });
+
+  const dimensions = [...grouped.values()].map((item) => {
+    const denominator = item.maxScore - item.minScore;
+    const percentage = denominator === 0 ? 100 : Math.round(((item.score - item.minScore) / denominator) * 100);
+    const analysis = makeStaticAnalysis(item, percentage);
+    return {
+      key: item.key,
+      name: item.name,
+      score: item.score,
+      maxScore: item.maxScore,
+      minScore: item.minScore,
+      questionCount: Math.round(item.maxScore / 5),
+      linearPercentage: percentage,
+      basePercentage: percentage,
+      associationDelta: 0,
+      percentage,
+      level: levelFromPercentage(percentage),
+      description: analysis.summary,
+      baselineDescription: item.description,
+      analysis,
+    };
+  }).sort((a, b) => {
+    if (b.percentage !== a.percentage) {
+      return b.percentage - a.percentage;
+    }
+    return a.key.localeCompare(b.key);
+  });
+
+  const totalScore = Math.round(dimensions.reduce((acc, item) => acc + item.percentage, 0) / dimensions.length);
+  const topDimensions = dimensions.slice(0, 5);
+  const resultId = `STATIC_${state.suiteId}_${Date.now().toString(36)}`;
+
+  return {
+    id: resultId,
+    timestamp: new Date().toISOString(),
+    suite: state.metadata?.suite || {
+      id: state.suiteId,
+      name: state.suiteName,
+      totalQuestions: state.questions.length,
+      dimensionCount: dimensions.length,
+    },
+    totalScore,
+    dimensions,
+    topDimensions,
+    associationInsights: [],
+    scoringStandard: {
+      scale: '每题1-5分',
+      normalization: '静态模式采用线性归一化百分比',
+    },
+    typicalPersona: buildStaticPersona(dimensions),
+  };
+}
+
+async function fetchSuites() {
+  try {
+    const payload = await fetchJson('api/suites');
+    state.runtimeMode = 'server';
+    state.suites = payload.data || [];
+
+    if (!state.suites.length) {
+      throw new Error('未发现可用套题');
+    }
+
+    const qs = new URLSearchParams(window.location.search);
+    const preferred = qs.get('suite');
+    const fallback = payload.defaultSuiteId;
+    const chosen = state.suites.find((item) => item.id === preferred)
+      || state.suites.find((item) => item.id === fallback)
+      || state.suites[0];
+
+    state.suiteId = chosen.id;
+    return;
+  } catch (error) {
+    console.warn('API 不可用，已切换静态模式。', error);
+    state.runtimeMode = 'static';
+    state.suites = await loadStaticSuites();
   }
 
   const qs = new URLSearchParams(window.location.search);
   const preferred = qs.get('suite');
-  const fallback = payload.defaultSuiteId;
+  const fallback = state.suites.find((item) => item.isDefault)?.id || state.suites[0]?.id;
   const chosen = state.suites.find((item) => item.id === preferred)
     || state.suites.find((item) => item.id === fallback)
     || state.suites[0];
@@ -157,7 +407,7 @@ async function fetchSuites() {
 
 async function fetchAdConfig() {
   try {
-    const payload = await fetchJson('/api/ad-config');
+    const payload = await fetchJson('api/ad-config');
     state.adConfig = payload.data || {};
   } catch (error) {
     console.warn('广告配置读取失败，将使用默认占位。', error);
@@ -185,27 +435,53 @@ function populateSuiteSelect() {
 }
 
 async function loadSuiteData(suiteId) {
-  const [questionsPayload, metadataPayload] = await Promise.all([
-    fetchJson(`/api/suites/${encodeURIComponent(suiteId)}/questions`),
-    fetchJson(`/api/suites/${encodeURIComponent(suiteId)}/metadata`),
-  ]);
-
   state.suiteId = suiteId;
-  state.questions = questionsPayload.data;
-  state.metadata = metadataPayload;
 
-  const suiteName = metadataPayload.suite?.name || suiteId;
+  if (state.runtimeMode === 'server') {
+    const [questionsPayload, metadataPayload] = await Promise.all([
+      fetchJson(`api/suites/${encodeURIComponent(suiteId)}/questions`),
+      fetchJson(`api/suites/${encodeURIComponent(suiteId)}/metadata`),
+    ]);
+    state.questions = questionsPayload.data;
+    state.metadata = metadataPayload;
+    state.dimensionDetails = metadataPayload.dimensions || [];
+  } else {
+    const suite = state.suites.find((item) => item.id === suiteId);
+    if (!suite) {
+      throw new Error(`套题不存在: ${suiteId}`);
+    }
+    state.questions = suite._questions || [];
+    state.dimensionDetails = suite._dimensionDetails || [];
+    state.metadata = {
+      success: true,
+      suite: {
+        id: suite.id,
+        name: suite.name,
+        version: suite.version,
+        description: suite.description,
+        source: suite.source,
+        adultContent: suite.adultContent,
+        totalQuestions: suite.totalQuestions,
+        dimensionCount: suite.dimensionCount,
+      },
+      totalQuestions: suite.totalQuestions,
+      dimensionCount: suite.dimensionCount,
+      dimensions: suite._dimensionMeta || [],
+    };
+  }
+
+  const suiteName = state.metadata.suite?.name || suiteId;
   state.suiteName = suiteName;
 
   suiteNameLabel.textContent = suiteName;
-  homeQuestionCount.textContent = String(metadataPayload.totalQuestions);
-  homeDimensionCount.textContent = String(metadataPayload.dimensionCount);
-  metaQuestionCount.textContent = String(metadataPayload.totalQuestions);
-  metaDimensionCount.textContent = String(metadataPayload.dimensionCount);
+  homeQuestionCount.textContent = String(state.metadata.totalQuestions);
+  homeDimensionCount.textContent = String(state.metadata.dimensionCount);
+  metaQuestionCount.textContent = String(state.metadata.totalQuestions);
+  metaDimensionCount.textContent = String(state.metadata.dimensionCount);
 
   const query = new URL(window.location.href);
   query.searchParams.set('suite', suiteId);
-  window.history.replaceState({}, '', `${query.pathname}${query.search}`);
+  window.history.replaceState({}, '', `${query.pathname}${query.search}${query.hash}`);
 }
 
 function resetAnswers() {
@@ -244,12 +520,17 @@ function renderQuestion() {
 }
 
 async function submitAnswers() {
+  if (state.runtimeMode === 'static') {
+    state.result = computeStaticResult();
+    return;
+  }
+
   const answers = state.questions.map((question) => ({
     subject_id: question.id,
     select_score: state.answers.get(question.id),
   }));
 
-  const submitResp = await fetch(`/api/suites/${encodeURIComponent(state.suiteId)}/submit`, {
+  const submitResp = await fetch(appUrl(`api/suites/${encodeURIComponent(state.suiteId)}/submit`), {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -265,7 +546,7 @@ async function submitAnswers() {
   const submitPayload = await submitResp.json();
   const resultId = submitPayload.data.resultId;
 
-  const resultResp = await fetch(`/api/suites/${encodeURIComponent(state.suiteId)}/result/${encodeURIComponent(resultId)}`);
+  const resultResp = await fetch(appUrl(`api/suites/${encodeURIComponent(state.suiteId)}/result/${encodeURIComponent(resultId)}`));
   if (!resultResp.ok) {
     throw new Error('结果查询失败');
   }
@@ -369,16 +650,6 @@ function renderAssociationInsights(result) {
     `;
     associationList.appendChild(card);
   });
-}
-
-function hashString(input) {
-  let hash = 0;
-  const str = String(input || '');
-  for (let i = 0; i < str.length; i += 1) {
-    hash = ((hash << 5) - hash) + str.charCodeAt(i);
-    hash |= 0;
-  }
-  return Math.abs(hash);
 }
 
 function buildPersonaImageDataUrl(result, persona) {
