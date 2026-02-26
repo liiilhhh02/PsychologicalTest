@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>麋鹿性偏好测试 · 本地免费版</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <section id="home-view" class="card">
+        <h1 class="headline">性偏好测试（本地题库版）</h1>
+        <p class="subline">
+          当前套题：<strong id="suite-name">-</strong>。共 <strong id="meta-question-count">-</strong> 题，
+          <strong id="meta-dimension-count">-</strong> 个维度，5级评分。
+        </p>
+
+        <div class="section suite-panel">
+          <label for="suite-select">选择套题</label>
+          <select id="suite-select" class="suite-select"></select>
+        </div>
+
+        <div class="section meta-grid">
+          <div class="meta-item">
+            <h3>题目数量</h3>
+            <p id="home-total-questions">-</p>
+          </div>
+          <div class="meta-item">
+            <h3>维度数量</h3>
+            <p id="home-total-dimensions">-</p>
+          </div>
+          <div class="meta-item">
+            <h3>报告版本</h3>
+            <p class="meta-inline">专业解读 + 关联分析</p>
+          </div>
+        </div>
+
+        <div class="section home-actions">
+          <button id="btn-start" class="btn btn-primary">开始测试</button>
+          <button id="btn-share-site" class="btn btn-secondary">分享此测试</button>
+        </div>
+
+        <div id="ad-home" class="ad-container" aria-label="广告位"></div>
+
+        <div class="notice">
+          本页面只用于本地演示和学习研究。题目涉及敏感成人话题，请确保在合适场景下使用，且不要将结果用于医学诊断或心理临床判断。
+        </div>
+      </section>
+
+      <section id="test-view" class="card hidden">
+        <div class="progress-wrap">
+          <div class="progress-track">
+            <div id="progress-bar" class="progress-bar"></div>
+          </div>
+          <div id="progress-text" class="progress-text">第 0/0 题</div>
+        </div>
+
+        <h2 id="question-text" class="question"></h2>
+
+        <div id="option-list" class="option-list"></div>
+
+        <div class="toolbar">
+          <button id="btn-prev" class="btn btn-secondary">上一题</button>
+          <button id="btn-home" class="btn btn-secondary">返回首页</button>
+        </div>
+      </section>
+
+      <section id="result-view" class="card hidden">
+        <h2 class="headline report-title">测试结果报告</h2>
+        <p id="report-meta" class="subline"></p>
+
+        <div class="section summary-grid">
+          <div class="summary-card">
+            <p class="summary-label">综合偏好分</p>
+            <p class="summary-value" id="summary-total">-</p>
+          </div>
+          <div class="summary-card">
+            <p class="summary-label">最突出维度</p>
+            <p class="summary-value compact" id="summary-top">-</p>
+          </div>
+          <div class="summary-card">
+            <p class="summary-label">高偏好维度数</p>
+            <p class="summary-value" id="summary-high-count">-</p>
+          </div>
+          <div class="summary-card">
+            <p class="summary-label">离散度（max-min）</p>
+            <p class="summary-value" id="summary-spread">-</p>
+          </div>
+        </div>
+
+        <div id="persona-section" class="section persona-card">
+          <h3 class="block-title">典型画像</h3>
+          <div class="persona-head">
+            <div class="persona-hero">
+              <img id="persona-image" class="persona-image" alt="典型画像配图" />
+            </div>
+            <div class="persona-main">
+              <h4 id="persona-title" class="persona-title">-</h4>
+              <p id="persona-summary" class="persona-summary">-</p>
+              <div id="persona-tags" class="persona-tags"></div>
+            </div>
+          </div>
+
+          <div class="persona-grid">
+            <div class="persona-col">
+              <h4 class="persona-subtitle">优势特征</h4>
+              <ul id="persona-strengths" class="persona-list"></ul>
+            </div>
+            <div class="persona-col">
+              <h4 class="persona-subtitle">成长建议</h4>
+              <ul id="persona-growth" class="persona-list"></ul>
+            </div>
+          </div>
+
+          <div class="persona-col">
+            <h4 class="persona-subtitle">探索路线</h4>
+            <ul id="persona-plan" class="persona-list"></ul>
+          </div>
+        </div>
+
+        <div class="section insight-card">
+          <h3 class="block-title">快速解读</h3>
+          <ul id="insight-list" class="insight-list"></ul>
+        </div>
+
+        <div class="section viz-card">
+          <div class="viz-head">
+            <h3 class="viz-title">维度可视化</h3>
+            <div class="viz-toggle no-print">
+              <button id="btn-chart-radar" class="toggle-btn active" type="button">雷达图（全部维度）</button>
+              <button id="btn-chart-bars" class="toggle-btn" type="button">柱状排名（23维）</button>
+            </div>
+          </div>
+
+          <div id="radar-wrap" class="chart-wrap">
+            <canvas id="radar-chart" aria-label="维度雷达图"></canvas>
+          </div>
+
+          <div id="bars-wrap" class="chart-wrap hidden">
+            <canvas id="bars-chart" aria-label="维度柱形统计图"></canvas>
+          </div>
+
+          <p id="viz-caption" class="viz-caption"></p>
+        </div>
+
+        <div class="section">
+          <h3 class="block-title">TOP 5 维度</h3>
+          <div id="top-list" class="top-list"></div>
+        </div>
+
+        <div class="section">
+          <h3 class="block-title">重点维度深度解读</h3>
+          <div id="deep-analysis" class="deep-grid"></div>
+        </div>
+
+        <div class="section assoc-card">
+          <h3 class="block-title">维度关联洞察</h3>
+          <div id="association-list" class="assoc-list"></div>
+        </div>
+
+        <div class="section">
+          <h3 class="block-title">全部维度明细</h3>
+          <div class="table-wrap">
+            <table class="report-table">
+              <thead>
+                <tr>
+                  <th>维度</th>
+                  <th>分数</th>
+                  <th>百分比</th>
+                  <th>分档</th>
+                  <th>说明</th>
+                </tr>
+              </thead>
+              <tbody id="report-table-body"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <div id="ad-result" class="ad-container no-print" aria-label="广告位"></div>
+
+        <div class="notice">报告仅用于自我觉察与关系沟通，不替代医学评估或临床心理诊断。</div>
+
+        <div class="toolbar no-print">
+          <button id="btn-export-pdf" class="btn btn-secondary">导出 PDF</button>
+          <button id="btn-share-result" class="btn btn-secondary">分享本报告</button>
+          <button id="btn-restart" class="btn btn-primary">重新测试</button>
+          <button id="btn-view-home" class="btn btn-secondary">回到首页</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

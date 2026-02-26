@@ -1,8 +1,0 @@
-services:
-  - type: web
-    name: milu-preference-test
-    env: docker
-    plan: free
-    dockerfilePath: ./Dockerfile
-    autoDeploy: true
-    healthCheckPath: /api/metadata

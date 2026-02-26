@@ -1,8 +1,0 @@
-.git
-.gitignore
-.playwright-cli
-output
-research
-node_modules
-npm-debug.log*
-.DS_Store
