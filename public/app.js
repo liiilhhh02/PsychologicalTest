@@ -46,6 +46,14 @@ const btnChartBars = document.getElementById('btn-chart-bars');
 const topList = document.getElementById('top-list');
 const deepAnalysis = document.getElementById('deep-analysis');
 const associationList = document.getElementById('association-list');
+const personaSection = document.getElementById('persona-section');
+const personaImage = document.getElementById('persona-image');
+const personaTitle = document.getElementById('persona-title');
+const personaSummary = document.getElementById('persona-summary');
+const personaTags = document.getElementById('persona-tags');
+const personaStrengths = document.getElementById('persona-strengths');
+const personaGrowth = document.getElementById('persona-growth');
+const personaPlan = document.getElementById('persona-plan');
 const reportMeta = document.getElementById('report-meta');
 const reportTableBody = document.getElementById('report-table-body');
 
@@ -331,6 +339,7 @@ function renderDeepAnalysis(dimensions) {
       <h4 class="deep-title">${safeText(dim.name)} (${safeText(dim.key)})</h4>
       <p class="deep-meta">${dim.percentage}% · ${safeText(dim.level)}</p>
       <p class="deep-text">${safeText(analysis.summary || dim.description)}</p>
+      <p class="deep-line"><strong>性格画像</strong>${safeText(analysis.personality || '该维度体现出你的稳定行为风格。')}</p>
       <p class="deep-line"><strong>沟通建议</strong>${safeText(analysis.communication || '建议提前沟通边界和期待。')}</p>
       <p class="deep-line"><strong>风险提示</strong>${safeText(analysis.risk || '请保持同意可撤回，并持续确认彼此状态。')}</p>
       <p class="deep-line"><strong>发展建议</strong>${safeText(analysis.development || '建议在安全和尊重前提下逐步探索。')}</p>
@@ -360,6 +369,87 @@ function renderAssociationInsights(result) {
     `;
     associationList.appendChild(card);
   });
+}
+
+function hashString(input) {
+  let hash = 0;
+  const str = String(input || '');
+  for (let i = 0; i < str.length; i += 1) {
+    hash = ((hash << 5) - hash) + str.charCodeAt(i);
+    hash |= 0;
+  }
+  return Math.abs(hash);
+}
+
+function buildPersonaImageDataUrl(result, persona) {
+  const seed = `${persona.title || ''}-${result.topDimensions?.[0]?.key || ''}-${result.totalScore || 0}`;
+  const hash = hashString(seed);
+  const hue = hash % 360;
+  const hue2 = (hue + 46) % 360;
+  const accent = (hue + 130) % 360;
+  const badge = safeText((result.topDimensions?.[0]?.name || '画像').slice(0, 4));
+  const score = Number(result.totalScore || 0);
+  const radius = 26 + Math.round((score / 100) * 18);
+
+  const svg = `
+  <svg xmlns="http://www.w3.org/2000/svg" width="420" height="260" viewBox="0 0 420 260">
+    <defs>
+      <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="hsl(${hue} 72% 90%)"/>
+        <stop offset="100%" stop-color="hsl(${hue2} 72% 82%)"/>
+      </linearGradient>
+      <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="hsl(${hue} 35% 98%)"/>
+        <stop offset="100%" stop-color="hsl(${hue2} 26% 95%)"/>
+      </linearGradient>
+    </defs>
+
+    <rect x="0" y="0" width="420" height="260" rx="20" fill="url(#bg)"/>
+    <circle cx="72" cy="58" r="${radius}" fill="hsl(${accent} 70% 56% / 0.28)"/>
+    <circle cx="354" cy="66" r="${Math.max(12, radius - 10)}" fill="hsl(${hue} 70% 48% / 0.22)"/>
+    <circle cx="330" cy="210" r="${Math.max(16, radius - 4)}" fill="hsl(${hue2} 65% 46% / 0.18)"/>
+
+    <rect x="34" y="32" width="352" height="196" rx="18" fill="url(#card)" stroke="hsl(${hue} 28% 76% / 0.9)" />
+    <circle cx="126" cy="116" r="42" fill="hsl(${hue} 55% 52% / 0.22)"/>
+    <circle cx="126" cy="104" r="20" fill="hsl(${hue} 44% 40% / 0.72)"/>
+    <rect x="94" y="130" width="64" height="36" rx="18" fill="hsl(${hue} 44% 40% / 0.72)"/>
+
+    <rect x="190" y="78" width="160" height="22" rx="11" fill="hsl(${hue2} 38% 88%)"/>
+    <rect x="190" y="112" width="140" height="16" rx="8" fill="hsl(${hue2} 26% 90%)"/>
+    <rect x="190" y="136" width="116" height="16" rx="8" fill="hsl(${hue2} 26% 90%)"/>
+    <rect x="190" y="160" width="96" height="16" rx="8" fill="hsl(${hue2} 26% 90%)"/>
+
+    <rect x="48" y="188" width="122" height="28" rx="14" fill="hsl(${accent} 68% 45%)"/>
+    <text x="109" y="206" text-anchor="middle" font-size="14" fill="white" font-family="PingFang SC, Noto Sans SC, sans-serif">${badge}</text>
+  </svg>`;
+
+  return `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(svg)}`;
+}
+
+function renderPersona(result) {
+  const persona = result.typicalPersona;
+  if (!persona) {
+    personaSection.classList.add('hidden');
+    return;
+  }
+
+  personaSection.classList.remove('hidden');
+  personaImage.src = buildPersonaImageDataUrl(result, persona);
+  personaImage.alt = `${persona.title || '典型画像'}配图`;
+  personaTitle.textContent = persona.title || '-';
+  personaSummary.textContent = persona.summary || '-';
+
+  const tags = Array.isArray(persona.tags) ? persona.tags : [];
+  personaTags.innerHTML = tags.map((tag) => `<span class="persona-tag">${safeText(tag)}</span>`).join('');
+
+  const writeList = (container, items) => {
+    const list = Array.isArray(items) ? items : [];
+    container.innerHTML = list.map((item) => `<li>${safeText(item)}</li>`).join('');
+  };
+
+  writeList(personaStrengths, persona.strengths);
+  writeList(personaGrowth, persona.growth);
+  writeList(personaPlan, persona.explorationPlan);
 }
 
 function getCanvasContext(canvas, options = {}) {
@@ -601,9 +691,8 @@ function renderVisualization() {
   const sortedDims = sortedDimensions(state.result.dimensions);
 
   if (state.chartMode === 'radar') {
-    const topTwelve = sortedDims.slice(0, 12);
-    drawRadarChartWhenReady(topTwelve);
-    vizCaption.textContent = '雷达图展示得分最高的12个维度，便于快速看出偏好轮廓。';
+    drawRadarChartWhenReady(sortedDims);
+    vizCaption.textContent = '雷达图展示全部维度，便于观察完整偏好结构。';
     return;
   }
 
@@ -644,6 +733,7 @@ function renderResult() {
   renderDeepAnalysis(sortedDims);
   renderAssociationInsights(result);
   renderTableRows(sortedDims);
+  renderPersona(result);
   setChartMode('radar');
 }
 

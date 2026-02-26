@@ -255,7 +255,7 @@ const SUMMARY_TEMPLATES = {
   high: [
     ({ focus, detail }) => `“${focus}”是高激活核心维度，对满意度和安全感影响都较明显。${detail}`,
     ({ focus, detail }) => `该维度处于前列驱动位，通常需要明确结构和规则支持。${detail}`,
-    ({ focus, detail }) => `这项偏好强度较高，若缺乏沟通设计，关系摩擦概率会增加。${detail}`,
+    ({ focus, detail }) => `这项偏好处于高激活区，建议用结构化协商保持关系稳定。${detail}`,
     ({ focus, detail }) => `高激活结果提示“${focus}”是你亲密脚本中的关键变量。${detail}`,
   ],
 };
@@ -580,6 +580,19 @@ function associationBand(percentage) {
   return '低激活';
 }
 
+function normalizeNarrativeText(text) {
+  return String(text || '')
+    .replace(/可能会/g, '会')
+    .replace(/可能/g, '')
+    .replace(/也许/g, '')
+    .replace(/或许/g, '')
+    .replace(/大概/g, '')
+    .replace(/\s{2,}/g, ' ')
+    .replace(/，\s*，/g, '，')
+    .replace(/。{2,}/g, '。')
+    .trim();
+}
+
 function buildAssociationInsights(contributions, adjustedPercentages, nameByKey) {
   const sorted = [...contributions].sort((a, b) => Math.abs(b.contribution) - Math.abs(a.contribution));
   const dedup = new Map();
@@ -607,50 +620,359 @@ function buildAssociationInsights(contributions, adjustedPercentages, nameByKey)
       pair: `${item.from}-${item.to}`,
       relation: item.relation,
       impact: `${fromName}（${fromBand}）对${toName}（${toBand}）呈${effect}效应，估计影响约 ${intensity} 分。`,
-      interpretation: item.insight,
-      suggestion: item.suggestion,
+      interpretation: normalizeNarrativeText(item.insight),
+      suggestion: normalizeNarrativeText(item.suggestion),
     };
   });
 }
 
-function composeDimensionAnalysis(key, percentage, basePercentage = percentage) {
-  const profile = PSY_DIMENSION_PROFILE[key] || {
-    focus: '亲密互动偏好',
-    low: '该维度偏好较低。',
-    mid: '该维度呈中等偏好。',
-    high: '该维度偏好较高。',
-    communication: '建议提前沟通边界与期待。',
-    suggestion: '建议在安全、同意、可撤回前提下探索。',
+const DIMENSION_KEYWORD_PRESETS = [
+  {
+    pattern: /捆绑|绳|Bondage/i,
+    trait: '你呈现出结构感强、执行细致的行为风格',
+    communication: '开场前对齐受力点、麻木阈值、解缚口令和急停动作',
+    risk: '强度提升过快会直接拉高身体负荷与紧绷残留',
+    exploration: '先做 5-10 分钟静态练习，再进入动态情境',
+  },
+  {
+    pattern: /SP|拍打/i,
+    trait: '你在强度管理上偏向节奏驱动和反馈驱动',
+    communication: '先约定部位、力度分级和每轮检查点',
+    risk: '忽略节奏校准会造成痛感与预期脱节',
+    exploration: '从低频短组开始，逐轮复盘再提强度',
+  },
+  {
+    pattern: /滴蜡|蜡|温感/i,
+    trait: '你的感官系统对温差和层次刺激反应明显',
+    communication: '先做蜡温测试，再明确高敏感禁区',
+    risk: '温控和落点失误会快速破坏安全感',
+    exploration: '先小面积试温，再扩展到剧情化滴蜡',
+  },
+  {
+    pattern: /K9|宠物/i,
+    trait: '你在角色秩序和指令反馈上有较强投入',
+    communication: '统一口令体系、奖励反馈和出戏仪式',
+    risk: '角色外溢会压缩现实关系的平等空间',
+    exploration: '先做低强度口令训练，再叠加姿态与道具',
+  },
+  {
+    pattern: /主导|征服|Dominant|控制|纪律|D\/s/i,
+    trait: '你更倾向承担决策责任并主导节奏',
+    communication: '把权限范围、时长和停机机制写成清单',
+    risk: '只强调执行不做回收会累积关系摩擦',
+    exploration: '从短时结构化场景开始，逐步扩展权限边界',
+  },
+  {
+    pattern: /臣服|服从|Submissive|被动|受辱/i,
+    trait: '你在信任环境下能快速进入接纳与响应状态',
+    communication: '优先确认安全词、可撤回路径和过程报码',
+    risk: '边界模糊会把体验压力转化成现实焦虑',
+    exploration: '先做轻度规则执行，再引入更深层次交付',
+  },
+  {
+    pattern: /羞辱|Degrad|强迫|被迫/i,
+    trait: '你对语言张力和权力差有高敏锐度',
+    communication: '建立词汇白名单和绝对禁语列表',
+    risk: '角色内外界限不清会伤害关系信任',
+    exploration: '先做短时脚本并固定结束后的情绪回收',
+  },
+  {
+    pattern: /受虐|虐待|Sadist|Masochist|痛感/i,
+    trait: '你对强刺激议题具备高专注与高反馈需求',
+    communication: '提前约定强度量表、禁区和急停动作',
+    risk: '忽略状态追踪会造成身体与情绪过载',
+    exploration: '采用“轻-中-重”分级策略并保留复盘窗口',
+  },
+  {
+    pattern: /暴露|展示|窥探|观演|Exhibition|Voyeur/i,
+    trait: '你对可见性和外部注视有明显情绪放大效应',
+    communication: '开场前写明拍摄权限、传播边界和匿名规则',
+    risk: '隐私管理松动会带来长期外溢风险',
+    exploration: '优先尝试低暴露、可回收的场景版本',
+  },
+  {
+    pattern: /群体|多人|Non-monogamy/i,
+    trait: '你对复杂关系协作有较高耐受度',
+    communication: '每位参与者都要单独确认边界和退出条件',
+    risk: '规则不对称会让冲突放大并快速扩散',
+    exploration: '从观察位或双人扩展位开始做低风险试运行',
+  },
+  {
+    pattern: /恋物|束缚|Gear|材质/i,
+    trait: '你的感官偏好明确，细节会直接影响体验质量',
+    communication: '提前对齐器具卫生标准和可接受材质',
+    risk: '忽略材质适配会触发不适或出戏',
+    exploration: '先确定单一锚点，再逐步叠加道具层次',
+  },
+  {
+    pattern: /aftercare|照护|恢复/i,
+    trait: '你重视情绪修复与关系闭环，恢复意识强',
+    communication: '结束后固定补水、安抚、回顾三步流程',
+    risk: '缺少收束会让高强度体验留下压力残余',
+    exploration: '把次日回访纳入标准流程，提升稳定性',
+  },
+  {
+    pattern: /SSC|RACK|安全|协议/i,
+    trait: '你具备规则意识和风险管理思维',
+    communication: '在开场前统一安全词、急停流程和应急职责',
+    risk: '流程短板会让局部失误升级成系统风险',
+    exploration: '每次复盘后更新风险分级和预案',
+  },
+  {
+    pattern: /纯爱|保护|情感|连结/i,
+    trait: '你的关系动机稳定，重视长期信任和情绪在场',
+    communication: '把需求表达做具体，避免隐性期待积压',
+    risk: '长期忽略情感反馈会降低关系满意度',
+    exploration: '建立固定沟通节律，持续维护情感连接',
+  },
+  {
+    pattern: /NTR|占有|嫉妒|竞争/i,
+    trait: '你对关系安全线索敏感，边界意识突出',
+    communication: '先定义现实边界，再讨论幻想内容',
+    risk: '让想象侵入现实会快速制造关系拉扯',
+    exploration: '把高冲突话题分段沟通并设置冷却期',
+  },
+  {
+    pattern: /开放|叛逆|跨性|同性|探索/i,
+    trait: '你的价值观包容度高，愿意在规则内做创新',
+    communication: '先对齐价值底线，再推进玩法尝试',
+    risk: '只追求新鲜而忽略适配会降低体验稳定性',
+    exploration: '采用最小实验策略，逐步验证再扩展',
+  },
+];
+
+const BAND_VARIANTS = {
+  low: {
+    summary: [
+      '当前处于低激活位，你对边界完整性和稳定感要求更高。',
+      '当前落在低反应区，你更重视舒适度而非刺激强度。',
+      '该维度暂不承担核心驱动，你以安全和可控为优先。',
+      '该议题处于背景位，你在决策上更偏向稳态执行。',
+    ],
+    style: ['克制稳态', '边界先行', '低刺激偏好', '稳定防御型'],
+    communication: [
+      '沟通时优先给出明确拒绝条件与替代方案。',
+      '建议先确认禁区，再讨论可接受范围。',
+      '把“不做什么”说清楚，能显著降低误判。',
+      '先定边界再谈升级，效率更高。',
+    ],
+    risk: [
+      '外部强推会快速触发抗拒和抽离。',
+      '节奏失控会直接降低信任感。',
+      '越过边界会让后续协商成本抬升。',
+      '忽略低激活信号会造成体验反噬。',
+    ],
+    development: [
+      '先在低强度、短时、可撤回框架中做微实验。',
+      '通过单变量试验积累正反馈，再决定是否升级。',
+      '把每次尝试控制在可复盘范围内，更容易形成稳定偏好。',
+      '优先练习表达底线，再扩展探索半径。',
+    ],
+  },
+  midLow: {
+    summary: [
+      '该维度进入中低激活区，你保持兴趣并维持审慎判断。',
+      '该议题已被点亮，你在探索和风控之间保持平衡。',
+      '当前呈现温和激活，你会在合适情境下投入。',
+      '该维度具备可探索性，你以节奏控制换取体验质量。',
+    ],
+    style: ['谨慎探索', '平衡试验型', '节奏审慎型', '可协商推进型'],
+    communication: [
+      '建议采用“先小后大、逐段确认”的沟通节奏。',
+      '把强度、时长、退出条件一次说清，推进更顺畅。',
+      '每一段结束后做短确认，能保持稳定体验。',
+      '先达成小范围共识，再扩展场景。',
+    ],
+    risk: [
+      '推进过快会造成体验质量波动。',
+      '缺少中途确认会让预期偏差放大。',
+      '边界更新滞后会造成疲惫感积累。',
+      '变量过多会干扰真实反馈。',
+    ],
+    development: [
+      '采用“一次只加一个变量”的策略更稳定。',
+      '先固定流程，再微调强度和情境细节。',
+      '把有效做法沉淀为小清单，重复执行更高效。',
+      '先做短回合训练，逐步延长场景时长。',
+    ],
+  },
+  midHigh: {
+    summary: [
+      '该维度处于中高活跃带，已经成为你的常用驱动项。',
+      '该议题进入稳定工作区，能持续影响体验结构。',
+      '当前处于高频可用位，你会主动把它纳入互动设计。',
+      '该维度已形成稳定产出，对关系节奏具有调节作用。',
+    ],
+    style: ['稳定驱动', '结构执行型', '高参与度', '常用引擎型'],
+    communication: [
+      '建议把关键条款写入可复用协议，减少误判。',
+      '通过固定前置清单提升沟通效率。',
+      '把过程检查点标准化，能持续保障质量。',
+      '用流程语言替代临场猜测，协作更稳。',
+    ],
+    risk: [
+      '忽视复盘会积累隐性摩擦。',
+      '默认同意会让边界逐步模糊。',
+      '长时间不校准会出现体验钝化。',
+      '协商断档会放大细节冲突。',
+    ],
+    development: [
+      '把体验前中后的流程标准化，稳定输出质量。',
+      '建立周期性复盘机制，持续优化条款。',
+      '把高分维度和照护流程绑定，可显著降噪。',
+      '用版本化方式迭代场景脚本，提升可复制性。',
+    ],
+  },
+  high: {
+    summary: [
+      '该维度位于高激活中枢，对满意度和安全感具有直接牵引力。',
+      '该议题进入核心驱动层，深度决定你的体验上限。',
+      '当前处于高强度主轴，关系协作质量会被它放大。',
+      '该维度是你的主引擎，流程完整度决定体验稳定度。',
+    ],
+    style: ['高强度核心驱动', '核心引擎型', '深度主轴型', '高权重偏好'],
+    communication: [
+      '建议执行“前置协商 + 过程检查 + 结束回收”完整闭环。',
+      '所有高强度场景都应先做协议确认再启动。',
+      '把停止权与降级路径写入显性规则。',
+      '用双向反馈机制保障每一段推进。',
+    ],
+    risk: [
+      '越界成本高，必须保持实时双向反馈。',
+      '缺少停机机制会让冲突快速升级。',
+      '只追求强度会压缩关系弹性。',
+      '忽略恢复阶段会放大后续摩擦。',
+    ],
+    development: [
+      '以结构化训练方式迭代，避免冲动升级。',
+      '先稳住闭环质量，再提高场景复杂度。',
+      '把高强度体验拆分为可管理模块，逐段验证。',
+      '固定恢复流程与次日回访，形成长期可持续性。',
+    ],
+  },
+};
+
+function pickBandCopy(band, key, seed, fallback = '') {
+  const list = BAND_VARIANTS[band]?.[key];
+  if (!Array.isArray(list) || list.length === 0) {
+    return fallback;
+  }
+  const builder = pickTemplate(String(seed), list);
+  return builder || list[0];
+}
+
+function getDimensionPreset(dimensionName, baselineDescription) {
+  const text = `${dimensionName || ''} ${baselineDescription || ''}`;
+  for (const preset of DIMENSION_KEYWORD_PRESETS) {
+    if (preset.pattern.test(text)) {
+      return preset;
+    }
+  }
+  return {
+    trait: '你在这个议题上呈现理性评估与边界先行的特征',
+    communication: '先说清目标、边界和暂停条件',
+    risk: '沟通粗糙会让双方预期错位',
+    exploration: '从低成本、可复盘的版本开始验证体验',
   };
+}
 
+function composeDimensionAnalysis(key, percentage, basePercentage = percentage, dimensionName = key, baselineDescription = '') {
   const band = bandFromPercentage(percentage);
-  const detail = band === 'low'
-    ? profile.low
-    : band === 'high'
-      ? profile.high
-      : profile.mid;
-
-  const summaryBuilder = pickTemplate(`${key}-${percentage}`, SUMMARY_TEMPLATES[band]) || SUMMARY_TEMPLATES[band][0];
-  const riskBuilder = pickTemplate(`${key}-${percentage + 13}`, RISK_NOTE_TEMPLATES[band]) || RISK_NOTE_TEMPLATES[band][0];
-  const growthBuilder = pickTemplate(`${key}-${percentage + 29}`, DEVELOPMENT_NOTE_TEMPLATES[band]) || DEVELOPMENT_NOTE_TEMPLATES[band][0];
+  const seedBase = `${key}-${dimensionName}-${percentage}`;
+  const preset = getDimensionPreset(dimensionName, baselineDescription);
+  const bandSummary = pickBandCopy(band, 'summary', `${seedBase}-summary`, BAND_VARIANTS.midLow.summary[0]);
+  const bandStyle = pickBandCopy(band, 'style', `${seedBase}-style`, BAND_VARIANTS.midLow.style[0]);
+  const bandCommunication = pickBandCopy(band, 'communication', `${seedBase}-communication`, BAND_VARIANTS.midLow.communication[0]);
+  const bandRisk = pickBandCopy(band, 'risk', `${seedBase}-risk`, BAND_VARIANTS.midLow.risk[0]);
+  const bandDevelopment = pickBandCopy(band, 'development', `${seedBase}-development`, BAND_VARIANTS.midLow.development[0]);
 
   const delta = percentage - basePercentage;
-  let associationHint = '关联维度对该项影响较平稳，当前分值主要由本维度题目驱动。';
+  let associationHint = '关联维度对该项影响平稳，当前分值以本维度题目驱动为主。';
   if (delta >= 4) {
-    associationHint = '关联维度带来上调效应，说明你的偏好结构存在协同增强。';
+    associationHint = '关联维度对该项形成明显上调，说明你的偏好结构存在协同增强。';
   } else if (delta <= -4) {
-    associationHint = '关联维度带来回落效应，提示该偏好受到其他需求的牵制。';
+    associationHint = '关联维度对该项形成回调，说明该偏好受其他需求约束。';
   }
 
   return {
-    summary: summaryBuilder({
-      focus: profile.focus,
-      detail,
-    }),
-    communication: profile.communication,
-    risk: riskBuilder(profile.focus),
-    development: `${growthBuilder()} ${profile.suggestion}`,
-    associationHint,
+    summary: normalizeNarrativeText(
+      `${dimensionName}当前得分 ${percentage}%（${levelFromPercentage(percentage)}）。${bandSummary} ${preset.trait}。${baselineDescription}`
+    ),
+    personality: normalizeNarrativeText(
+      `人格侧写：你在“${dimensionName}”议题呈现${bandStyle}，并体现出“${preset.trait}”这一稳定特征。`
+    ),
+    communication: normalizeNarrativeText(`${preset.communication} ${bandCommunication}`),
+    risk: normalizeNarrativeText(`${preset.risk} ${bandRisk}`),
+    development: normalizeNarrativeText(`${preset.exploration} ${bandDevelopment}`),
+    associationHint: normalizeNarrativeText(associationHint),
+  };
+}
+
+function average(nums) {
+  if (!nums.length) {
+    return 50;
+  }
+  return nums.reduce((acc, value) => acc + value, 0) / nums.length;
+}
+
+function averageByKeys(scoreMap, keys) {
+  const values = keys
+    .map((key) => scoreMap.get(key))
+    .filter((value) => typeof value === 'number');
+  return average(values);
+}
+
+function indexLabel(value, highLabel, midLabel, lowLabel) {
+  if (value >= 8) {
+    return highLabel;
+  }
+  if (value <= -8) {
+    return lowLabel;
+  }
+  return midLabel;
+}
+
+function buildTypicalPersona(dimensions, associationInsights = []) {
+  const ordered = [...dimensions].sort((a, b) => b.percentage - a.percentage);
+  const topThree = ordered.slice(0, 3);
+  const lowThree = [...ordered].reverse().slice(0, 3).reverse();
+  const scoreMap = new Map(dimensions.map((dim) => [dim.key, dim.percentage]));
+
+  const dominanceIndex = averageByKeys(scoreMap, ['H', 'J', 'L', 'C', 'U']) - averageByKeys(scoreMap, ['G', 'I', 'K', 'B', 'T']);
+  const bondingIndex = averageByKeys(scoreMap, ['N', 'Q', 'M']) - averageByKeys(scoreMap, ['O', 'R', 'E']);
+  const noveltyIndex = averageByKeys(scoreMap, ['S', 'A', 'E', 'F', 'P', 'V', 'W']) - averageByKeys(scoreMap, ['J', 'I']);
+
+  const dominanceTag = indexLabel(dominanceIndex, '主导决策型', '可切换决策型', '接纳响应型');
+  const bondingTag = indexLabel(bondingIndex, '关系凝聚型', '连接平衡型', '体验自主型');
+  const noveltyTag = indexLabel(noveltyIndex, '高探索节奏', '稳态探索节奏', '深耕稳定节奏');
+
+  const dominantNames = topThree.map((dim) => dim.name).join('、');
+  const softNames = lowThree.map((dim) => dim.name).join('、');
+  const associationLine = associationInsights[0]?.impact
+    ? `当前最显著联动：${associationInsights[0].impact}`
+    : '维度分布均衡，主要由单维度偏好直接驱动。';
+
+  return {
+    title: normalizeNarrativeText(`${topThree[0]?.name || '综合'}驱动的${dominanceTag}画像`),
+    summary: normalizeNarrativeText(
+      `你的核心驱动集中在 ${dominantNames}。人格呈现为${dominanceTag}、${bondingTag}、${noveltyTag}三轴并行。${associationLine}`
+    ),
+    tags: [dominanceTag, bondingTag, noveltyTag, `核心维度：${topThree.length} 项`],
+    strengths: [
+      normalizeNarrativeText(`执行优势：在 ${topThree[0]?.name || '核心议题'} 上，你进入状态快、稳定度高。`),
+      normalizeNarrativeText(`协同优势：你能把 ${topThree[1]?.name || '次高维度'} 与关系节奏联动，形成持续体验质量。`),
+      normalizeNarrativeText(`成长优势：你愿意为 ${topThree[2]?.name || '第三维度'} 建立规则、复盘并持续优化。`),
+    ],
+    growth: [
+      normalizeNarrativeText(`补强建议：把 ${softNames} 作为“低压训练区”，用小步验证代替一次到位。`),
+      normalizeNarrativeText('沟通建议：每次互动坚持“目标、边界、退出条件”三段式确认。'),
+      normalizeNarrativeText('节奏建议：高强度场景后保留恢复窗口，并在次日做状态回访。'),
+    ],
+    explorationPlan: [
+      normalizeNarrativeText('第1步：先稳定一个高分维度的流程模板（前置协商-过程检查-结束回收）。'),
+      normalizeNarrativeText('第2步：在模板稳定后，只增加一个新变量并记录主观体验变化。'),
+      normalizeNarrativeText('第3步：每三次体验做一次复盘，更新禁区、偏好和协商条款。'),
+    ],
   };
 }
 
@@ -943,7 +1265,13 @@ function calculateResult(suite, answers) {
     const basePercentage = basePercentages[key];
     const percentage = adjustedPercentages[key] ?? basePercentage;
     const associationDelta = percentage - basePercentage;
-    const analysis = composeDimensionAnalysis(item.key, percentage, basePercentage);
+    const analysis = composeDimensionAnalysis(
+      item.key,
+      percentage,
+      basePercentage,
+      item.name,
+      item.description
+    );
 
     return {
       key: item.key,
@@ -967,12 +1295,14 @@ function calculateResult(suite, answers) {
   const topDimensions = [...dimensions]
     .sort((a, b) => b.percentage - a.percentage)
     .slice(0, 5);
+  const typicalPersona = buildTypicalPersona(dimensions, associationInsights);
 
   return {
     totalScore,
     dimensions,
     topDimensions,
     associationInsights,
+    typicalPersona,
     scoringStandard: {
       scale: '每题1-5分',
       normalization: '百分比 = (维度总分 - 维度最小分) / (维度最大分 - 维度最小分) * 100',
