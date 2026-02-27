@@ -1,0 +1,1622 @@
+[
+  {
+    "id": 1,
+    "dimension": "honestyHumility",
+    "text": "即使没人发现，我也不会拿不属于自己的好处",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "dimension": "honestyHumility",
+    "text": "为了利益，适度夸大或包装自己是必要的",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 5
+      },
+      {
+        "text": "不同意",
+        "score": 4
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 2
+      },
+      {
+        "text": "非常同意",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "dimension": "honestyHumility",
+    "text": "我不喜欢依靠人脉特权去获得不公平优势",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "dimension": "honestyHumility",
+    "text": "只要结果有利，手段是否体面并不重要",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 5
+      },
+      {
+        "text": "不同意",
+        "score": 4
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 2
+      },
+      {
+        "text": "非常同意",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "dimension": "honestyHumility",
+    "text": "我更在意长期信誉，而非短期套利",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "dimension": "honestyHumility",
+    "text": "在资源分配上，我默认自己应该拿更多",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 5
+      },
+      {
+        "text": "不同意",
+        "score": 4
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 2
+      },
+      {
+        "text": "非常同意",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "dimension": "honestyHumility",
+    "text": "我会主动回避利用信息差去占便宜",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "dimension": "honestyHumility",
+    "text": "只要不违法，钻规则空子没有问题",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 5
+      },
+      {
+        "text": "不同意",
+        "score": 4
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 2
+      },
+      {
+        "text": "非常同意",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "dimension": "honestyHumility",
+    "text": "被赞赏时我会提醒自己保持分寸感",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "dimension": "honestyHumility",
+    "text": "我经常把功劳尽量归到自己名下",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 5
+      },
+      {
+        "text": "不同意",
+        "score": 4
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 2
+      },
+      {
+        "text": "非常同意",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "dimension": "emotionality",
+    "text": "面对不确定局面时，我容易提前担忧",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "dimension": "emotionality",
+    "text": "遭遇压力后，我通常很快恢复平稳",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 5
+      },
+      {
+        "text": "不同意",
+        "score": 4
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 2
+      },
+      {
+        "text": "非常同意",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "dimension": "emotionality",
+    "text": "我很在意亲密关系中的情感安全感",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "dimension": "emotionality",
+    "text": "我很少因为他人的情绪而受影响",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 5
+      },
+      {
+        "text": "不同意",
+        "score": 4
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 2
+      },
+      {
+        "text": "非常同意",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "dimension": "emotionality",
+    "text": "高风险决策时，我会优先考虑损失可能",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "dimension": "emotionality",
+    "text": "在冲突场景中，我几乎不会紧张",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 5
+      },
+      {
+        "text": "不同意",
+        "score": 4
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 2
+      },
+      {
+        "text": "非常同意",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "dimension": "emotionality",
+    "text": "我更愿意向可信的人寻求情感支持",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "dimension": "emotionality",
+    "text": "即使长期高压，我也不会感到脆弱",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 5
+      },
+      {
+        "text": "不同意",
+        "score": 4
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 2
+      },
+      {
+        "text": "非常同意",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "dimension": "emotionality",
+    "text": "我对人际关系中的细微变化比较敏感",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "dimension": "emotionality",
+    "text": "我很少担心亲密关系会出现疏离",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 5
+      },
+      {
+        "text": "不同意",
+        "score": 4
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 2
+      },
+      {
+        "text": "非常同意",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "dimension": "extraversion",
+    "text": "在多人场合中，我通常主动开启话题",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "dimension": "extraversion",
+    "text": "我更喜欢安静独处，不太想参与社交活动",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 5
+      },
+      {
+        "text": "不同意",
+        "score": 4
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 2
+      },
+      {
+        "text": "非常同意",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "dimension": "extraversion",
+    "text": "我在表达观点时通常直接而有能量",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "dimension": "extraversion",
+    "text": "我不太享受成为众人关注的焦点",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 5
+      },
+      {
+        "text": "不同意",
+        "score": 4
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 2
+      },
+      {
+        "text": "非常同意",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "dimension": "extraversion",
+    "text": "我能快速把陌生人带入互动氛围",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "dimension": "extraversion",
+    "text": "需要主动拓展关系时，我常常拖延",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 5
+      },
+      {
+        "text": "不同意",
+        "score": 4
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 2
+      },
+      {
+        "text": "非常同意",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "dimension": "extraversion",
+    "text": "我在团队中愿意承担对外沟通角色",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "dimension": "extraversion",
+    "text": "高频社交会让我明显消耗",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 5
+      },
+      {
+        "text": "不同意",
+        "score": 4
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 2
+      },
+      {
+        "text": "非常同意",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "dimension": "extraversion",
+    "text": "我对公开展示和表达有较高舒适度",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "dimension": "extraversion",
+    "text": "在群体讨论中，我通常保持沉默观察",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 5
+      },
+      {
+        "text": "不同意",
+        "score": 4
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 2
+      },
+      {
+        "text": "非常同意",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "dimension": "agreeableness",
+    "text": "他人冒犯我时，我倾向先缓和再沟通",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "dimension": "agreeableness",
+    "text": "只要对方强硬，我会马上升级对抗",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 5
+      },
+      {
+        "text": "不同意",
+        "score": 4
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 2
+      },
+      {
+        "text": "非常同意",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "dimension": "agreeableness",
+    "text": "我愿意给对方解释和修正的机会",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "dimension": "agreeableness",
+    "text": "我会长期记住别人曾经的冒犯",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 5
+      },
+      {
+        "text": "不同意",
+        "score": 4
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 2
+      },
+      {
+        "text": "非常同意",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "dimension": "agreeableness",
+    "text": "面对分歧时，我会优先寻找共同点",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "dimension": "agreeableness",
+    "text": "我在争执中很难压住情绪",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 5
+      },
+      {
+        "text": "不同意",
+        "score": 4
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 2
+      },
+      {
+        "text": "非常同意",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "dimension": "agreeableness",
+    "text": "我能在冲突后主动推进关系修复",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "dimension": "agreeableness",
+    "text": "被质疑时，我常用攻击方式自我保护",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 5
+      },
+      {
+        "text": "不同意",
+        "score": 4
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 2
+      },
+      {
+        "text": "非常同意",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 39,
+    "dimension": "agreeableness",
+    "text": "我可以在不认同时仍保持基本尊重",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 40,
+    "dimension": "agreeableness",
+    "text": "只要我占理，就没必要顾及对方感受",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 5
+      },
+      {
+        "text": "不同意",
+        "score": 4
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 2
+      },
+      {
+        "text": "非常同意",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 41,
+    "dimension": "conscientiousness",
+    "text": "我习惯把任务拆解为可执行步骤",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "dimension": "conscientiousness",
+    "text": "我常常临近截止才开始行动",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 5
+      },
+      {
+        "text": "不同意",
+        "score": 4
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 2
+      },
+      {
+        "text": "非常同意",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 43,
+    "dimension": "conscientiousness",
+    "text": "我会按计划追踪进度并及时修正",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 44,
+    "dimension": "conscientiousness",
+    "text": "对细节质量的要求会让我感到负担",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 5
+      },
+      {
+        "text": "不同意",
+        "score": 4
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 2
+      },
+      {
+        "text": "非常同意",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 45,
+    "dimension": "conscientiousness",
+    "text": "我重视承诺兑现和交付稳定性",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 46,
+    "dimension": "conscientiousness",
+    "text": "面对重复工作时，我很难保持纪律",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 5
+      },
+      {
+        "text": "不同意",
+        "score": 4
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 2
+      },
+      {
+        "text": "非常同意",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 47,
+    "dimension": "conscientiousness",
+    "text": "我会提前准备关键节点所需资源",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 48,
+    "dimension": "conscientiousness",
+    "text": "我经常忘记已答应的事项",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 5
+      },
+      {
+        "text": "不同意",
+        "score": 4
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 2
+      },
+      {
+        "text": "非常同意",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 49,
+    "dimension": "conscientiousness",
+    "text": "我倾向先完成再优化，而不是无限打磨",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 50,
+    "dimension": "conscientiousness",
+    "text": "我不太喜欢使用清单或流程来管理任务",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 5
+      },
+      {
+        "text": "不同意",
+        "score": 4
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 2
+      },
+      {
+        "text": "非常同意",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 51,
+    "dimension": "openness",
+    "text": "我乐于接触与自己立场不同的观点",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 52,
+    "dimension": "openness",
+    "text": "我倾向只采用自己熟悉的做法",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 5
+      },
+      {
+        "text": "不同意",
+        "score": 4
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 2
+      },
+      {
+        "text": "非常同意",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 53,
+    "dimension": "openness",
+    "text": "我会主动探索新方法来优化旧问题",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 54,
+    "dimension": "openness",
+    "text": "抽象概念和理论讨论让我感到无聊",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 5
+      },
+      {
+        "text": "不同意",
+        "score": 4
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 2
+      },
+      {
+        "text": "非常同意",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 55,
+    "dimension": "openness",
+    "text": "艺术、设计或审美体验会明显影响我",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 56,
+    "dimension": "openness",
+    "text": "我不太愿意尝试非惯常路线",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 5
+      },
+      {
+        "text": "不同意",
+        "score": 4
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 2
+      },
+      {
+        "text": "非常同意",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 57,
+    "dimension": "openness",
+    "text": "我喜欢把不同领域的知识连接起来",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 58,
+    "dimension": "openness",
+    "text": "面对模糊问题时，我更希望快速套用旧答案",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 5
+      },
+      {
+        "text": "不同意",
+        "score": 4
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 2
+      },
+      {
+        "text": "非常同意",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 59,
+    "dimension": "openness",
+    "text": "我对学习新工具和新知识保持长期兴趣",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 60,
+    "dimension": "openness",
+    "text": "我觉得创新大多不如沿用成熟方案可靠",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 5
+      },
+      {
+        "text": "不同意",
+        "score": 4
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 2
+      },
+      {
+        "text": "非常同意",
+        "score": 1
+      }
+    ]
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "id": "grit-12",
+  "name": "毅力与长期执行测评（12题）",
+  "version": "2026.02.27-grit12",
+  "description": "评估持续努力与兴趣稳定两大维度，识别长期执行结构。",
+  "source": "curated psychometric expansion 2026-02-27",
+  "adultContent": false,
+  "default": false,
+  "category": "personality",
+  "priority": 35,
+  "tags": [
+    "毅力",
+    "长期目标",
+    "执行结构"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "self-compassion-12",
+  "name": "自我关怀测评（SCS-SF 改编12题）",
+  "version": "2026.02.27-scs12",
+  "description": "评估你在压力与失败情境下的自我支持方式。",
+  "source": "curated psychometric expansion 2026-02-27",
+  "adultContent": false,
+  "default": false,
+  "category": "personality",
+  "priority": 34,
+  "tags": [
+    "自我关怀",
+    "情绪调节",
+    "韧性"
+  ]
+}

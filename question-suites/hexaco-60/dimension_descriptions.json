@@ -1,0 +1,32 @@
+[
+  {
+    "key": "honestyHumility",
+    "name": "诚实-谦逊",
+    "description": "对公平交易、克制占有与反操控的稳定倾向。"
+  },
+  {
+    "key": "emotionality",
+    "name": "情绪性",
+    "description": "在脆弱、依恋、担忧与情感敏感上的倾向。"
+  },
+  {
+    "key": "extraversion",
+    "name": "外向性",
+    "description": "在人际活力、表达意愿与社交主导上的倾向。"
+  },
+  {
+    "key": "agreeableness",
+    "name": "宜人性",
+    "description": "在冲突容忍、宽和、耐心与关系修复上的倾向。"
+  },
+  {
+    "key": "conscientiousness",
+    "name": "尽责性",
+    "description": "在计划、纪律、精确和持续执行上的倾向。"
+  },
+  {
+    "key": "openness",
+    "name": "开放性",
+    "description": "在审美、求知、想象与观念多样性上的倾向。"
+  }
+]

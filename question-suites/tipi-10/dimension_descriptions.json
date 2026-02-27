@@ -1,0 +1,27 @@
+[
+  {
+    "key": "extraversion",
+    "name": "外向性",
+    "description": "社交活跃、表达能量与外部刺激偏好。"
+  },
+  {
+    "key": "agreeableness",
+    "name": "宜人性",
+    "description": "同理、合作与关系修复倾向。"
+  },
+  {
+    "key": "conscientiousness",
+    "name": "尽责性",
+    "description": "纪律、组织与执行稳定性。"
+  },
+  {
+    "key": "emotionalStability",
+    "name": "情绪稳定性",
+    "description": "在压力与波动中的情绪稳健程度。"
+  },
+  {
+    "key": "openness",
+    "name": "开放性",
+    "description": "求知、想象与接受新观念倾向。"
+  }
+]

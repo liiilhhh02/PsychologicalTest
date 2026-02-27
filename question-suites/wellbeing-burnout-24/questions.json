@@ -1,0 +1,650 @@
+[
+  {
+    "id": 1,
+    "dimension": "wellbeing",
+    "text": "近两周，我大部分时间都感觉心情不错",
+    "options": [
+      {
+        "text": "从不",
+        "score": 1
+      },
+      {
+        "text": "很少",
+        "score": 2
+      },
+      {
+        "text": "有时",
+        "score": 3
+      },
+      {
+        "text": "经常",
+        "score": 4
+      },
+      {
+        "text": "总是",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "dimension": "wellbeing",
+    "text": "近两周，我感到放松并能恢复精力",
+    "options": [
+      {
+        "text": "从不",
+        "score": 1
+      },
+      {
+        "text": "很少",
+        "score": 2
+      },
+      {
+        "text": "有时",
+        "score": 3
+      },
+      {
+        "text": "经常",
+        "score": 4
+      },
+      {
+        "text": "总是",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "dimension": "wellbeing",
+    "text": "近两周，我醒来后通常有行动动力",
+    "options": [
+      {
+        "text": "从不",
+        "score": 1
+      },
+      {
+        "text": "很少",
+        "score": 2
+      },
+      {
+        "text": "有时",
+        "score": 3
+      },
+      {
+        "text": "经常",
+        "score": 4
+      },
+      {
+        "text": "总是",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "dimension": "wellbeing",
+    "text": "近两周，我对日常生活保持兴趣",
+    "options": [
+      {
+        "text": "从不",
+        "score": 1
+      },
+      {
+        "text": "很少",
+        "score": 2
+      },
+      {
+        "text": "有时",
+        "score": 3
+      },
+      {
+        "text": "经常",
+        "score": 4
+      },
+      {
+        "text": "总是",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "dimension": "wellbeing",
+    "text": "近两周，我感到生活中有值得期待的事",
+    "options": [
+      {
+        "text": "从不",
+        "score": 1
+      },
+      {
+        "text": "很少",
+        "score": 2
+      },
+      {
+        "text": "有时",
+        "score": 3
+      },
+      {
+        "text": "经常",
+        "score": 4
+      },
+      {
+        "text": "总是",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "dimension": "personalBurnout",
+    "text": "我经常在一天开始前就感到疲惫",
+    "options": [
+      {
+        "text": "从不",
+        "score": 1
+      },
+      {
+        "text": "很少",
+        "score": 2
+      },
+      {
+        "text": "有时",
+        "score": 3
+      },
+      {
+        "text": "经常",
+        "score": 4
+      },
+      {
+        "text": "总是",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "dimension": "personalBurnout",
+    "text": "即使休息后，我仍觉得恢复不充分",
+    "options": [
+      {
+        "text": "从不",
+        "score": 1
+      },
+      {
+        "text": "很少",
+        "score": 2
+      },
+      {
+        "text": "有时",
+        "score": 3
+      },
+      {
+        "text": "经常",
+        "score": 4
+      },
+      {
+        "text": "总是",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "dimension": "personalBurnout",
+    "text": "我的身心能量经常被持续消耗",
+    "options": [
+      {
+        "text": "从不",
+        "score": 1
+      },
+      {
+        "text": "很少",
+        "score": 2
+      },
+      {
+        "text": "有时",
+        "score": 3
+      },
+      {
+        "text": "经常",
+        "score": 4
+      },
+      {
+        "text": "总是",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "dimension": "personalBurnout",
+    "text": "我很难长时间保持稳定专注",
+    "options": [
+      {
+        "text": "从不",
+        "score": 1
+      },
+      {
+        "text": "很少",
+        "score": 2
+      },
+      {
+        "text": "有时",
+        "score": 3
+      },
+      {
+        "text": "经常",
+        "score": 4
+      },
+      {
+        "text": "总是",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "dimension": "personalBurnout",
+    "text": "我对很多事情都出现了“提不起劲”状态",
+    "options": [
+      {
+        "text": "从不",
+        "score": 1
+      },
+      {
+        "text": "很少",
+        "score": 2
+      },
+      {
+        "text": "有时",
+        "score": 3
+      },
+      {
+        "text": "经常",
+        "score": 4
+      },
+      {
+        "text": "总是",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "dimension": "personalBurnout",
+    "text": "我经常需要靠意志硬撑完成任务",
+    "options": [
+      {
+        "text": "从不",
+        "score": 1
+      },
+      {
+        "text": "很少",
+        "score": 2
+      },
+      {
+        "text": "有时",
+        "score": 3
+      },
+      {
+        "text": "经常",
+        "score": 4
+      },
+      {
+        "text": "总是",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "dimension": "workBurnout",
+    "text": "想到工作/学习任务，我会明显感到压力",
+    "options": [
+      {
+        "text": "从不",
+        "score": 1
+      },
+      {
+        "text": "很少",
+        "score": 2
+      },
+      {
+        "text": "有时",
+        "score": 3
+      },
+      {
+        "text": "经常",
+        "score": 4
+      },
+      {
+        "text": "总是",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "dimension": "workBurnout",
+    "text": "工作/学习结束后，我常处于高度耗尽状态",
+    "options": [
+      {
+        "text": "从不",
+        "score": 1
+      },
+      {
+        "text": "很少",
+        "score": 2
+      },
+      {
+        "text": "有时",
+        "score": 3
+      },
+      {
+        "text": "经常",
+        "score": 4
+      },
+      {
+        "text": "总是",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "dimension": "workBurnout",
+    "text": "我对当前任务内容的兴趣较过去明显下降",
+    "options": [
+      {
+        "text": "从不",
+        "score": 1
+      },
+      {
+        "text": "很少",
+        "score": 2
+      },
+      {
+        "text": "有时",
+        "score": 3
+      },
+      {
+        "text": "经常",
+        "score": 4
+      },
+      {
+        "text": "总是",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "dimension": "workBurnout",
+    "text": "我觉得投入与回报不成比例",
+    "options": [
+      {
+        "text": "从不",
+        "score": 1
+      },
+      {
+        "text": "很少",
+        "score": 2
+      },
+      {
+        "text": "有时",
+        "score": 3
+      },
+      {
+        "text": "经常",
+        "score": 4
+      },
+      {
+        "text": "总是",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "dimension": "workBurnout",
+    "text": "我在工作/学习中更容易产生挫败感",
+    "options": [
+      {
+        "text": "从不",
+        "score": 1
+      },
+      {
+        "text": "很少",
+        "score": 2
+      },
+      {
+        "text": "有时",
+        "score": 3
+      },
+      {
+        "text": "经常",
+        "score": 4
+      },
+      {
+        "text": "总是",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "dimension": "workBurnout",
+    "text": "我很难在工作和休息之间快速切换",
+    "options": [
+      {
+        "text": "从不",
+        "score": 1
+      },
+      {
+        "text": "很少",
+        "score": 2
+      },
+      {
+        "text": "有时",
+        "score": 3
+      },
+      {
+        "text": "经常",
+        "score": 4
+      },
+      {
+        "text": "总是",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "dimension": "workBurnout",
+    "text": "我常对未完成事项持续焦虑",
+    "options": [
+      {
+        "text": "从不",
+        "score": 1
+      },
+      {
+        "text": "很少",
+        "score": 2
+      },
+      {
+        "text": "有时",
+        "score": 3
+      },
+      {
+        "text": "经常",
+        "score": 4
+      },
+      {
+        "text": "总是",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "dimension": "relationalBurnout",
+    "text": "高频社交或照顾他人后，我会显著耗竭",
+    "options": [
+      {
+        "text": "从不",
+        "score": 1
+      },
+      {
+        "text": "很少",
+        "score": 2
+      },
+      {
+        "text": "有时",
+        "score": 3
+      },
+      {
+        "text": "经常",
+        "score": 4
+      },
+      {
+        "text": "总是",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "dimension": "relationalBurnout",
+    "text": "回应他人需求时，我常感到情绪负担",
+    "options": [
+      {
+        "text": "从不",
+        "score": 1
+      },
+      {
+        "text": "很少",
+        "score": 2
+      },
+      {
+        "text": "有时",
+        "score": 3
+      },
+      {
+        "text": "经常",
+        "score": 4
+      },
+      {
+        "text": "总是",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "dimension": "relationalBurnout",
+    "text": "我有时会对他人的问题产生情感麻木",
+    "options": [
+      {
+        "text": "从不",
+        "score": 1
+      },
+      {
+        "text": "很少",
+        "score": 2
+      },
+      {
+        "text": "有时",
+        "score": 3
+      },
+      {
+        "text": "经常",
+        "score": 4
+      },
+      {
+        "text": "总是",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "dimension": "relationalBurnout",
+    "text": "我在关系中很难维持稳定边界",
+    "options": [
+      {
+        "text": "从不",
+        "score": 1
+      },
+      {
+        "text": "很少",
+        "score": 2
+      },
+      {
+        "text": "有时",
+        "score": 3
+      },
+      {
+        "text": "经常",
+        "score": 4
+      },
+      {
+        "text": "总是",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "dimension": "relationalBurnout",
+    "text": "我经常觉得自己“给出去太多”",
+    "options": [
+      {
+        "text": "从不",
+        "score": 1
+      },
+      {
+        "text": "很少",
+        "score": 2
+      },
+      {
+        "text": "有时",
+        "score": 3
+      },
+      {
+        "text": "经常",
+        "score": 4
+      },
+      {
+        "text": "总是",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "dimension": "relationalBurnout",
+    "text": "我需要较长时间才能从人际压力中恢复",
+    "options": [
+      {
+        "text": "从不",
+        "score": 1
+      },
+      {
+        "text": "很少",
+        "score": 2
+      },
+      {
+        "text": "有时",
+        "score": 3
+      },
+      {
+        "text": "经常",
+        "score": 4
+      },
+      {
+        "text": "总是",
+        "score": 5
+      }
+    ]
+  }
+]

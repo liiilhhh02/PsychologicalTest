@@ -1,0 +1,12 @@
+[
+  {
+    "key": "anxiety",
+    "name": "依恋焦虑",
+    "description": "对被忽视、被抛弃与关系不确定性的敏感度。"
+  },
+  {
+    "key": "avoidance",
+    "name": "依恋回避",
+    "description": "在亲密关系中回避依赖、回避暴露脆弱的倾向。"
+  }
+]

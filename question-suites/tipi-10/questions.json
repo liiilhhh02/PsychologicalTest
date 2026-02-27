@@ -1,0 +1,272 @@
+[
+  {
+    "id": 1,
+    "dimension": "extraversion",
+    "text": "我是一个外向、活跃、愿意主动交流的人",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "dimension": "extraversion",
+    "text": "我是一个安静、内敛、不太外露的人",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 5
+      },
+      {
+        "text": "不同意",
+        "score": 4
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 2
+      },
+      {
+        "text": "非常同意",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "dimension": "agreeableness",
+    "text": "我是一个体谅他人、愿意合作的人",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "dimension": "agreeableness",
+    "text": "我是一个容易挑剔、对抗感较强的人",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 5
+      },
+      {
+        "text": "不同意",
+        "score": 4
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 2
+      },
+      {
+        "text": "非常同意",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "dimension": "conscientiousness",
+    "text": "我是一个自律、可靠、做事有条理的人",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "dimension": "conscientiousness",
+    "text": "我是一个随性、易分心、执行松散的人",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 5
+      },
+      {
+        "text": "不同意",
+        "score": 4
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 2
+      },
+      {
+        "text": "非常同意",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "dimension": "emotionalStability",
+    "text": "我是一个沉着、稳定、不易慌乱的人",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "dimension": "emotionalStability",
+    "text": "我是一个容易焦虑、敏感、波动较大的人",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 5
+      },
+      {
+        "text": "不同意",
+        "score": 4
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 2
+      },
+      {
+        "text": "非常同意",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "dimension": "openness",
+    "text": "我是一个开放、好奇、富有想象力的人",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "dimension": "openness",
+    "text": "我是一个偏保守、较少尝试新事物的人",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 5
+      },
+      {
+        "text": "不同意",
+        "score": 4
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 2
+      },
+      {
+        "text": "非常同意",
+        "score": 1
+      }
+    ]
+  }
+]

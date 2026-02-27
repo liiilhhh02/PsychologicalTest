@@ -1,0 +1,22 @@
+[
+  {
+    "key": "wellbeing",
+    "name": "主观幸福感",
+    "description": "近两周的积极情绪、活力与生活满足感。"
+  },
+  {
+    "key": "personalBurnout",
+    "name": "个人耗竭",
+    "description": "总体疲惫、精力透支与恢复困难程度。"
+  },
+  {
+    "key": "workBurnout",
+    "name": "工作耗竭",
+    "description": "与学习/工作相关的压力消耗与倦怠程度。"
+  },
+  {
+    "key": "relationalBurnout",
+    "name": "关系耗竭",
+    "description": "在服务他人或高互动关系中的情绪消耗程度。"
+  }
+]

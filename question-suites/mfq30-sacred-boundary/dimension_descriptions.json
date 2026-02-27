@@ -1,0 +1,32 @@
+[
+  {
+    "key": "care",
+    "name": "关怀/伤害",
+    "description": "对脆弱者保护、同理与减少伤害的重视程度。"
+  },
+  {
+    "key": "fairness",
+    "name": "公平/互惠",
+    "description": "对规则公平、责任对等与程序正义的重视程度。"
+  },
+  {
+    "key": "loyalty",
+    "name": "忠诚/团结",
+    "description": "对群体归属、承诺与共同体利益的重视程度。"
+  },
+  {
+    "key": "authority",
+    "name": "权威/秩序",
+    "description": "对角色秩序、责任分工与制度稳定的重视程度。"
+  },
+  {
+    "key": "sanctity",
+    "name": "神圣/纯洁",
+    "description": "对禁忌、洁净、庄重与自我约束的重视程度。"
+  },
+  {
+    "key": "liberty",
+    "name": "自由/压迫",
+    "description": "对个体自主、反胁迫与选择空间的重视程度。"
+  }
+]

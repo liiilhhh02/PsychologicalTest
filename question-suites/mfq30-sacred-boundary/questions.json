@@ -1,0 +1,974 @@
+[
+  {
+    "id": 1,
+    "dimension": "care",
+    "text": "判断一件事是否正确时，我会先考虑是否伤害了弱势者。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "dimension": "care",
+    "text": "看到他人遭遇不公或痛苦时，我会主动介入。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "dimension": "care",
+    "text": "即使成本较高，我也愿意避免对他人造成伤害。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "dimension": "care",
+    "text": "在团队决策中，我会优先评估对脆弱成员的影响。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "dimension": "care",
+    "text": "情绪上的忽视和冷暴力也应被视为伤害。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "dimension": "care",
+    "text": "我认为“关怀”是公共决策的重要标准。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "dimension": "fairness",
+    "text": "我更能接受结果一般但程序公平的决策。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "dimension": "fairness",
+    "text": "规则应对所有人一视同仁，而非按关系区别对待。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "dimension": "fairness",
+    "text": "付出与回报应尽量匹配，这是合作的基础。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "dimension": "fairness",
+    "text": "我很在意“是否有人在规则外获利”。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "dimension": "fairness",
+    "text": "面对冲突时，我倾向先追问事实与责任边界。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "dimension": "fairness",
+    "text": "透明和可追溯，比“高效率但不透明”更重要。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "dimension": "loyalty",
+    "text": "在关键时刻，我会优先维护自己所属团队。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "dimension": "loyalty",
+    "text": "我认为共同体认同能显著提升协作效率。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "dimension": "loyalty",
+    "text": "背弃集体承诺会让我难以继续信任对方。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "dimension": "loyalty",
+    "text": "面对外部竞争时，内部应先保持一致立场。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "dimension": "loyalty",
+    "text": "我愿意为团队声誉承担额外责任。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "dimension": "loyalty",
+    "text": "即使个人受益，损害集体的行为也不可取。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "dimension": "authority",
+    "text": "清晰的角色分工能显著降低冲突成本。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "dimension": "authority",
+    "text": "在高压场景中，我更信任明确指挥链。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "dimension": "authority",
+    "text": "对职责和边界的尊重，是组织稳定的前提。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "dimension": "authority",
+    "text": "我认为秩序感比“人人都可随意改规则”更重要。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "dimension": "authority",
+    "text": "即使意见不同，我也会先遵守已定流程。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "dimension": "authority",
+    "text": "我认可“先执行、再复盘”的治理逻辑。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "dimension": "sanctity",
+    "text": "有些行为即使合法，我仍会认为不应被鼓励。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "dimension": "sanctity",
+    "text": "我重视仪式感和庄重感，它们有社会价值。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "dimension": "sanctity",
+    "text": "我会主动避免令自己感到“污损边界”的行为。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "dimension": "sanctity",
+    "text": "对禁忌保持敬畏，有助于维持群体秩序。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "dimension": "sanctity",
+    "text": "身体与精神的自我约束，对人格建设很关键。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "dimension": "sanctity",
+    "text": "我认为“底线感”比“什么都可谈判”更重要。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "dimension": "liberty",
+    "text": "我会警惕任何以集体名义过度压缩个体自由的做法。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "dimension": "liberty",
+    "text": "只要不伤害他人，个人应有较大自主选择权。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "dimension": "liberty",
+    "text": "我不喜欢被强制统一生活方式或价值表达。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "dimension": "liberty",
+    "text": "面对不合理控制，我倾向公开表达反对。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "dimension": "liberty",
+    "text": "授权和选择空间，能显著提升人的责任感。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "dimension": "liberty",
+    "text": "我认为“可退出权”是任何规则设计的底线。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  }
+]

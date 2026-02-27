@@ -1,0 +1,16 @@
+{
+  "id": "mfq30-sacred-boundary",
+  "name": "道德基础与边界观测评（36题）",
+  "version": "2026.02.27-mfq36",
+  "description": "改编自道德基础与神圣边界框架，识别价值判断的核心驱动。",
+  "source": "curated psychometric expansion 2026-02-27",
+  "adultContent": false,
+  "default": false,
+  "category": "personality",
+  "priority": 28,
+  "tags": [
+    "价值观",
+    "道德判断",
+    "边界设计"
+  ]
+}

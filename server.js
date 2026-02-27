@@ -7,7 +7,18 @@ const ROOT = __dirname;
 const PUBLIC_DIR = path.join(ROOT, 'public');
 const SUITES_DIR = path.join(ROOT, 'question-suites');
 const AD_CONFIG_PATH = path.join(ROOT, 'config', 'ad-config.json');
-const LINEAR_SCORE_SUITE_IDS = new Set(['animal-personality', 'fruit-personality']);
+const LINEAR_SCORE_SUITE_IDS = new Set([
+  'animal-personality',
+  'fruit-personality',
+  'tipi-10',
+  'mfq30-sacred-boundary',
+  'hexaco-60',
+  'ecrr-36',
+  'via-strengths-24',
+  'wellbeing-burnout-24',
+  'self-compassion-12',
+  'grit-12',
+]);
 
 const RESULT_STORE = new Map();
 

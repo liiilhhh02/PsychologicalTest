@@ -1,0 +1,16 @@
+{
+  "id": "tipi-10",
+  "name": "十项人格速测（TIPI 改编10题）",
+  "version": "2026.02.27-tipi10",
+  "description": "1分钟快速人格入口，用于后续套题分流与推荐。",
+  "source": "curated psychometric expansion 2026-02-27",
+  "adultContent": false,
+  "default": false,
+  "category": "personality",
+  "priority": 8,
+  "tags": [
+    "速测入口",
+    "Big Five",
+    "分流推荐"
+  ]
+}

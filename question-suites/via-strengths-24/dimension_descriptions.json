@@ -1,0 +1,122 @@
+[
+  {
+    "key": "creativity",
+    "name": "创造力",
+    "description": "提出新点子并重构问题的倾向。"
+  },
+  {
+    "key": "curiosity",
+    "name": "好奇心",
+    "description": "主动探索未知和学习新事物的倾向。"
+  },
+  {
+    "key": "judgment",
+    "name": "判断力",
+    "description": "基于证据思考并审慎决策的倾向。"
+  },
+  {
+    "key": "loveOfLearning",
+    "name": "热爱学习",
+    "description": "持续积累知识并深化理解的倾向。"
+  },
+  {
+    "key": "perspective",
+    "name": "洞察力",
+    "description": "从更高层次理解问题与关系的倾向。"
+  },
+  {
+    "key": "bravery",
+    "name": "勇敢",
+    "description": "面对风险和压力仍主动行动的倾向。"
+  },
+  {
+    "key": "perseverance",
+    "name": "毅力",
+    "description": "在困难与重复中持续推进的倾向。"
+  },
+  {
+    "key": "integrity",
+    "name": "真诚",
+    "description": "言行一致并坚持真实表达的倾向。"
+  },
+  {
+    "key": "zest",
+    "name": "活力",
+    "description": "以高能量投入生活和工作的倾向。"
+  },
+  {
+    "key": "love",
+    "name": "爱与连接",
+    "description": "建立深度关系并维持情感投入的倾向。"
+  },
+  {
+    "key": "kindness",
+    "name": "善意",
+    "description": "主动帮助和关照他人的倾向。"
+  },
+  {
+    "key": "socialIntelligence",
+    "name": "社会智慧",
+    "description": "识别他人情绪并调整互动方式的倾向。"
+  },
+  {
+    "key": "teamwork",
+    "name": "团队协作",
+    "description": "在群体中贡献并协同达成目标的倾向。"
+  },
+  {
+    "key": "fairness",
+    "name": "公平感",
+    "description": "在分配与规则中坚持对等原则的倾向。"
+  },
+  {
+    "key": "leadership",
+    "name": "领导力",
+    "description": "组织群体并推动共识行动的倾向。"
+  },
+  {
+    "key": "forgiveness",
+    "name": "宽恕",
+    "description": "在受挫后降低报复并修复关系的倾向。"
+  },
+  {
+    "key": "humility",
+    "name": "谦逊",
+    "description": "不过度放大自我并保持客观定位的倾向。"
+  },
+  {
+    "key": "prudence",
+    "name": "审慎",
+    "description": "延迟冲动并优先评估后果的倾向。"
+  },
+  {
+    "key": "selfRegulation",
+    "name": "自我调节",
+    "description": "管理情绪与行为、维持纪律的倾向。"
+  },
+  {
+    "key": "appreciationBeauty",
+    "name": "欣赏美",
+    "description": "对美感与卓越表现保持敏锐感受的倾向。"
+  },
+  {
+    "key": "gratitude",
+    "name": "感恩",
+    "description": "识别并回应他人善意与资源支持的倾向。"
+  },
+  {
+    "key": "hope",
+    "name": "希望感",
+    "description": "在不确定中仍保持积极预期和行动的倾向。"
+  },
+  {
+    "key": "humor",
+    "name": "幽默",
+    "description": "用轻松表达缓冲压力并连接关系的倾向。"
+  },
+  {
+    "key": "spirituality",
+    "name": "意义感",
+    "description": "从价值与信念中获得方向与稳定的倾向。"
+  }
+]

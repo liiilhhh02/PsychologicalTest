@@ -1,0 +1,16 @@
+{
+  "id": "ecrr-36",
+  "name": "依恋风格测评（ECR-R 改编36题）",
+  "version": "2026.02.27-ecrr36",
+  "description": "基于依恋焦虑与依恋回避双维度的关系风格评估。",
+  "source": "curated psychometric expansion 2026-02-27",
+  "adultContent": false,
+  "default": false,
+  "category": "relationship",
+  "priority": 31,
+  "tags": [
+    "依恋风格",
+    "关系沟通",
+    "双维模型"
+  ]
+}

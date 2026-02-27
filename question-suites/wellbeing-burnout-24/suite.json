@@ -1,0 +1,16 @@
+{
+  "id": "wellbeing-burnout-24",
+  "name": "幸福感与耗竭状态测评（24题）",
+  "version": "2026.02.27-who5cbi24",
+  "description": "结合主观幸福感与多场景耗竭线索，用于状态管理和复测追踪。",
+  "source": "curated psychometric expansion 2026-02-27",
+  "adultContent": false,
+  "default": false,
+  "category": "screening",
+  "priority": 33,
+  "tags": [
+    "幸福感",
+    "耗竭",
+    "状态管理"
+  ]
+}

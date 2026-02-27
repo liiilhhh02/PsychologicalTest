@@ -1,0 +1,16 @@
+{
+  "id": "hexaco-60",
+  "name": "HEXACO 人格六维测评（60题）",
+  "version": "2026.02.27-hexaco60",
+  "description": "基于 HEXACO 六维框架的本地改编版，用于人格结构与行为风格分析。",
+  "source": "curated psychometric expansion 2026-02-27",
+  "adultContent": false,
+  "default": false,
+  "category": "personality",
+  "priority": 29,
+  "tags": [
+    "HEXACO",
+    "人格六维",
+    "行为风格"
+  ]
+}

@@ -1,0 +1,326 @@
+[
+  {
+    "id": 1,
+    "dimension": "perseverance",
+    "text": "遇到困难时，我通常会继续推进而不是放弃",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "dimension": "perseverance",
+    "text": "即使进展很慢，我也能坚持原计划",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "dimension": "perseverance",
+    "text": "失败后我能快速回到执行状态",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "dimension": "perseverance",
+    "text": "长期任务里，我常在中途失去动力",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 5
+      },
+      {
+        "text": "不同意",
+        "score": 4
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 2
+      },
+      {
+        "text": "非常同意",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "dimension": "perseverance",
+    "text": "当目标重要时，我愿意投入长期努力",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "dimension": "perseverance",
+    "text": "碰到阻力时，我经常改做更轻松的事",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 5
+      },
+      {
+        "text": "不同意",
+        "score": 4
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 2
+      },
+      {
+        "text": "非常同意",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "dimension": "consistency",
+    "text": "我会长期围绕同一核心目标持续积累",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "dimension": "consistency",
+    "text": "我的兴趣和目标经常快速变化",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 5
+      },
+      {
+        "text": "不同意",
+        "score": 4
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 2
+      },
+      {
+        "text": "非常同意",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "dimension": "consistency",
+    "text": "几年内我通常保持相对稳定的发展方向",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "dimension": "consistency",
+    "text": "我常因为新鲜感放弃旧计划",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 5
+      },
+      {
+        "text": "不同意",
+        "score": 4
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 2
+      },
+      {
+        "text": "非常同意",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "dimension": "consistency",
+    "text": "我能在长期项目中维持同一主线",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "dimension": "consistency",
+    "text": "我很难对一个方向持续投入超过几个月",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 5
+      },
+      {
+        "text": "不同意",
+        "score": 4
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 2
+      },
+      {
+        "text": "非常同意",
+        "score": 1
+      }
+    ]
+  }
+]

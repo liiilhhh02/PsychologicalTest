@@ -80,8 +80,16 @@ const adResult = document.getElementById('ad-result');
 let resizeTimer = null;
 let adScriptLoadPromise = null;
 const STATIC_SUITE_IDS = [
+  'tipi-10',
   'fruit-personality',
   'animal-personality',
+  'mfq30-sacred-boundary',
+  'hexaco-60',
+  'ecrr-36',
+  'via-strengths-24',
+  'wellbeing-burnout-24',
+  'self-compassion-12',
+  'grit-12',
   'mental-age',
   'ayp-age-gap-love-self',
   'adhd-assessment-adult',

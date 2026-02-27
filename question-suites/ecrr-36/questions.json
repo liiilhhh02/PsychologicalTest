@@ -1,0 +1,974 @@
+[
+  {
+    "id": 1,
+    "dimension": "anxiety",
+    "text": "我经常担心对方并没有像我想象中那样在乎我",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "dimension": "anxiety",
+    "text": "当关系短暂冷淡时，我会迅速感到不安",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "dimension": "anxiety",
+    "text": "我需要很多确认，才能确信这段关系是稳定的",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "dimension": "anxiety",
+    "text": "当对方回复变慢时，我会反复猜测原因",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "dimension": "anxiety",
+    "text": "我害怕自己投入过深而最终被抛下",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "dimension": "anxiety",
+    "text": "一旦发生冲突，我会担心关系会不会结束",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "dimension": "anxiety",
+    "text": "我很在意对方是否把我放在优先位置",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "dimension": "anxiety",
+    "text": "我常会担心自己对伴侣并不够重要",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "dimension": "anxiety",
+    "text": "当关系稳定时，我也能长期保持安心",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 5
+      },
+      {
+        "text": "不同意",
+        "score": 4
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 2
+      },
+      {
+        "text": "非常同意",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "dimension": "anxiety",
+    "text": "即使短期失联，我通常也能保持信任",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 5
+      },
+      {
+        "text": "不同意",
+        "score": 4
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 2
+      },
+      {
+        "text": "非常同意",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "dimension": "anxiety",
+    "text": "我能够在关系中维持稳定的安全感",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 5
+      },
+      {
+        "text": "不同意",
+        "score": 4
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 2
+      },
+      {
+        "text": "非常同意",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "dimension": "anxiety",
+    "text": "我不太会因为小波动就怀疑对方心意",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 5
+      },
+      {
+        "text": "不同意",
+        "score": 4
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 2
+      },
+      {
+        "text": "非常同意",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "dimension": "anxiety",
+    "text": "我通常不需要反复确认来维持安心",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 5
+      },
+      {
+        "text": "不同意",
+        "score": 4
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 2
+      },
+      {
+        "text": "非常同意",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "dimension": "anxiety",
+    "text": "我能接受关系中存在短期距离和节奏差",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 5
+      },
+      {
+        "text": "不同意",
+        "score": 4
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 2
+      },
+      {
+        "text": "非常同意",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "dimension": "anxiety",
+    "text": "在亲密关系里，我很少担心被替代",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 5
+      },
+      {
+        "text": "不同意",
+        "score": 4
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 2
+      },
+      {
+        "text": "非常同意",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "dimension": "anxiety",
+    "text": "对方忙碌时，我也能维持情绪稳定",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 5
+      },
+      {
+        "text": "不同意",
+        "score": 4
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 2
+      },
+      {
+        "text": "非常同意",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "dimension": "anxiety",
+    "text": "我能把“当下情绪”与“关系事实”区分开",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 5
+      },
+      {
+        "text": "不同意",
+        "score": 4
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 2
+      },
+      {
+        "text": "非常同意",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "dimension": "anxiety",
+    "text": "我相信关系可以通过沟通修复，而非立即崩解",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 5
+      },
+      {
+        "text": "不同意",
+        "score": 4
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 2
+      },
+      {
+        "text": "非常同意",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "dimension": "avoidance",
+    "text": "我不喜欢在关系里过多暴露自己的脆弱",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "dimension": "avoidance",
+    "text": "当对方靠近时，我会下意识拉开距离",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "dimension": "avoidance",
+    "text": "我更习惯独自处理压力，而不是依赖伴侣",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "dimension": "avoidance",
+    "text": "我会避免讨论过深的情绪议题",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "dimension": "avoidance",
+    "text": "关系越亲密，我越担心失去个人空间",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "dimension": "avoidance",
+    "text": "我不太习惯向伴侣提出支持请求",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "dimension": "avoidance",
+    "text": "我倾向把重要情绪留在心里自己消化",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "dimension": "avoidance",
+    "text": "别人越想了解我，我越想保持边界",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "dimension": "avoidance",
+    "text": "我能够自然地向伴侣寻求帮助",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 5
+      },
+      {
+        "text": "不同意",
+        "score": 4
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 2
+      },
+      {
+        "text": "非常同意",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "dimension": "avoidance",
+    "text": "我愿意在关系里分享真实感受和脆弱",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 5
+      },
+      {
+        "text": "不同意",
+        "score": 4
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 2
+      },
+      {
+        "text": "非常同意",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "dimension": "avoidance",
+    "text": "亲密关系不会让我感到被束缚",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 5
+      },
+      {
+        "text": "不同意",
+        "score": 4
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 2
+      },
+      {
+        "text": "非常同意",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "dimension": "avoidance",
+    "text": "我能够在依赖与独立之间保持平衡",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 5
+      },
+      {
+        "text": "不同意",
+        "score": 4
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 2
+      },
+      {
+        "text": "非常同意",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "dimension": "avoidance",
+    "text": "在重要议题上，我愿意进行深入沟通",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 5
+      },
+      {
+        "text": "不同意",
+        "score": 4
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 2
+      },
+      {
+        "text": "非常同意",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "dimension": "avoidance",
+    "text": "我能在需要时放心把压力交给伴侣共同承担",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 5
+      },
+      {
+        "text": "不同意",
+        "score": 4
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 2
+      },
+      {
+        "text": "非常同意",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "dimension": "avoidance",
+    "text": "亲密连接会让我感到支持而不是负担",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 5
+      },
+      {
+        "text": "不同意",
+        "score": 4
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 2
+      },
+      {
+        "text": "非常同意",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "dimension": "avoidance",
+    "text": "我不会因为害怕受伤就提前关闭关系",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 5
+      },
+      {
+        "text": "不同意",
+        "score": 4
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 2
+      },
+      {
+        "text": "非常同意",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "dimension": "avoidance",
+    "text": "我可以在表达边界的同时维持情感连结",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 5
+      },
+      {
+        "text": "不同意",
+        "score": 4
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 2
+      },
+      {
+        "text": "非常同意",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "dimension": "avoidance",
+    "text": "当关系升温时，我也能保持开放和投入",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 5
+      },
+      {
+        "text": "不同意",
+        "score": 4
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 2
+      },
+      {
+        "text": "非常同意",
+        "score": 1
+      }
+    ]
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "key": "selfKindness",
+    "name": "自我友善",
+    "description": "在低谷时对自己的支持与善意表达。"
+  },
+  {
+    "key": "commonHumanity",
+    "name": "共通人性",
+    "description": "把挫折视为人类共通经验而非个人失败。"
+  },
+  {
+    "key": "mindfulBalance",
+    "name": "正念平衡",
+    "description": "在情绪波动中保持觉察与不过度卷入。"
+  }
+]

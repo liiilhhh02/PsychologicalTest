@@ -1,0 +1,16 @@
+{
+  "id": "via-strengths-24",
+  "name": "品格优势测评（VIA 改编24题）",
+  "version": "2026.02.27-via24",
+  "description": "基于24项品格优势的快速评估，识别你的稳定长板。",
+  "source": "curated psychometric expansion 2026-02-27",
+  "adultContent": false,
+  "default": false,
+  "category": "personality",
+  "priority": 32,
+  "tags": [
+    "品格优势",
+    "长板识别",
+    "发展建议"
+  ]
+}

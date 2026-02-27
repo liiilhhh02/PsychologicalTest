@@ -1,0 +1,326 @@
+[
+  {
+    "id": 1,
+    "dimension": "selfKindness",
+    "text": "当我做错事时，我会以建设性方式对待自己",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "dimension": "selfKindness",
+    "text": "在低落时，我愿意给自己必要的休息和支持",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "dimension": "selfKindness",
+    "text": "我经常用苛刻语言责备自己",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 5
+      },
+      {
+        "text": "不同意",
+        "score": 4
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 2
+      },
+      {
+        "text": "非常同意",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "dimension": "selfKindness",
+    "text": "遇到挫折时，我会把自己看成“毫无价值”",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 5
+      },
+      {
+        "text": "不同意",
+        "score": 4
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 2
+      },
+      {
+        "text": "非常同意",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "dimension": "commonHumanity",
+    "text": "我知道失败和不完美是每个人都会经历的",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "dimension": "commonHumanity",
+    "text": "遇到困难时，我能意识到自己并不孤单",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "dimension": "commonHumanity",
+    "text": "当我状态差时，我会觉得“只有我这么糟”",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 5
+      },
+      {
+        "text": "不同意",
+        "score": 4
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 2
+      },
+      {
+        "text": "非常同意",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "dimension": "commonHumanity",
+    "text": "我常把一时失误理解成“我这个人不行”",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 5
+      },
+      {
+        "text": "不同意",
+        "score": 4
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 2
+      },
+      {
+        "text": "非常同意",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "dimension": "mindfulBalance",
+    "text": "我能在压力中观察情绪，而不是立刻被带走",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "dimension": "mindfulBalance",
+    "text": "我会给自己一点时间再做情绪化决定",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "dimension": "mindfulBalance",
+    "text": "一旦难受，我很容易陷入反复内耗",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 5
+      },
+      {
+        "text": "不同意",
+        "score": 4
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 2
+      },
+      {
+        "text": "非常同意",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "dimension": "mindfulBalance",
+    "text": "负面情绪出现时，我常完全失去节奏",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 5
+      },
+      {
+        "text": "不同意",
+        "score": 4
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 2
+      },
+      {
+        "text": "非常同意",
+        "score": 1
+      }
+    ]
+  }
+]
