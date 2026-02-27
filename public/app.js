@@ -2196,10 +2196,12 @@ suiteSelect.addEventListener('change', async () => {
   }
 });
 
-suiteSearch.addEventListener('input', () => {
-  state.suiteSearchTerm = suiteSearch.value;
-  populateSuiteSelect();
-});
+if (suiteSearch) {
+  suiteSearch.addEventListener('input', () => {
+    state.suiteSearchTerm = suiteSearch.value;
+    populateSuiteSelect();
+  });
+}
 
 window.addEventListener('resize', onResize);
 
