@@ -12,6 +12,7 @@ const state = {
   currentIndex: 0,
   result: null,
   chartMode: 'radar',
+  suiteSearchTerm: '',
 };
 
 const homeView = document.getElementById('home-view');
@@ -20,6 +21,7 @@ const resultView = document.getElementById('result-view');
 
 const suiteNameLabel = document.getElementById('suite-name');
 const suiteSelect = document.getElementById('suite-select');
+const suiteSearch = document.getElementById('suite-search');
 
 const homeQuestionCount = document.getElementById('home-total-questions');
 const homeDimensionCount = document.getElementById('home-total-dimensions');
@@ -370,14 +372,41 @@ function normalizePriority(priority, fallback = 999) {
   return Math.round(value);
 }
 
+const pinyinCollator = new Intl.Collator('zh-Hans-CN-u-co-pinyin', {
+  usage: 'sort',
+  sensitivity: 'base',
+  numeric: true,
+});
+
 function sortSuitesByPriority(suites) {
   return [...suites].sort((a, b) => {
-    const pa = normalizePriority(a.priority, 999);
-    const pb = normalizePriority(b.priority, 999);
-    if (pa !== pb) {
-      return pa - pb;
+    const byName = pinyinCollator.compare(String(a.name || ''), String(b.name || ''));
+    if (byName !== 0) {
+      return byName;
     }
-    return String(a.id || '').localeCompare(String(b.id || ''));
+    return pinyinCollator.compare(String(a.id || ''), String(b.id || ''));
+  });
+}
+
+function filterSuitesBySearch(suites, searchTerm) {
+  const keyword = String(searchTerm || '').trim().toLowerCase();
+  if (!keyword) {
+    return suites;
+  }
+
+  return suites.filter((suite) => {
+    const bag = [
+      suite.id,
+      suite.name,
+      suite.description,
+      suiteCategoryLabel(suite.category),
+      ...(Array.isArray(suite.tags) ? suite.tags : []),
+    ]
+      .filter(Boolean)
+      .join(' ')
+      .toLowerCase();
+
+    return bag.includes(keyword);
   });
 }
 
@@ -778,13 +807,29 @@ async function fetchAdConfig() {
 }
 
 function populateSuiteSelect() {
+  const visibleSuites = filterSuitesBySearch(state.suites, state.suiteSearchTerm);
   suiteSelect.innerHTML = '';
 
-  state.suites.forEach((suite) => {
+  if (!visibleSuites.length) {
+    const option = document.createElement('option');
+    option.value = '';
+    option.textContent = '未找到匹配套题';
+    option.selected = true;
+    suiteSelect.appendChild(option);
+    btnStart.disabled = true;
+    return;
+  }
+
+  btnStart.disabled = false;
+  const selectedSuiteId = visibleSuites.some((suite) => suite.id === state.suiteId)
+    ? state.suiteId
+    : visibleSuites[0].id;
+
+  visibleSuites.forEach((suite) => {
     const option = document.createElement('option');
     option.value = suite.id;
     option.textContent = `${suiteCategoryLabel(suite.category)} · ${suite.name}`;
-    if (suite.id === state.suiteId) {
+    if (suite.id === selectedSuiteId) {
       option.selected = true;
     }
     suiteSelect.appendChild(option);
@@ -866,7 +911,7 @@ function renderQuestion() {
     const button = document.createElement('button');
     button.className = 'option';
     button.type = 'button';
-    button.textContent = `${option.text}（${option.score}分）`;
+    button.textContent = `${option.text}`;
 
     button.addEventListener('click', async () => {
       state.answers.set(current.id, option.score);
@@ -2075,10 +2120,22 @@ function exportPdf() {
   }, 500);
 }
 
-btnStart.addEventListener('click', () => {
-  resetAnswers();
-  renderQuestion();
-  showView('test');
+btnStart.addEventListener('click', async () => {
+  if (!suiteSelect.value) {
+    return;
+  }
+
+  try {
+    if (suiteSelect.value !== state.suiteId) {
+      await loadSuiteData(suiteSelect.value);
+    }
+    resetAnswers();
+    renderQuestion();
+    showView('test');
+  } catch (error) {
+    console.error(error);
+    alert(`启动测试失败：${error.message}`);
+  }
 });
 
 btnShareSite.addEventListener('click', async () => {
@@ -2137,6 +2194,11 @@ suiteSelect.addEventListener('change', async () => {
     console.error(error);
     alert(`切换套题失败：${error.message}`);
   }
+});
+
+suiteSearch.addEventListener('input', () => {
+  state.suiteSearchTerm = suiteSearch.value;
+  populateSuiteSelect();
 });
 
 window.addEventListener('resize', onResize);
