@@ -1,0 +1,956 @@
+{
+  "source": "xuhuiai chunk page-58a74bf651b32353.js",
+  "updatedAt": "2026-02-27T15:07:37.268Z",
+  "dimensionKeys": [
+    "influence",
+    "innovation",
+    "execution",
+    "empathy",
+    "values"
+  ],
+  "animal": [
+    {
+      "id": "dog",
+      "title": "狗",
+      "summary": "忠诚守护，重视陪伴与承诺。",
+      "description": "你把陪伴当作最重要的价值，愿意为亲近的人付出时间与精力。你擅长建立稳定关系，用温暖与行动让团队感到安全可信。",
+      "weights": {
+        "influence": 0.2,
+        "innovation": 0.08,
+        "execution": 0.12,
+        "empathy": 0.36,
+        "values": 0.24
+      }
+    },
+    {
+      "id": "cat",
+      "title": "猫",
+      "summary": "优雅独立，保持自我边界。",
+      "description": "你享受独处与自由，内心世界丰富而敏锐。你只对真正感兴趣的事投入专注，表达克制却充满魅力，擅长在安静中观察与思考。",
+      "weights": {
+        "influence": 0.16,
+        "innovation": 0.28,
+        "execution": 0.08,
+        "empathy": 0.28,
+        "values": 0.2
+      }
+    },
+    {
+      "id": "wolf",
+      "title": "狼",
+      "summary": "领袖与战术，重视群体秩序。",
+      "description": "你既能独立决策，也能带领团队协作前进。你对目标执着，善于制定策略并守护群体利益，让人愿意跟随你的方向。",
+      "weights": {
+        "influence": 0.26,
+        "innovation": 0.12,
+        "execution": 0.32,
+        "empathy": 0.12,
+        "values": 0.18
+      }
+    },
+    {
+      "id": "fox",
+      "title": "狐",
+      "summary": "机敏智取，擅长洞察与策略。",
+      "description": "你思维灵活，善于在复杂环境中寻找最优解。你倾向于低调行动，用敏锐的观察避开风险，以智慧而非蛮力达成目标。",
+      "weights": {
+        "influence": 0.22,
+        "innovation": 0.32,
+        "execution": 0.12,
+        "empathy": 0.1,
+        "values": 0.24
+      }
+    },
+    {
+      "id": "lion",
+      "title": "狮",
+      "summary": "自信王者，喜欢掌控与舞台。",
+      "description": "你有强烈的存在感和领导欲，擅长凝聚人心并掌控节奏。你追求成就与认可，同时也懂得在关键时刻承担责任。",
+      "weights": {
+        "influence": 0.34,
+        "innovation": 0.14,
+        "execution": 0.26,
+        "empathy": 0.06,
+        "values": 0.2
+      }
+    },
+    {
+      "id": "bear",
+      "title": "熊",
+      "summary": "沉稳守护，强调安全与责任。",
+      "description": "你外表平静但内心有力量，重视安全感与稳定秩序。你愿意为亲近的人提供庇护，在需要时展现出坚定的保护力。",
+      "weights": {
+        "influence": 0.16,
+        "innovation": 0.08,
+        "execution": 0.3,
+        "empathy": 0.22,
+        "values": 0.24
+      }
+    },
+    {
+      "id": "rabbit",
+      "title": "兔",
+      "summary": "敏感警觉，渴望安全与温和。",
+      "description": "你对环境变化非常敏感，习惯提前感知风险并保护自己。你温和体贴，避免冲突，在熟悉的圈子里会表现得活泼可爱。",
+      "weights": {
+        "influence": 0.08,
+        "innovation": 0.08,
+        "execution": 0.14,
+        "empathy": 0.36,
+        "values": 0.34
+      }
+    },
+    {
+      "id": "hamster",
+      "title": "仓鼠",
+      "summary": "囤积小确幸，享受安逸节奏。",
+      "description": "你喜欢经营属于自己的小世界，重视秩序与舒适。你擅长收集与整理，让生活细节更有安全感，也懂得自我疗愈。",
+      "weights": {
+        "influence": 0.06,
+        "innovation": 0.08,
+        "execution": 0.18,
+        "empathy": 0.32,
+        "values": 0.36
+      }
+    },
+    {
+      "id": "swan",
+      "title": "天鹅",
+      "summary": "优雅理想主义，忠诚而挑剔。",
+      "description": "你追求高质量的关系与审美，气质温柔却有清晰标准。你对承诺极为认真，宁愿慢一点也不将就。",
+      "weights": {
+        "influence": 0.14,
+        "innovation": 0.2,
+        "execution": 0.1,
+        "empathy": 0.34,
+        "values": 0.22
+      }
+    },
+    {
+      "id": "deer",
+      "title": "鹿",
+      "summary": "温柔敏感，向往宁静与美感。",
+      "description": "你向往自然与纯粹的生活节奏，内心细腻而有灵性。你需要安稳的环境才能放松，擅长用温柔化解紧张。",
+      "weights": {
+        "influence": 0.12,
+        "innovation": 0.16,
+        "execution": 0.1,
+        "empathy": 0.36,
+        "values": 0.26
+      }
+    },
+    {
+      "id": "eagle",
+      "title": "鹰",
+      "summary": "高远视角，独立果断。",
+      "description": "你善于从高处看全局，目标感强且行动果决。你追求效率与成果，习惯独立完成任务，也能在关键时刻做出精准判断。",
+      "weights": {
+        "influence": 0.32,
+        "innovation": 0.22,
+        "execution": 0.32,
+        "empathy": 0.04,
+        "values": 0.1
+      }
+    },
+    {
+      "id": "owl",
+      "title": "鸟鸮",
+      "summary": "智慧观察者，擅长学习与沟通。",
+      "description": "你拥有强烈的好奇心和学习能力，善于洞察信息与规律。你乐于交流与协作，用理性思考为团队提供清晰方向。",
+      "weights": {
+        "influence": 0.12,
+        "innovation": 0.3,
+        "execution": 0.14,
+        "empathy": 0.18,
+        "values": 0.26
+      }
+    },
+    {
+      "id": "capybara",
+      "title": "水豚",
+      "summary": "随和社交，情绪稳定。",
+      "description": "你情绪平和，能够包容不同观点，社交中给人放松感。你不喜欢对抗，擅长用温柔和耐心化解矛盾。",
+      "weights": {
+        "influence": 0.08,
+        "innovation": 0.06,
+        "execution": 0.12,
+        "empathy": 0.4,
+        "values": 0.34
+      }
+    },
+    {
+      "id": "whale",
+      "title": "鲸",
+      "summary": "深沉哲思，包容且有力量。",
+      "description": "你思考深远，拥有宽广的情感容量。你既能融入群体又保持独立深度，在安静中积蓄力量并影响他人。",
+      "weights": {
+        "influence": 0.12,
+        "innovation": 0.24,
+        "execution": 0.12,
+        "empathy": 0.32,
+        "values": 0.2
+      }
+    },
+    {
+      "id": "parrot",
+      "title": "鹦鹉",
+      "summary": "社交表演，活泼好奇。",
+      "description": "你表达欲强，喜欢互动与分享，天生具备带动气氛的能力。你善于学习新信息，用幽默与热情连接他人。",
+      "weights": {
+        "influence": 0.32,
+        "innovation": 0.28,
+        "execution": 0.08,
+        "empathy": 0.22,
+        "values": 0.1
+      }
+    },
+    {
+      "id": "octopus",
+      "title": "章鱼",
+      "summary": "多面智者，灵活适应。",
+      "description": "你拥有强大的解决问题能力，思维灵活且擅长变通。你能在多任务中保持秩序，用创造力化解复杂情境。",
+      "weights": {
+        "influence": 0.1,
+        "innovation": 0.36,
+        "execution": 0.32,
+        "empathy": 0.08,
+        "values": 0.14
+      }
+    },
+    {
+      "id": "shark",
+      "title": "鲨鱼",
+      "summary": "目标导向，行动高效。",
+      "description": "你追求明确的目标和结果，行动果断且执行力强。你偏好简单直接的关系，专注向前，不被杂音干扰。",
+      "weights": {
+        "influence": 0.26,
+        "innovation": 0.12,
+        "execution": 0.42,
+        "empathy": 0.04,
+        "values": 0.16
+      }
+    },
+    {
+      "id": "dolphin",
+      "title": "海豚",
+      "summary": "合作探索，乐观游戏心。",
+      "description": "你重视团队协作，善于通过互动解决问题。你保持好奇与玩心，把挑战当作探索，让伙伴更愿意与你并肩。",
+      "weights": {
+        "influence": 0.24,
+        "innovation": 0.24,
+        "execution": 0.12,
+        "empathy": 0.32,
+        "values": 0.08
+      }
+    },
+    {
+      "id": "raccoon",
+      "title": "浣熊",
+      "summary": "机灵应变，爱尝新路线。",
+      "description": "你动手能力强，擅长在规则中找到新路径。你灵活大胆，愿意尝试不同方法，把困难转化为可玩的挑战。",
+      "weights": {
+        "influence": 0.18,
+        "innovation": 0.3,
+        "execution": 0.26,
+        "empathy": 0.08,
+        "values": 0.18
+      }
+    },
+    {
+      "id": "meerkat",
+      "title": "猫鼬",
+      "summary": "警戒守望，重视家庭协作。",
+      "description": "你责任感强，习惯为团队安全把关并提醒风险。你重视群体协作，愿意为了共同目标承担守望与守护。",
+      "weights": {
+        "influence": 0.2,
+        "innovation": 0.12,
+        "execution": 0.34,
+        "empathy": 0.2,
+        "values": 0.14
+      }
+    }
+  ],
+  "fruit": [
+    {
+      "id": "strawberry",
+      "name": "草莓",
+      "tagline": "甜美细腻，注重细节",
+      "description": "你像草莓一样外柔内韧，注重生活仪式感，擅长在细微处发现美丽与价值。你以温柔却坚定的方式完成任务，让团队安心，同时也要替自己设定情绪边界与呼吸节奏。",
+      "strengths": [
+        "细腻敏感，审美独特",
+        "温柔体贴，懂得照顾别人",
+        "追求品质，热衷精致表达"
+      ],
+      "growth": [
+        "容易受外界评价影响，需要建立情绪边界",
+        "在表达诉求时可再直接果断一些"
+      ],
+      "career": [
+        "设计 / 艺术相关岗位",
+        "心理咨询、品牌顾问"
+      ],
+      "advice": [
+        "培养心理韧性，管理情绪能量",
+        "给自己留出放松与疗愈的仪式感"
+      ],
+      "weights": {
+        "empathy": 0.35,
+        "execution": 0.2,
+        "values": 0.2,
+        "influence": 0.15,
+        "innovation": 0.1
+      },
+      "theme": {
+        "primary": "#f472b6",
+        "secondary": "#fce7f3"
+      }
+    },
+    {
+      "id": "orange",
+      "name": "橙子",
+      "tagline": "阳光活力，乐观正能量",
+      "description": "你像橙子一样明亮热烈，总能把活力和乐观传递给身边伙伴。你享受社交舞台，善于连接资源并激活团队，也要在热闹之外留给自己沉淀与思考的空间。",
+      "strengths": [
+        "外向自信，感染力强",
+        "擅长激励与组织",
+        "乐观稳定，面对变化从容"
+      ],
+      "growth": [
+        "容易忽略细节，建议配备规划清单",
+        "注意平衡他人期待与自我需求"
+      ],
+      "career": [
+        "市场 / 公关 / 主持",
+        "团队管理、业务拓展"
+      ],
+      "advice": [
+        "保持运动与社交能让你持续发光",
+        "培养深度聆听，帮助你看见更多可能"
+      ],
+      "weights": {
+        "influence": 0.4,
+        "innovation": 0.2,
+        "empathy": 0.15,
+        "execution": 0.15,
+        "values": 0.1
+      },
+      "theme": {
+        "primary": "#fb923c",
+        "secondary": "#fff1df"
+      }
+    },
+    {
+      "id": "watermelon",
+      "name": "西瓜",
+      "tagline": "爽朗大方，善于分享",
+      "description": "你像西瓜般爽朗大方，外表豪迈内心细腻。你乐于分享资源，重视团队和谐，关键时刻能稳住局面，同时也别忘了适时表达个人情绪与柔软需求。",
+      "strengths": [
+        "真诚坦率，讲究公平",
+        "执行力强，愿意承担",
+        "遇事冷静，擅长统筹"
+      ],
+      "growth": [
+        "偶尔会忽略自己的感受，需要适度表达",
+        "面对私密议题可更细腻柔和"
+      ],
+      "career": [
+        "运营管理、项目统筹",
+        "社区 / 社群运营"
+      ],
+      "advice": [
+        "保持节奏感，避免过度消耗",
+        "练习在倾听中提出更具引导力的问题"
+      ],
+      "weights": {
+        "influence": 0.25,
+        "execution": 0.3,
+        "empathy": 0.2,
+        "values": 0.15,
+        "innovation": 0.1
+      },
+      "theme": {
+        "primary": "#f97373",
+        "secondary": "#ffe4e4"
+      }
+    },
+    {
+      "id": "grape",
+      "name": "葡萄",
+      "tagline": "深度感受，善有内涵",
+      "description": "你像葡萄一样多层次有韵味，擅长捕捉情绪细节与深层动机。你在复杂关系中保持敏锐洞察，能为团队提供清晰判断，但需要练习在思考之外更快行动。",
+      "strengths": [
+        "洞察力强，情绪智商高",
+        "善于连接资源",
+        "学习能力扎实"
+      ],
+      "growth": [
+        "可能过度思考，需练习及时行动",
+        "适度区分他人情绪与自我感受"
+      ],
+      "career": [
+        "研究 / 数据分析",
+        "心理、咨询、HRBP"
+      ],
+      "advice": [
+        "以写作 / 冥想帮助沉淀思绪",
+        "建立界限，保护能量"
+      ],
+      "weights": {
+        "empathy": 0.35,
+        "values": 0.2,
+        "innovation": 0.15,
+        "execution": 0.15,
+        "influence": 0.15
+      },
+      "theme": {
+        "primary": "#a855f7",
+        "secondary": "#ede9fe"
+      }
+    },
+    {
+      "id": "blueberry",
+      "name": "蓝莓",
+      "tagline": "独特个性，外柔内刚",
+      "description": "你像蓝莓一样安静而有力，拥有鲜明审美和独立观点。你善于挖掘新趋势并守护自己的节奏，也要允许更多协作，把灵感持续转化为落地作品。",
+      "strengths": [
+        "独立思考，保持创意",
+        "情绪稳定，表达克制",
+        "能够兼顾艺术与逻辑"
+      ],
+      "growth": [
+        "沟通时可再开放，避免自我设限",
+        "允许他人协助，释放压力"
+      ],
+      "career": [
+        "内容创意、策展",
+        "产品 / 体验设计"
+      ],
+      "advice": [
+        "记录灵感，建立创作档案",
+        "与志同者交流汲取能量"
+      ],
+      "weights": {
+        "innovation": 0.35,
+        "values": 0.2,
+        "empathy": 0.15,
+        "execution": 0.15,
+        "influence": 0.15
+      },
+      "theme": {
+        "primary": "#3b82f6",
+        "secondary": "#e0f2fe"
+      }
+    },
+    {
+      "id": "banana",
+      "name": "香蕉",
+      "tagline": "温暖贴心，乐于助人",
+      "description": "你像香蕉一样柔和包容，是大家信任的托举者。你擅长照顾情绪与维持稳定节奏，乐于分享经验，也需要明确个人目标并学会拒绝过度的情感劳动。",
+      "strengths": [
+        "耐心细致，乐于协作",
+        "善解人意，沟通亲和",
+        "执行稳定，值得信赖"
+      ],
+      "growth": [
+        "别忽视个人目标，适时表达诉求",
+        "练习拒绝不合理的情感劳动"
+      ],
+      "career": [
+        "客户运营、用户关怀",
+        "行政 / HR 协调岗位",
+        "教育培训、社区服务"
+      ],
+      "advice": [
+        "建立自我奖励系统",
+        "保持运动或松弛活动释放压力"
+      ],
+      "weights": {
+        "empathy": 0.4,
+        "execution": 0.2,
+        "values": 0.2,
+        "influence": 0.1,
+        "innovation": 0.1
+      },
+      "theme": {
+        "primary": "#facc15",
+        "secondary": "#fef9c3"
+      }
+    },
+    {
+      "id": "apple",
+      "name": "苹果",
+      "tagline": "经典沉稳，值得信赖",
+      "description": "你像苹果一样沉稳可靠，重视秩序与承诺。你擅长搭建长期关系并用务实方式解决问题，但偶尔也要给自己松动空间，尝试更轻松的情绪表达。",
+      "strengths": [
+        "责任心强，执行有序",
+        "价值观明确，守信守诺",
+        "善于总结复盘"
+      ],
+      "growth": [
+        "偶尔不必过度谨慎，给自己试错空间",
+        "学会用更轻松的方式表达情绪"
+      ],
+      "career": [
+        "项目管理、供应链",
+        "金融法务、企业运营"
+      ],
+      "advice": [
+        "设置阶段性目标避免疲惫",
+        "在高质量关系中获得支持"
+      ],
+      "weights": {
+        "values": 0.35,
+        "execution": 0.3,
+        "influence": 0.15,
+        "empathy": 0.1,
+        "innovation": 0.1
+      },
+      "theme": {
+        "primary": "#f87171",
+        "secondary": "#fee2e2"
+      }
+    },
+    {
+      "id": "peach",
+      "name": "桃子",
+      "tagline": "温柔浪漫，沉浸魅力",
+      "description": "你像桃子一样柔软浪漫，关注关系温度与氛围营造。你善于用美感打造体验，真诚表达情绪，同时需要坚持立场并让灵感落地为可执行计划。",
+      "strengths": [
+        "感知力强，富有想象",
+        "善于营造浪漫体验",
+        "沟通圆润，情感表达真挚"
+      ],
+      "growth": [
+        "避免过度迎合，保持自我立场",
+        "设定可衡量的目标帮助落地"
+      ],
+      "career": [
+        "品牌内容、空间美学",
+        "文化创意、体验策划"
+      ],
+      "advice": [
+        "记录灵感并转换为作品",
+        "练习清晰表达边界"
+      ],
+      "weights": {
+        "empathy": 0.35,
+        "innovation": 0.2,
+        "values": 0.2,
+        "influence": 0.15,
+        "execution": 0.1
+      },
+      "theme": {
+        "primary": "#fda4af",
+        "secondary": "#ffe4e6"
+      }
+    },
+    {
+      "id": "mango",
+      "name": "芒果",
+      "tagline": "热情外向，灵感充沛",
+      "description": "你像芒果一样热烈丰盈，灵感与好奇心总在路上。你喜欢挑战与舞台，具备天然主导力，需要用结构化方法管理精力，兼顾长远规划与当下冲动。",
+      "strengths": [
+        "学习快、反应快",
+        "擅长开拓新项目",
+        "充满感染力，激发团队热情"
+      ],
+      "growth": [
+        "易分心，需要结构化方法",
+        "注意兼顾长期规划与当下冲动"
+      ],
+      "career": [
+        "创新业务、创业团队",
+        "内容创作、主持 / 培训"
+      ],
+      "advice": [
+        "用视觉化工具管理灵感",
+        "保持规律作息提升持续力"
+      ],
+      "weights": {
+        "influence": 0.35,
+        "innovation": 0.25,
+        "empathy": 0.15,
+        "execution": 0.15,
+        "values": 0.1
+      },
+      "theme": {
+        "primary": "#fb923c",
+        "secondary": "#fff3d8"
+      }
+    },
+    {
+      "id": "lemon",
+      "name": "柠檬",
+      "tagline": "清醒理性，善于洞察问题",
+      "description": "你像柠檬一样清醒克制，善于洞察问题本质并提出改良方案。你追求纯粹效果，坚持原则，也要在表达建议时注入更多温度与耐心。",
+      "strengths": [
+        "判断迅速，思维敏锐",
+        "敢于表达真实观点",
+        "擅长建立规范"
+      ],
+      "growth": [
+        "表达建议时可更柔和",
+        "适度关注情感层面，增进合作氛围"
+      ],
+      "career": [
+        "产品 / 策略 / 咨询",
+        "风控、审计、质量管理"
+      ],
+      "advice": [
+        "用同理沟通争取更多支持",
+        "给自己设置“放空时段”释放紧绷"
+      ],
+      "weights": {
+        "values": 0.3,
+        "innovation": 0.25,
+        "execution": 0.2,
+        "influence": 0.15,
+        "empathy": 0.1
+      },
+      "theme": {
+        "primary": "#facc15",
+        "secondary": "#fef9c3"
+      }
+    },
+    {
+      "id": "cherry",
+      "name": "樱桃",
+      "tagline": "精致优雅，注重品质",
+      "description": "你像樱桃一样精致优雅，对细节和品质有着近乎苛刻的追求。你擅长打造高端体验与形象，也要允许自己偶尔不完美，在变化中保持弹性。",
+      "strengths": [
+        "审美力强，表达高级",
+        "做事严谨，追求极致",
+        "擅长打造高端体验"
+      ],
+      "growth": [
+        "完美主义可能带来压力",
+        "尝试更灵活地接受变化"
+      ],
+      "career": [
+        "时尚 / 美妆 / 高端品牌",
+        "艺术策展、珠宝设计"
+      ],
+      "advice": [
+        "允许“80 分”方案存在",
+        "通过瑜伽 / 冥想保持松弛"
+      ],
+      "weights": {
+        "execution": 0.25,
+        "empathy": 0.2,
+        "innovation": 0.2,
+        "values": 0.2,
+        "influence": 0.15
+      },
+      "theme": {
+        "primary": "#f43f5e",
+        "secondary": "#ffe4e8"
+      }
+    },
+    {
+      "id": "durian",
+      "name": "榴莲",
+      "tagline": "独特锋芒，个性鲜明",
+      "description": "你像榴莲一样个性鲜明，勇于表达立场，拥有不可替代的专业锋芒。你能迅速聚焦重点并推动突破，同时在合作中需要更多同理与信任建立。",
+      "strengths": [
+        "观点鲜明，有话直说",
+        "专注力强，钻研能力高",
+        "自带话题度，影响力大"
+      ],
+      "growth": [
+        "注意兼顾他人感受，减少锋利感",
+        "在合作中建立信任共识"
+      ],
+      "career": [
+        "专家顾问、技术研发",
+        "意见领袖、自媒体"
+      ],
+      "advice": [
+        "用故事化表达帮助他人理解",
+        "学会适时示弱，拉近距离"
+      ],
+      "weights": {
+        "values": 0.3,
+        "influence": 0.25,
+        "innovation": 0.2,
+        "execution": 0.15,
+        "empathy": 0.1
+      },
+      "theme": {
+        "primary": "#d97706",
+        "secondary": "#fef3c7"
+      }
+    },
+    {
+      "id": "pear",
+      "name": "梨",
+      "tagline": "温和收敛，内心坚韧",
+      "description": "你像梨一样温润含蓄，外柔内韧。你稳步推进事务，擅长调和矛盾并守护秩序，也别忘了主动展示成果，提升自己的存在感与影响力。",
+      "strengths": [
+        "耐心持久，可靠可信",
+        "善于调解矛盾",
+        "逻辑与感性平衡"
+      ],
+      "growth": [
+        "别把需求埋太深，适时表达",
+        "尝试更多舞台，训练外向表达"
+      ],
+      "career": [
+        "流程 / 法务 / 合规",
+        "心理辅导、行政支持"
+      ],
+      "advice": [
+        "记录成功经验建立自信",
+        "通过兴趣社群扩展声量"
+      ],
+      "weights": {
+        "values": 0.3,
+        "empathy": 0.25,
+        "execution": 0.2,
+        "influence": 0.15,
+        "innovation": 0.1
+      },
+      "theme": {
+        "primary": "#fde68a",
+        "secondary": "#fff7d6"
+      }
+    },
+    {
+      "id": "lychee",
+      "name": "荔枝",
+      "tagline": "外表华美，内在珍贵",
+      "description": "你像荔枝一样外热内柔，情感表达真挚而富有仪式感。你喜欢制造惊喜、链接人心，同时要学会在浪漫中控制节奏，理性评估投入与回报。",
+      "strengths": [
+        "热情真挚，感染力强",
+        "善于表达情绪和故事",
+        "洞察人心，制造惊喜"
+      ],
+      "growth": [
+        "情绪起伏大时需自我安顿",
+        "注意理性评估风险与回报"
+      ],
+      "career": [
+        "内容创作、直播 / 主持",
+        "文化项目、体验活动"
+      ],
+      "advice": [
+        "建立长期练习提升专业度",
+        "让身边人了解你的情绪节奏"
+      ],
+      "weights": {
+        "influence": 0.3,
+        "empathy": 0.25,
+        "innovation": 0.2,
+        "values": 0.15,
+        "execution": 0.1
+      },
+      "theme": {
+        "primary": "#f472b6",
+        "secondary": "#fce7f3"
+      }
+    },
+    {
+      "id": "longan",
+      "name": "龙眼",
+      "tagline": "甜厚内敛，温暖人心",
+      "description": "你像龙眼一样甜厚内敛，是团队里的情绪支点。你耐心倾听、稳健执行，乐于陪伴，却也要练习分担责任，让自己的声音被更多人听见。",
+      "strengths": [
+        "共情力强，包容度高",
+        "有耐心，能把项目做细",
+        "可靠守信，照顾团队"
+      ],
+      "growth": [
+        "不要把所有责任揽在自己身上",
+        "适度展示个人观点和成就"
+      ],
+      "career": [
+        "客户运营、社区运营",
+        "教育、医疗、公益组织"
+      ],
+      "advice": [
+        "定期输出总结巩固影响力",
+        "学会向外索取资源"
+      ],
+      "weights": {
+        "empathy": 0.4,
+        "execution": 0.2,
+        "values": 0.2,
+        "influence": 0.1,
+        "innovation": 0.1
+      },
+      "theme": {
+        "primary": "#fbbf24",
+        "secondary": "#fff7d1"
+      }
+    },
+    {
+      "id": "mangosteen",
+      "name": "山竹",
+      "tagline": "神秘沉静，内敛智慧",
+      "description": "你像山竹一样沉静深邃，在复杂局势中保持清醒判断。你善于推演本质、守住高标准，但也要分享思考路径，让伙伴理解并参与合作。",
+      "strengths": [
+        "观察入微，善于推演",
+        "自省能力强",
+        "保持高标准与洞察"
+      ],
+      "growth": [
+        "适度分享过程，避免信息不对称",
+        "培养信任圈，减少孤军奋战"
+      ],
+      "career": [
+        "战略规划、研究咨询",
+        "心理 / 哲学 / 文化研究"
+      ],
+      "advice": [
+        "以写作或输出巩固影响力",
+        "保证作息与心灵疗愈时间"
+      ],
+      "weights": {
+        "values": 0.3,
+        "innovation": 0.25,
+        "empathy": 0.2,
+        "execution": 0.15,
+        "influence": 0.1
+      },
+      "theme": {
+        "primary": "#6d28d9",
+        "secondary": "#f3e8ff"
+      }
+    },
+    {
+      "id": "coconut",
+      "name": "椰子",
+      "tagline": "外坚内柔，独立自洽",
+      "description": "你像椰子一样外坚内柔，拥有明确价值观并能独立前行。你自律果断，能在独处中完成高质量工作，同时别忘了培养柔和而真诚的沟通方式。",
+      "strengths": [
+        "自律、执行力强",
+        "独自推进能力突出",
+        "原则性强，底线清晰"
+      ],
+      "growth": [
+        "适度寻求协作，提升效率",
+        "在表达方式上多些温度"
+      ],
+      "career": [
+        "远程 / 自由职业者",
+        "技术研发、写作"
+      ],
+      "advice": [
+        "设置定期社交保证链接",
+        "练习情绪分享，增进亲密关系"
+      ],
+      "weights": {
+        "values": 0.35,
+        "execution": 0.25,
+        "innovation": 0.15,
+        "empathy": 0.15,
+        "influence": 0.1
+      },
+      "theme": {
+        "primary": "#65a30d",
+        "secondary": "#ecfccb"
+      }
+    },
+    {
+      "id": "kiwi",
+      "name": "猕猴桃",
+      "tagline": "活力轻盈，适应力强",
+      "description": "你像猕猴桃一样朴实灵动，适应力极强。你能够迅速融入新环境并找到机会，但要给长期目标更多耐心，避免把精力过度分散在零散尝试上。",
+      "strengths": [
+        "学习敏捷，跨界能力强",
+        "善于融入不同团队",
+        "乐观幽默，缓解紧张氛围"
+      ],
+      "growth": [
+        "给长期目标更多耐心",
+        "避免过度分散，聚焦关键项目"
+      ],
+      "career": [
+        "产品运营、跨境项目",
+        "旅行、内容、教育"
+      ],
+      "advice": [
+        "定期复盘，梳理方法论",
+        "保持运动和旅行获取灵感"
+      ],
+      "weights": {
+        "innovation": 0.3,
+        "influence": 0.2,
+        "execution": 0.2,
+        "empathy": 0.15,
+        "values": 0.15
+      },
+      "theme": {
+        "primary": "#84cc16",
+        "secondary": "#e6f9c9"
+      }
+    },
+    {
+      "id": "pomegranate",
+      "name": "石榴",
+      "tagline": "多元包容，擅长协作",
+      "description": "你像石榴一样多元包容，擅长协调多方资源打造共赢方案。你有强烈的团队意识与公共精神，也要学会授权和自我展示，避免长期过度耗能。",
+      "strengths": [
+        "组织力与协作力并存",
+        "沟通耐心，善于整合",
+        "关注公共价值"
+      ],
+      "growth": [
+        "警惕过度妥协导致疲惫",
+        "给个人成就更多展示空间"
+      ],
+      "career": [
+        "项目管理、社会创新",
+        "社区与平台运营"
+      ],
+      "advice": [
+        "学会授权，建立备份团队",
+        "用数据呈现成果提升可见度"
+      ],
+      "weights": {
+        "execution": 0.25,
+        "empathy": 0.25,
+        "values": 0.2,
+        "influence": 0.2,
+        "innovation": 0.1
+      },
+      "theme": {
+        "primary": "#f43f5e",
+        "secondary": "#ffe5ec"
+      }
+    },
+    {
+      "id": "hami",
+      "name": "哈密瓜",
+      "tagline": "活力开朗，能量满格",
+      "description": "你像哈密瓜一样甜爽开朗，能量满格地把快乐传递出去。你行动快速、敢于尝试新方式，但需设置节奏节点，沉淀方法论以保持长期竞争力。",
+      "strengths": [
+        "反应快，效率高",
+        "乐观外向，容易拉近关系",
+        "敢于承担挑战"
+      ],
+      "growth": [
+        "保持节奏，避免三分钟热度",
+        "深入打磨专业度，形成壁垒"
+      ],
+      "career": [
+        "销售、BD、直播",
+        "活动策划、新媒体"
+      ],
+      "advice": [
+        "为自己设置阶段检查点",
+        "学会复盘，累积方法论"
+      ],
+      "weights": {
+        "influence": 0.35,
+        "innovation": 0.2,
+        "execution": 0.2,
+        "empathy": 0.15,
+        "values": 0.1
+      },
+      "theme": {
+        "primary": "#fbbf24",
+        "secondary": "#fff5d7"
+      }
+    }
+  ]
+}

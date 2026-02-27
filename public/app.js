@@ -7,6 +7,7 @@ const state = {
   dimensionDetails: [],
   metadata: null,
   adConfig: null,
+  archetypeLibrary: null,
   answers: new Map(),
   currentIndex: 0,
   result: null,
@@ -56,6 +57,11 @@ const personaTags = document.getElementById('persona-tags');
 const personaStrengths = document.getElementById('persona-strengths');
 const personaGrowth = document.getElementById('persona-growth');
 const personaPlan = document.getElementById('persona-plan');
+const archetypeSection = document.getElementById('archetype-section');
+const archetypeTitle = document.getElementById('archetype-title');
+const archetypeLead = document.getElementById('archetype-lead');
+const archetypeHighlight = document.getElementById('archetype-highlight');
+const archetypeRankings = document.getElementById('archetype-rankings');
 const reportMeta = document.getElementById('report-meta');
 const reportTableBody = document.getElementById('report-table-body');
 
@@ -86,6 +92,51 @@ const STATIC_SUITE_IDS = [
   'milu-pro-100',
   'bdsm-60',
 ];
+const ARCHETYPE_SUITE_IDS = new Set(['animal-personality', 'fruit-personality']);
+const ANIMAL_EMOJI_MAP = {
+  狗: '🐶',
+  猫: '🐱',
+  狼: '🐺',
+  狐: '🦊',
+  狮: '🦁',
+  熊: '🐻',
+  兔: '🐰',
+  仓鼠: '🐹',
+  天鹅: '🦢',
+  鹿: '🦌',
+  鹰: '🦅',
+  鸟鸮: '🦉',
+  水豚: '🦫',
+  鲸: '🐋',
+  鹦鹉: '🦜',
+  章鱼: '🐙',
+  鲨鱼: '🦈',
+  海豚: '🐬',
+  浣熊: '🦝',
+  猫鼬: '🐾',
+};
+const FRUIT_EMOJI_MAP = {
+  草莓: '🍓',
+  橙子: '🍊',
+  西瓜: '🍉',
+  葡萄: '🍇',
+  蓝莓: '🫐',
+  香蕉: '🍌',
+  苹果: '🍎',
+  桃子: '🍑',
+  芒果: '🥭',
+  柠檬: '🍋',
+  樱桃: '🍒',
+  榴莲: '🟡',
+  梨: '🍐',
+  荔枝: '🟠',
+  龙眼: '🟤',
+  山竹: '🟣',
+  椰子: '🥥',
+  猕猴桃: '🥝',
+  石榴: '❤️',
+  哈密瓜: '🍈',
+};
 
 function suiteCategoryLabel(category) {
   if (category === 'personality') {
@@ -206,6 +257,36 @@ async function fetchJson(url) {
     throw new Error(`${url} 请求失败 (${resp.status})`);
   }
   return resp.json();
+}
+
+function archetypeTypeBySuiteId(suiteId) {
+  if (suiteId === 'animal-personality') {
+    return 'animal';
+  }
+  if (suiteId === 'fruit-personality') {
+    return 'fruit';
+  }
+  return null;
+}
+
+function archetypeEmoji(type, name) {
+  if (type === 'animal') {
+    return ANIMAL_EMOJI_MAP[name] || '🧭';
+  }
+  if (type === 'fruit') {
+    return FRUIT_EMOJI_MAP[name] || '🍀';
+  }
+  return '🧩';
+}
+
+async function fetchArchetypeLibrary() {
+  try {
+    const payload = await fetchJson('archetypes.json');
+    state.archetypeLibrary = payload;
+  } catch (error) {
+    console.warn('原型库加载失败，动物/水果图鉴将使用降级模式。', error);
+    state.archetypeLibrary = null;
+  }
 }
 
 async function loadStaticSuites() {
@@ -629,15 +710,182 @@ async function submitAnswers() {
   state.result = resultPayload.data;
 }
 
+function dimensionRatioMap(result) {
+  const map = Object.create(null);
+  (result.dimensions || []).forEach((dim) => {
+    map[dim.key] = Math.max(0, Math.min(1, Number(dim.percentage || 0) / 100));
+  });
+  return map;
+}
+
+function scoreArchetypes(archetypes, ratioMap, dimensionKeys) {
+  return (archetypes || [])
+    .map((archetype, index) => {
+      const score = (dimensionKeys || []).reduce((acc, key) => {
+        const weight = Number(archetype.weights?.[key]) || 0;
+        return acc + (Number(ratioMap[key]) || 0) * weight;
+      }, 0);
+      return {
+        archetype,
+        score,
+        index,
+      };
+    })
+    .sort((a, b) => {
+      if (b.score !== a.score) {
+        return b.score - a.score;
+      }
+      return a.index - b.index;
+    });
+}
+
+function resolveArchetypeMatch(result) {
+  const suiteId = result.suite?.id || state.suiteId;
+  const type = archetypeTypeBySuiteId(suiteId);
+  if (!type || !state.archetypeLibrary) {
+    return null;
+  }
+
+  const archetypes = type === 'animal'
+    ? state.archetypeLibrary.animal
+    : state.archetypeLibrary.fruit;
+  const dimensionKeys = state.archetypeLibrary.dimensionKeys || ['influence', 'innovation', 'execution', 'empathy', 'values'];
+  const rankings = scoreArchetypes(archetypes, dimensionRatioMap(result), dimensionKeys);
+  if (!rankings.length) {
+    return null;
+  }
+
+  return {
+    type,
+    best: rankings[0].archetype,
+    rankings: rankings.map((item) => ({
+      archetype: item.archetype,
+      score: item.score,
+      scorePercent: Math.round(item.score * 1000) / 10,
+    })),
+  };
+}
+
+function buildArchetypePersona(result, match) {
+  if (!match) {
+    return result.typicalPersona;
+  }
+
+  const topDims = sortedDimensions(result.dimensions || []).slice(0, 3);
+  if (match.type === 'animal') {
+    const animal = match.best;
+    return {
+      title: `${animal.title}型人格画像`,
+      summary: animal.description,
+      tags: [
+        animal.summary,
+        `主轴维度：${topDims.map((item) => item.name).join('、')}`,
+      ],
+      strengths: [
+        `你在 ${topDims[0]?.name || '核心维度'} 的表现最突出，行为风格与「${animal.title}」原型高度一致。`,
+        '你在关系与任务中倾向形成稳定节奏，能快速识别场景主线并持续推进。',
+      ],
+      growth: [
+        `当 ${topDims[0]?.name || '主轴维度'} 过强时，容易压缩其他维度空间，建议保留弹性协商窗口。`,
+        '将高压场景拆分为短回合，既能保留表现力，也能降低沟通磨损。',
+      ],
+      explorationPlan: [
+        '先巩固当前高分优势场景，再补齐一个低分维度。',
+        '每次互动后复盘“哪一刻最顺畅/最卡顿”，持续校准节奏。',
+      ],
+    };
+  }
+
+  const fruit = match.best;
+  return {
+    title: `${fruit.name}型人格画像`,
+    summary: fruit.description,
+    tags: [
+      fruit.tagline || '水果塑原型',
+      `主轴维度：${topDims.map((item) => item.name).join('、')}`,
+    ],
+    strengths: Array.isArray(fruit.strengths) ? fruit.strengths : [],
+    growth: Array.isArray(fruit.growth) ? fruit.growth : [],
+    explorationPlan: [
+      ...(Array.isArray(fruit.career) ? fruit.career.map((item) => `职业场景：${item}`) : []),
+      ...(Array.isArray(fruit.advice) ? fruit.advice : []),
+    ],
+  };
+}
+
+function customDeepAnalysis(dim) {
+  const ratio = Number(dim.percentage || 0);
+  const tone = ratio >= 75
+    ? '高活跃'
+    : ratio >= 50
+      ? '稳定活跃'
+      : ratio >= 25
+        ? '保守活跃'
+        : '低活跃';
+  const guideByKey = {
+    influence: {
+      personality: '你在社交与表达中重视场域掌控，擅长把话题推向目标。',
+      communication: '先说结论再补充细节，能让你的影响力更高效落地。',
+      risk: '若长期只输出不倾听，关系信任会被慢慢稀释。',
+      development: '保留 20% 的提问时间，能显著提升协作质量。',
+    },
+    innovation: {
+      personality: '你在新问题面前反应快，愿意从旧框架中跳出来找新路径。',
+      communication: '提出新想法时同步给出最小可行版本，团队更容易跟进。',
+      risk: '创意过密会导致执行分散，优先级容易失焦。',
+      development: '固定“一周一复盘”机制，把灵感沉淀成稳定方法。',
+    },
+    execution: {
+      personality: '你对行动闭环敏感，偏好计划清晰、节奏可控的推进方式。',
+      communication: '把“目标、截止时间、责任人”一次说清，减少反复确认。',
+      risk: '推进速度过快时，身边人可能跟不上你的节奏。',
+      development: '关键节点加入状态检查，能兼顾效率与团队感受。',
+    },
+    empathy: {
+      personality: '你对他人情绪线索敏锐，擅长在复杂关系中维护氛围稳定。',
+      communication: '在回应观点前先回应感受，会显著提升对方配合度。',
+      risk: '过度承接他人情绪会带来自我消耗。',
+      development: '为自己设置情绪边界时段，让共情能力可持续输出。',
+    },
+    values: {
+      personality: '你对原则与承诺的敏感度高，做判断时更看重长期一致性。',
+      communication: '先对齐底线与规则，再讨论执行细节，能降低后续冲突。',
+      risk: '标准过硬时，可能降低对变化情境的容纳度。',
+      development: '在坚持原则的前提下保留试错空间，能提升适应力。',
+    },
+  };
+
+  const guide = guideByKey[dim.key] || {
+    personality: '该维度体现出你的稳定行为风格。',
+    communication: '建议先确认目标、边界与节奏。',
+    risk: '忽略中途确认会放大预期偏差。',
+    development: '采用小步迭代并复盘，可持续提升体验质量。',
+  };
+
+  return {
+    summary: `${dim.name}处于${tone}区间（${ratio}%），该特征会直接影响你的互动节奏与决策方式。`,
+    ...guide,
+    associationHint: '该套题采用原型权重匹配，维度分布直接映射到原型结果。',
+  };
+}
+
 function renderSummary(result, sortedDims) {
   const top = sortedDims[0];
+  const archetypeMatch = resolveArchetypeMatch(result);
   const highCount = sortedDims.filter((dim) => dim.percentage >= 75).length;
   const max = sortedDims[0]?.percentage ?? 0;
   const min = sortedDims[sortedDims.length - 1]?.percentage ?? 0;
   const spread = max - min;
 
   summaryTotal.textContent = `${result.totalScore}`;
-  summaryTop.textContent = top ? `${top.name} (${top.key}) · ${top.percentage}%` : '-';
+  if (archetypeMatch) {
+    const name = archetypeMatch.type === 'animal'
+      ? archetypeMatch.best.title
+      : archetypeMatch.best.name;
+    summaryTop.textContent = `${name}原型 · ${archetypeMatch.rankings[0].scorePercent}%`;
+  } else {
+    summaryTop.textContent = top ? `${top.name} (${top.key}) · ${top.percentage}%` : '-';
+  }
   summaryHighCount.textContent = `${highCount}`;
   summarySpread.textContent = `${spread}`;
 }
@@ -647,6 +895,28 @@ function renderInsights(result, sortedDims) {
   const lowThree = [...sortedDims].reverse().slice(0, 3).reverse();
   const highCount = sortedDims.filter((dim) => dim.percentage >= 75).length;
   const topAssociation = (result.associationInsights || [])[0];
+  const archetypeMatch = resolveArchetypeMatch(result);
+
+  if (archetypeMatch) {
+    const subjectName = archetypeMatch.type === 'animal'
+      ? archetypeMatch.best.title
+      : archetypeMatch.best.name;
+    const topDimText = topThree.map((dim) => `${dim.name}（${dim.percentage}%）`).join('、');
+    const lowDimText = lowThree.map((dim) => `${dim.name}（${dim.percentage}%）`).join('、');
+
+    const lines = [
+      `你的原型匹配结果为「${subjectName}」，其权重与你在 ${topDimText} 上的表现最贴合。`,
+      `当前高活跃维度数量为 ${highCount} 个，说明你的行为风格已经具备较稳定的主轴。`,
+      `低活跃端集中在 ${lowDimText}，补足这部分会让整体人格表达更立体。`,
+      archetypeMatch.type === 'animal'
+        ? '动物塑结果强调“行为风格 + 关系姿态”，可用于团队协作与亲密沟通场景。'
+        : '水果塑结果强调“优势气质 + 成长建议”，适合用于职业定位与自我发展复盘。',
+      '本报告用于自我理解与沟通参考，不替代心理或医学临床诊断。',
+    ];
+
+    insightList.innerHTML = lines.map((line) => `<li>${safeText(line)}</li>`).join('');
+    return;
+  }
 
   const lines = [
     `高激活重心集中在 ${topThree.map((dim) => `${dim.name}（${dim.percentage}%）`).join('、')}。`,
@@ -685,9 +955,12 @@ function renderTopDimensions(dimensions) {
 function renderDeepAnalysis(dimensions) {
   deepAnalysis.innerHTML = '';
   const topSix = dimensions.slice(0, 6);
+  const useCustomNarrative = ARCHETYPE_SUITE_IDS.has(state.suiteId);
 
   topSix.forEach((dim) => {
-    const analysis = dim.analysis || {};
+    const analysis = useCustomNarrative
+      ? customDeepAnalysis(dim)
+      : (dim.analysis || {});
     const card = document.createElement('article');
     card.className = 'deep-card';
     card.innerHTML = `
@@ -709,6 +982,10 @@ function renderAssociationInsights(result) {
   const insights = result.associationInsights || [];
 
   if (!insights.length) {
+    if (ARCHETYPE_SUITE_IDS.has(state.suiteId)) {
+      associationList.innerHTML = '<p class="assoc-empty">该套题按原题库规则采用直接维度映射，不启用联动修正。</p>';
+      return;
+    }
     associationList.innerHTML = '<p class="assoc-empty">未识别到显著联动，当前画像主要由各维度独立驱动。</p>';
     return;
   }
@@ -726,7 +1003,92 @@ function renderAssociationInsights(result) {
   });
 }
 
-function buildPersonaImageDataUrl(result, persona) {
+function renderArchetypeSection(result) {
+  const match = resolveArchetypeMatch(result);
+  if (!match) {
+    archetypeSection.classList.add('hidden');
+    archetypeTitle.textContent = '原型匹配榜单';
+    archetypeLead.textContent = '';
+    archetypeHighlight.innerHTML = '';
+    archetypeRankings.innerHTML = '';
+    return null;
+  }
+
+  const topName = match.type === 'animal' ? match.best.title : match.best.name;
+  const topEmoji = archetypeEmoji(match.type, topName);
+  archetypeSection.classList.remove('hidden');
+  archetypeTitle.textContent = match.type === 'animal' ? '动物塑图鉴匹配' : '水果塑图鉴匹配';
+  archetypeLead.textContent = match.type === 'animal'
+    ? '结果按原站动物塑权重库实时匹配，排名越靠前表示与你的维度结构越接近。'
+    : '结果按原站水果塑权重库实时匹配，展示你的核心气质、成长空间与职业建议线索。';
+
+  if (match.type === 'animal') {
+    archetypeHighlight.innerHTML = `
+      <h4 class="deep-title">${safeText(topEmoji)} ${safeText(match.best.title)} · ${safeText(match.best.summary)}</h4>
+      <p class="deep-text">${safeText(match.best.description)}</p>
+    `;
+  } else {
+    const strengths = Array.isArray(match.best.strengths) ? match.best.strengths.slice(0, 2).join('、') : '';
+    const growth = Array.isArray(match.best.growth) ? match.best.growth.slice(0, 2).join('、') : '';
+    archetypeHighlight.innerHTML = `
+      <h4 class="deep-title">${safeText(topEmoji)} ${safeText(match.best.name)} · ${safeText(match.best.tagline || '')}</h4>
+      <p class="deep-text">${safeText(match.best.description)}</p>
+      <p class="deep-line"><strong>核心优势</strong>${safeText(strengths)}</p>
+      <p class="deep-line"><strong>成长空间</strong>${safeText(growth)}</p>
+    `;
+  }
+
+  archetypeRankings.innerHTML = match.rankings.map((item, index) => {
+    const name = match.type === 'animal' ? item.archetype.title : item.archetype.name;
+    const desc = match.type === 'animal'
+      ? item.archetype.summary
+      : (item.archetype.tagline || item.archetype.description || '');
+    return `
+      <article class="archetype-item">
+        <div class="archetype-row">
+          <div class="archetype-name">
+            <span class="archetype-rank">${index + 1}</span>
+            ${safeText(archetypeEmoji(match.type, name))} ${safeText(name)}
+          </div>
+          <span class="archetype-score">${item.scorePercent}%</span>
+        </div>
+        <p class="archetype-desc">${safeText(desc)}</p>
+      </article>
+    `;
+  }).join('');
+
+  return match;
+}
+
+function buildPersonaImageDataUrl(result, persona, archetypeMatch = null) {
+  if (archetypeMatch) {
+    const label = archetypeMatch.type === 'animal' ? archetypeMatch.best.title : archetypeMatch.best.name;
+    const emoji = archetypeEmoji(archetypeMatch.type, label);
+    const primary = archetypeMatch.type === 'fruit'
+      ? (archetypeMatch.best.theme?.primary || '#f97316')
+      : '#3b82f6';
+    const secondary = archetypeMatch.type === 'fruit'
+      ? (archetypeMatch.best.theme?.secondary || '#fff7ed')
+      : '#e0edff';
+    const badge = safeText(label);
+    const icon = safeText(emoji);
+    const svg = `
+    <svg xmlns="http://www.w3.org/2000/svg" width="420" height="260" viewBox="0 0 420 260">
+      <defs>
+        <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="${secondary}" />
+          <stop offset="100%" stop-color="${primary}" />
+        </linearGradient>
+      </defs>
+      <rect x="0" y="0" width="420" height="260" rx="20" fill="url(#bg)"/>
+      <rect x="30" y="24" width="360" height="212" rx="18" fill="rgba(255,255,255,0.78)"/>
+      <text x="210" y="128" text-anchor="middle" font-size="84">${icon}</text>
+      <rect x="88" y="176" width="244" height="44" rx="22" fill="${primary}"/>
+      <text x="210" y="204" text-anchor="middle" font-size="20" fill="#fff" font-family="PingFang SC, Noto Sans SC, sans-serif">${badge}</text>
+    </svg>`;
+    return `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(svg)}`;
+  }
+
   const seed = `${persona.title || ''}-${result.topDimensions?.[0]?.key || ''}-${result.totalScore || 0}`;
   const hash = hashString(seed);
   const hue = hash % 360;
@@ -772,14 +1134,15 @@ function buildPersonaImageDataUrl(result, persona) {
 }
 
 function renderPersona(result) {
-  const persona = result.typicalPersona;
+  const archetypeMatch = resolveArchetypeMatch(result);
+  const persona = buildArchetypePersona(result, archetypeMatch);
   if (!persona) {
     personaSection.classList.add('hidden');
     return;
   }
 
   personaSection.classList.remove('hidden');
-  personaImage.src = buildPersonaImageDataUrl(result, persona);
+  personaImage.src = buildPersonaImageDataUrl(result, persona, archetypeMatch);
   personaImage.alt = `${persona.title || '典型画像'}配图`;
   personaTitle.textContent = persona.title || '-';
   personaSummary.textContent = persona.summary || '-';
@@ -1051,13 +1414,16 @@ function renderTableRows(dimensions) {
   dimensions.forEach((dim) => {
     const tr = document.createElement('tr');
     const levelCls = levelClass(dim.level);
+    const summaryText = ARCHETYPE_SUITE_IDS.has(state.suiteId)
+      ? customDeepAnalysis(dim).summary
+      : dim.description;
 
     tr.innerHTML = `
       <td>${safeText(dim.name)} (${safeText(dim.key)})</td>
       <td>${dim.score}/${dim.maxScore}</td>
       <td>${dim.percentage}%</td>
       <td><span class="tag ${levelCls}">${safeText(dim.level)}</span></td>
-      <td>${safeText(dim.description)}</td>
+      <td>${safeText(summaryText)}</td>
     `;
 
     reportTableBody.appendChild(tr);
@@ -1072,6 +1438,7 @@ function renderResult() {
   const localTime = new Date(result.timestamp).toLocaleString();
   reportMeta.textContent = `套题: ${result.suite?.name || state.suiteName} ｜ 结果ID: ${result.id} ｜ 综合分: ${result.totalScore} ｜ 时间: ${localTime}`;
 
+  renderArchetypeSection(result);
   renderSummary(result, sortedDims);
   renderInsights(result, sortedDims);
   renderTopDimensions(topFive);
@@ -1364,7 +1731,7 @@ window.addEventListener('resize', onResize);
 
 (async () => {
   try {
-    await Promise.all([fetchSuites(), fetchAdConfig()]);
+    await Promise.all([fetchSuites(), fetchAdConfig(), fetchArchetypeLibrary()]);
     populateSuiteSelect();
     await loadSuiteData(state.suiteId);
     renderAds();

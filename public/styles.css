@@ -570,6 +570,82 @@ body {
   margin-top: 6px;
 }
 
+.archetype-card {
+  border: 1px solid #dfe1ee;
+  border-radius: 14px;
+  background: linear-gradient(170deg, #f8fbff, #ffffff);
+  padding: 12px;
+}
+
+.archetype-lead {
+  margin: 0;
+  color: #4f5468;
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+.archetype-highlight {
+  margin-top: 10px;
+  border: 1px solid #d6deef;
+  border-radius: 12px;
+  background: #fff;
+  padding: 10px 12px;
+}
+
+.archetype-rankings {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.archetype-item {
+  border: 1px solid #dbe2ee;
+  border-radius: 12px;
+  background: #fff;
+  padding: 10px;
+}
+
+.archetype-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.archetype-rank {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 999px;
+  background: #204f9b;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  margin-right: 6px;
+}
+
+.archetype-name {
+  font-size: 15px;
+  color: #23293a;
+  font-weight: 700;
+}
+
+.archetype-score {
+  font-size: 13px;
+  color: #3f4e70;
+  font-weight: 700;
+}
+
+.archetype-desc {
+  margin: 8px 0 0;
+  font-size: 13px;
+  color: #4d5263;
+  line-height: 1.55;
+}
+
 .table-wrap {
   overflow: auto;
   border: 1px solid #e5ded3;

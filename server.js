@@ -7,6 +7,7 @@ const ROOT = __dirname;
 const PUBLIC_DIR = path.join(ROOT, 'public');
 const SUITES_DIR = path.join(ROOT, 'question-suites');
 const AD_CONFIG_PATH = path.join(ROOT, 'config', 'ad-config.json');
+const LINEAR_SCORE_SUITE_IDS = new Set(['animal-personality', 'fruit-personality']);
 
 const RESULT_STORE = new Map();
 
@@ -1263,6 +1264,7 @@ function calculateResult(suite, answers) {
   }
 
   const grouped = new Map();
+  const useLinearScoring = LINEAR_SCORE_SUITE_IDS.has(suite.id);
 
   for (const question of suite.questions) {
     const dim = question.dimension;
@@ -1298,20 +1300,29 @@ function calculateResult(suite, answers) {
     const linearPercentage = denominator === 0
       ? 100
       : Math.round(((item.score - item.minScore) / denominator) * 100);
-    const basePercentage = nonlinearPercentageFromLinear(linearPercentage);
+    const basePercentage = useLinearScoring
+      ? linearPercentage
+      : nonlinearPercentageFromLinear(linearPercentage);
 
     linearPercentages[key] = linearPercentage;
     basePercentages[key] = basePercentage;
     nameByKey[key] = item.name;
   });
 
-  const associationModelResult = applyAssociationModel(basePercentages, suite.dimensionOrder);
+  const associationModelResult = useLinearScoring
+    ? {
+      adjustedPercentages: { ...basePercentages },
+      contributions: [],
+    }
+    : applyAssociationModel(basePercentages, suite.dimensionOrder);
   const adjustedPercentages = associationModelResult.adjustedPercentages;
-  const associationInsights = buildAssociationInsights(
-    associationModelResult.contributions,
-    adjustedPercentages,
-    nameByKey
-  );
+  const associationInsights = useLinearScoring
+    ? []
+    : buildAssociationInsights(
+      associationModelResult.contributions,
+      adjustedPercentages,
+      nameByKey
+    );
 
   const dimensions = suite.dimensionOrder.map((key) => {
     const item = grouped.get(key);
@@ -1358,15 +1369,22 @@ function calculateResult(suite, answers) {
     associationInsights,
     typicalPersona,
     scoringStandard: {
-      scale: '每题1-5分',
+      scale: '每题取题目内选项分值',
       normalization: '百分比 = (维度总分 - 维度最小分) / (维度最大分 - 维度最小分) * 100',
-      nonlinearScoring: {
-        model: 'sigmoid',
-        slope: SIGMOID_SLOPE,
-        formula: '最终分 = round(100 * (sigmoid(k*(x-50)) - sigmoid(-50k)) / (sigmoid(50k) - sigmoid(-50k)))',
-        note: 'x 为线性归一化分，k 为斜率参数；该变换用于提升中段分辨率并保留 0-100 边界。',
-      },
-      associationModel: '百分比会根据关联维度进行协同修正，模拟单题对多维的间接影响。',
+      nonlinearScoring: useLinearScoring
+        ? {
+          model: 'none',
+          note: '该套题按原题库规则使用线性归一化，不使用非线性变换。',
+        }
+        : {
+          model: 'sigmoid',
+          slope: SIGMOID_SLOPE,
+          formula: '最终分 = round(100 * (sigmoid(k*(x-50)) - sigmoid(-50k)) / (sigmoid(50k) - sigmoid(-50k)))',
+          note: 'x 为线性归一化分，k 为斜率参数；该变换用于提升中段分辨率并保留 0-100 边界。',
+        },
+      associationModel: useLinearScoring
+        ? '该套题未启用维度联动修正，直接使用线性分布。'
+        : '百分比会根据关联维度进行协同修正，模拟单题对多维的间接影响。',
       levelBands: [
         { label: '低偏好', min: 0, max: 24 },
         { label: '中低偏好', min: 25, max: 49 },
