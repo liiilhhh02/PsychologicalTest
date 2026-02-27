@@ -1,15 +1,15 @@
 {
   "id": "milu-basic",
-  "name": "麋鹿性偏好测试（50题简短版）",
+  "name": "麋鹿关系互动测评（50题简短版）",
   "version": "2026.02.25-50",
-  "description": "50题快速版，覆盖23维度，适合首次测评与偏好概览。",
+  "description": "50题快速版，覆盖23维度，适合首次进行关系互动与边界认知梳理。",
   "source": "local upgraded suite",
   "adultContent": true,
   "default": false,
-  "category": "adult",
+  "category": "relationship",
   "priority": 110,
   "tags": [
-    "成人主题",
+    "关系沟通",
     "麋鹿系列"
   ]
 }

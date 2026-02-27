@@ -1,15 +1,15 @@
 {
   "id": "milu-pro-100",
-  "name": "麋鹿性偏好测试（100题详细版）",
+  "name": "麋鹿关系互动测评（100题详细版）",
   "version": "2026.02.25-100",
-  "description": "100题详细版，强调边界协商、情境差异与复盘能力。",
+  "description": "100题详细版，强调边界协同、情境差异与复盘能力。",
   "source": "local upgraded suite",
   "adultContent": true,
   "default": false,
-  "category": "adult",
+  "category": "relationship",
   "priority": 120,
   "tags": [
-    "成人主题",
+    "关系沟通",
     "麋鹿系列"
   ]
 }
