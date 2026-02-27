@@ -377,6 +377,7 @@ function computeStaticResult() {
         score: 0,
         maxScore: 0,
         minScore: 0,
+        questionCount: 0,
       });
     }
 
@@ -385,6 +386,7 @@ function computeStaticResult() {
     bucket.score += score;
     bucket.maxScore += bounds.maxScore;
     bucket.minScore += bounds.minScore;
+    bucket.questionCount += 1;
   });
 
   const dimensions = [...grouped.values()].map((item) => {
@@ -397,7 +399,7 @@ function computeStaticResult() {
       score: item.score,
       maxScore: item.maxScore,
       minScore: item.minScore,
-      questionCount: Math.round(item.maxScore / 5),
+      questionCount: item.questionCount,
       linearPercentage: percentage,
       basePercentage: percentage,
       associationDelta: 0,
