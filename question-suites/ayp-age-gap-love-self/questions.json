@@ -1,0 +1,1082 @@
+[
+  {
+    "id": 1,
+    "dimension": "maturity",
+    "text": "当面对人生重要决定时，我内心渴望有人能给我明确的指引",
+    "options": [
+      {
+        "text": "非常不符合",
+        "score": 1
+      },
+      {
+        "text": "不太符合",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "比较符合",
+        "score": 4
+      },
+      {
+        "text": "非常符合",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "dimension": "maturity",
+    "text": "看到那些跨越年龄差距的恋情，我第一反应是羡慕他们的勇气",
+    "options": [
+      {
+        "text": "非常不符合",
+        "score": 1
+      },
+      {
+        "text": "不太符合",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "比较符合",
+        "score": 4
+      },
+      {
+        "text": "非常符合",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "dimension": "maturity",
+    "text": "在朋友聚会中，我通常更享受与阅历丰富的人深入交谈",
+    "options": [
+      {
+        "text": "非常不符合",
+        "score": 1
+      },
+      {
+        "text": "不太符合",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "比较符合",
+        "score": 4
+      },
+      {
+        "text": "非常符合",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "dimension": "maturity",
+    "text": "当伴侣的想法比我成熟很多时，我感到的是安心踏实",
+    "options": [
+      {
+        "text": "非常不符合",
+        "score": 1
+      },
+      {
+        "text": "不太符合",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "比较符合",
+        "score": 4
+      },
+      {
+        "text": "非常符合",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "dimension": "maturity",
+    "text": "我理想中的爱情更追求细水长流的稳定而非纯真热烈",
+    "options": [
+      {
+        "text": "非常不符合",
+        "score": 1
+      },
+      {
+        "text": "不太符合",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "比较符合",
+        "score": 4
+      },
+      {
+        "text": "非常符合",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "dimension": "maturity",
+    "text": "如果必须选择，我更倾向于平淡安稳但可靠的关系",
+    "options": [
+      {
+        "text": "非常不符合",
+        "score": 1
+      },
+      {
+        "text": "不太符合",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "比较符合",
+        "score": 4
+      },
+      {
+        "text": "非常符合",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "dimension": "maturity",
+    "text": "当遇到挫折时，我更希望伴侣像个导师一样指引我",
+    "options": [
+      {
+        "text": "非常不符合",
+        "score": 1
+      },
+      {
+        "text": "不太符合",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "比较符合",
+        "score": 4
+      },
+      {
+        "text": "非常符合",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "dimension": "maturity",
+    "text": "我认为“在爱情中成长”更多是被对方引领成长",
+    "options": [
+      {
+        "text": "非常不符合",
+        "score": 1
+      },
+      {
+        "text": "不太符合",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "比较符合",
+        "score": 4
+      },
+      {
+        "text": "非常符合",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "dimension": "maturity",
+    "text": "在亲密关系中，我更看重的是长远的可能性而非当下快乐",
+    "options": [
+      {
+        "text": "非常不符合",
+        "score": 1
+      },
+      {
+        "text": "不太符合",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "比较符合",
+        "score": 4
+      },
+      {
+        "text": "非常符合",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "dimension": "maturity",
+    "text": "当发现伴侣在某些方面远比我优秀时，我更多的是欣赏崇拜",
+    "options": [
+      {
+        "text": "非常不符合",
+        "score": 1
+      },
+      {
+        "text": "不太符合",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "比较符合",
+        "score": 4
+      },
+      {
+        "text": "非常符合",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "dimension": "care",
+    "text": "在疲惫的一天结束后，我期待伴侣为我安排好一切",
+    "options": [
+      {
+        "text": "非常不符合",
+        "score": 1
+      },
+      {
+        "text": "不太符合",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "比较符合",
+        "score": 4
+      },
+      {
+        "text": "非常符合",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "dimension": "care",
+    "text": "当我生病时，我希望伴侣寸步不离地照顾我",
+    "options": [
+      {
+        "text": "非常不符合",
+        "score": 1
+      },
+      {
+        "text": "不太符合",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "比较符合",
+        "score": 4
+      },
+      {
+        "text": "非常符合",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "dimension": "care",
+    "text": "在重要的纪念日，我更在意精心准备的惊喜",
+    "options": [
+      {
+        "text": "非常不符合",
+        "score": 1
+      },
+      {
+        "text": "不太符合",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "比较符合",
+        "score": 4
+      },
+      {
+        "text": "非常符合",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "dimension": "care",
+    "text": "当我在工作中受挫，我更想听到“别担心有我”而非分析问题",
+    "options": [
+      {
+        "text": "非常不符合",
+        "score": 1
+      },
+      {
+        "text": "不太符合",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "比较符合",
+        "score": 4
+      },
+      {
+        "text": "非常符合",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "dimension": "care",
+    "text": "我认为在爱情中展现脆弱是自然的真情流露",
+    "options": [
+      {
+        "text": "非常不符合",
+        "score": 1
+      },
+      {
+        "text": "不太符合",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "比较符合",
+        "score": 4
+      },
+      {
+        "text": "非常符合",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "dimension": "care",
+    "text": "当我情绪低落时，我希望伴侣立即察觉并安慰我",
+    "options": [
+      {
+        "text": "非常不符合",
+        "score": 1
+      },
+      {
+        "text": "不太符合",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "比较符合",
+        "score": 4
+      },
+      {
+        "text": "非常符合",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "dimension": "care",
+    "text": "在旅行规划中，我更享受被安排得明明白白",
+    "options": [
+      {
+        "text": "非常不符合",
+        "score": 1
+      },
+      {
+        "text": "不太符合",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "比较符合",
+        "score": 4
+      },
+      {
+        "text": "非常符合",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "dimension": "care",
+    "text": "当与伴侣产生分歧时，我期待对方主动让步",
+    "options": [
+      {
+        "text": "非常不符合",
+        "score": 1
+      },
+      {
+        "text": "不太符合",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "比较符合",
+        "score": 4
+      },
+      {
+        "text": "非常符合",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "dimension": "care",
+    "text": "我理想中的关怀是事无巨细的呵护",
+    "options": [
+      {
+        "text": "非常不符合",
+        "score": 1
+      },
+      {
+        "text": "不太符合",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "比较符合",
+        "score": 4
+      },
+      {
+        "text": "非常符合",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "dimension": "care",
+    "text": "当我在新环境中感到不安时，我需要伴侣的保护",
+    "options": [
+      {
+        "text": "非常不符合",
+        "score": 1
+      },
+      {
+        "text": "不太符合",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "比较符合",
+        "score": 4
+      },
+      {
+        "text": "非常符合",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "dimension": "guide",
+    "text": "在尝试新事物时，我更享受被伴侣领伴探索",
+    "options": [
+      {
+        "text": "非常不符合",
+        "score": 1
+      },
+      {
+        "text": "不太符合",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "比较符合",
+        "score": 4
+      },
+      {
+        "text": "非常符合",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "dimension": "guide",
+    "text": "当伴侣向我求助时，我内心的第一反应是责任感满满",
+    "options": [
+      {
+        "text": "非常不符合",
+        "score": 1
+      },
+      {
+        "text": "不太符合",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "比较符合",
+        "score": 4
+      },
+      {
+        "text": "非常符合",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "dimension": "guide",
+    "text": "我更愿意做关系中的“定心丸”而非“开心果”",
+    "options": [
+      {
+        "text": "非常不符合",
+        "score": 1
+      },
+      {
+        "text": "不太符合",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "比较符合",
+        "score": 4
+      },
+      {
+        "text": "非常符合",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "dimension": "guide",
+    "text": "看到伴侣因为我的建议而成长时，我感受到的是成就感",
+    "options": [
+      {
+        "text": "非常不符合",
+        "score": 1
+      },
+      {
+        "text": "不太符合",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "比较符合",
+        "score": 4
+      },
+      {
+        "text": "非常符合",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "dimension": "guide",
+    "text": "在关系中，我倾向于承担主导和规划的角色",
+    "options": [
+      {
+        "text": "非常不符合",
+        "score": 1
+      },
+      {
+        "text": "不太符合",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "比较符合",
+        "score": 4
+      },
+      {
+        "text": "非常符合",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "dimension": "guide",
+    "text": "我希望在关键时刻能替伴侣做出决策或给出方向",
+    "options": [
+      {
+        "text": "非常不符合",
+        "score": 1
+      },
+      {
+        "text": "不太符合",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "比较符合",
+        "score": 4
+      },
+      {
+        "text": "非常符合",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "dimension": "guide",
+    "text": "当伴侣犹豫不决时，我会主动给出方案并推动执行",
+    "options": [
+      {
+        "text": "非常不符合",
+        "score": 1
+      },
+      {
+        "text": "不太符合",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "比较符合",
+        "score": 4
+      },
+      {
+        "text": "非常符合",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "dimension": "guide",
+    "text": "我认为带领彼此体验新鲜感是关系里的乐趣所在",
+    "options": [
+      {
+        "text": "非常不符合",
+        "score": 1
+      },
+      {
+        "text": "不太符合",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "比较符合",
+        "score": 4
+      },
+      {
+        "text": "非常符合",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "dimension": "guide",
+    "text": "当伴侣迷茫时，我愿意帮助梳理目标与路径",
+    "options": [
+      {
+        "text": "非常不符合",
+        "score": 1
+      },
+      {
+        "text": "不太符合",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "比较符合",
+        "score": 4
+      },
+      {
+        "text": "非常符合",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "dimension": "guide",
+    "text": "对我而言，“引导”意味着陪伴与责任并重",
+    "options": [
+      {
+        "text": "非常不符合",
+        "score": 1
+      },
+      {
+        "text": "不太符合",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "比较符合",
+        "score": 4
+      },
+      {
+        "text": "非常符合",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "dimension": "independence",
+    "text": "当伴侣想融入我的朋友圈时，我感到些许不适",
+    "options": [
+      {
+        "text": "非常不符合",
+        "score": 1
+      },
+      {
+        "text": "不太符合",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "比较符合",
+        "score": 4
+      },
+      {
+        "text": "非常符合",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "dimension": "independence",
+    "text": "我认为“我们”和“我”的平衡需要刻意维护的界限",
+    "options": [
+      {
+        "text": "非常不符合",
+        "score": 1
+      },
+      {
+        "text": "不太符合",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "比较符合",
+        "score": 4
+      },
+      {
+        "text": "非常符合",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "dimension": "independence",
+    "text": "在做出人生重大决定时，我会优先跟随自己的内心",
+    "options": [
+      {
+        "text": "非常不符合",
+        "score": 1
+      },
+      {
+        "text": "不太符合",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "比较符合",
+        "score": 4
+      },
+      {
+        "text": "非常符合",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "dimension": "independence",
+    "text": "我享受独处并认为双方都该保有独立的空间与节奏",
+    "options": [
+      {
+        "text": "非常不符合",
+        "score": 1
+      },
+      {
+        "text": "不太符合",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "比较符合",
+        "score": 4
+      },
+      {
+        "text": "非常符合",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "dimension": "independence",
+    "text": "即使在亲密关系中，我也希望有完全不被打扰的时间",
+    "options": [
+      {
+        "text": "非常不符合",
+        "score": 1
+      },
+      {
+        "text": "不太符合",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "比较符合",
+        "score": 4
+      },
+      {
+        "text": "非常符合",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "dimension": "independence",
+    "text": "我倾向于坚持个人习惯，即便伴侣有不同意见",
+    "options": [
+      {
+        "text": "非常不符合",
+        "score": 1
+      },
+      {
+        "text": "不太符合",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "比较符合",
+        "score": 4
+      },
+      {
+        "text": "非常符合",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "dimension": "independence",
+    "text": "当伴侣过度干预时，我会产生明显的抗拒情绪",
+    "options": [
+      {
+        "text": "非常不符合",
+        "score": 1
+      },
+      {
+        "text": "不太符合",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "比较符合",
+        "score": 4
+      },
+      {
+        "text": "非常符合",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "dimension": "independence",
+    "text": "我更喜欢自由安排行程，而不是随时汇报或共同决策",
+    "options": [
+      {
+        "text": "非常不符合",
+        "score": 1
+      },
+      {
+        "text": "不太符合",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "比较符合",
+        "score": 4
+      },
+      {
+        "text": "非常符合",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 39,
+    "dimension": "independence",
+    "text": "保持个人成长与兴趣对我来说比完全同步更重要",
+    "options": [
+      {
+        "text": "非常不符合",
+        "score": 1
+      },
+      {
+        "text": "不太符合",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "比较符合",
+        "score": 4
+      },
+      {
+        "text": "非常符合",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 40,
+    "dimension": "independence",
+    "text": "在关系中，我相信适度距离能保持长期的新鲜与尊重",
+    "options": [
+      {
+        "text": "非常不符合",
+        "score": 1
+      },
+      {
+        "text": "不太符合",
+        "score": 2
+      },
+      {
+        "text": "一般",
+        "score": 3
+      },
+      {
+        "text": "比较符合",
+        "score": 4
+      },
+      {
+        "text": "非常符合",
+        "score": 5
+      }
+    ]
+  }
+]

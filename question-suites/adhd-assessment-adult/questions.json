@@ -1,0 +1,488 @@
+[
+  {
+    "id": 1,
+    "dimension": "attention_exec",
+    "text": "你有多经常在必须完成一项任务或工作时，难以集中注意力在细节上，或犯粗心的错误？",
+    "options": [
+      {
+        "text": "从不",
+        "score": 1
+      },
+      {
+        "text": "很少",
+        "score": 2
+      },
+      {
+        "text": "有时",
+        "score": 3
+      },
+      {
+        "text": "经常",
+        "score": 4
+      },
+      {
+        "text": "总是",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "dimension": "attention_exec",
+    "text": "你有多经常在工作或娱乐活动中难以保持注意力？",
+    "options": [
+      {
+        "text": "从不",
+        "score": 1
+      },
+      {
+        "text": "很少",
+        "score": 2
+      },
+      {
+        "text": "有时",
+        "score": 3
+      },
+      {
+        "text": "经常",
+        "score": 4
+      },
+      {
+        "text": "总是",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "dimension": "attention_exec",
+    "text": "你有多经常在直接对你说话时显得没有在听？",
+    "options": [
+      {
+        "text": "从不",
+        "score": 1
+      },
+      {
+        "text": "很少",
+        "score": 2
+      },
+      {
+        "text": "有时",
+        "score": 3
+      },
+      {
+        "text": "经常",
+        "score": 4
+      },
+      {
+        "text": "总是",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "dimension": "attention_exec",
+    "text": "你有多经常没有按照指示完成任务，没能完成工作职责？",
+    "options": [
+      {
+        "text": "从不",
+        "score": 1
+      },
+      {
+        "text": "很少",
+        "score": 2
+      },
+      {
+        "text": "有时",
+        "score": 3
+      },
+      {
+        "text": "经常",
+        "score": 4
+      },
+      {
+        "text": "总是",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "dimension": "attention_exec",
+    "text": "你有多经常在组织任务和活动方面有困难？",
+    "options": [
+      {
+        "text": "从不",
+        "score": 1
+      },
+      {
+        "text": "很少",
+        "score": 2
+      },
+      {
+        "text": "有时",
+        "score": 3
+      },
+      {
+        "text": "经常",
+        "score": 4
+      },
+      {
+        "text": "总是",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "dimension": "attention_exec",
+    "text": "你有多经常坐着时手脚不安或扭动？",
+    "options": [
+      {
+        "text": "从不",
+        "score": 1
+      },
+      {
+        "text": "很少",
+        "score": 2
+      },
+      {
+        "text": "有时",
+        "score": 3
+      },
+      {
+        "text": "经常",
+        "score": 4
+      },
+      {
+        "text": "总是",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "dimension": "attention_exec",
+    "text": "你有多经常觉得难以安静地进行休闲活动？",
+    "options": [
+      {
+        "text": "从不",
+        "score": 1
+      },
+      {
+        "text": "很少",
+        "score": 2
+      },
+      {
+        "text": "有时",
+        "score": 3
+      },
+      {
+        "text": "经常",
+        "score": 4
+      },
+      {
+        "text": "总是",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "dimension": "attention_exec",
+    "text": "你有多经常在需要长时间集中注意力的活动中难以坚持？",
+    "options": [
+      {
+        "text": "从不",
+        "score": 1
+      },
+      {
+        "text": "很少",
+        "score": 2
+      },
+      {
+        "text": "有时",
+        "score": 3
+      },
+      {
+        "text": "经常",
+        "score": 4
+      },
+      {
+        "text": "总是",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "dimension": "attention_exec",
+    "text": "你有多经常丢失完成任务所需的物品？",
+    "options": [
+      {
+        "text": "从不",
+        "score": 1
+      },
+      {
+        "text": "很少",
+        "score": 2
+      },
+      {
+        "text": "有时",
+        "score": 3
+      },
+      {
+        "text": "经常",
+        "score": 4
+      },
+      {
+        "text": "总是",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "dimension": "attention_exec",
+    "text": "你有多经常容易被外界刺激分心？",
+    "options": [
+      {
+        "text": "从不",
+        "score": 1
+      },
+      {
+        "text": "很少",
+        "score": 2
+      },
+      {
+        "text": "有时",
+        "score": 3
+      },
+      {
+        "text": "经常",
+        "score": 4
+      },
+      {
+        "text": "总是",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "dimension": "attention_exec",
+    "text": "你有多经常在日常活动中健忘？",
+    "options": [
+      {
+        "text": "从不",
+        "score": 1
+      },
+      {
+        "text": "很少",
+        "score": 2
+      },
+      {
+        "text": "有时",
+        "score": 3
+      },
+      {
+        "text": "经常",
+        "score": 4
+      },
+      {
+        "text": "总是",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "dimension": "attention_exec",
+    "text": "你有多经常在需要保持安静时难以安静下来？",
+    "options": [
+      {
+        "text": "从不",
+        "score": 1
+      },
+      {
+        "text": "很少",
+        "score": 2
+      },
+      {
+        "text": "有时",
+        "score": 3
+      },
+      {
+        "text": "经常",
+        "score": 4
+      },
+      {
+        "text": "总是",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "dimension": "attention_exec",
+    "text": "你有多经常说话过多？",
+    "options": [
+      {
+        "text": "从不",
+        "score": 1
+      },
+      {
+        "text": "很少",
+        "score": 2
+      },
+      {
+        "text": "有时",
+        "score": 3
+      },
+      {
+        "text": "经常",
+        "score": 4
+      },
+      {
+        "text": "总是",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "dimension": "attention_exec",
+    "text": "你有多经常在别人说话时插嘴或打断？",
+    "options": [
+      {
+        "text": "从不",
+        "score": 1
+      },
+      {
+        "text": "很少",
+        "score": 2
+      },
+      {
+        "text": "有时",
+        "score": 3
+      },
+      {
+        "text": "经常",
+        "score": 4
+      },
+      {
+        "text": "总是",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "dimension": "attention_exec",
+    "text": "你有多经常难以等待轮到自己？",
+    "options": [
+      {
+        "text": "从不",
+        "score": 1
+      },
+      {
+        "text": "很少",
+        "score": 2
+      },
+      {
+        "text": "有时",
+        "score": 3
+      },
+      {
+        "text": "经常",
+        "score": 4
+      },
+      {
+        "text": "总是",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "dimension": "attention_exec",
+    "text": "你有多经常打断或干扰他人？",
+    "options": [
+      {
+        "text": "从不",
+        "score": 1
+      },
+      {
+        "text": "很少",
+        "score": 2
+      },
+      {
+        "text": "有时",
+        "score": 3
+      },
+      {
+        "text": "经常",
+        "score": 4
+      },
+      {
+        "text": "总是",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "dimension": "attention_exec",
+    "text": "你有多经常在需要集中注意力的活动中感到烦躁？",
+    "options": [
+      {
+        "text": "从不",
+        "score": 1
+      },
+      {
+        "text": "很少",
+        "score": 2
+      },
+      {
+        "text": "有时",
+        "score": 3
+      },
+      {
+        "text": "经常",
+        "score": 4
+      },
+      {
+        "text": "总是",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "dimension": "attention_exec",
+    "text": "你有多经常在工作或学习中难以坚持到底？",
+    "options": [
+      {
+        "text": "从不",
+        "score": 1
+      },
+      {
+        "text": "很少",
+        "score": 2
+      },
+      {
+        "text": "有时",
+        "score": 3
+      },
+      {
+        "text": "经常",
+        "score": 4
+      },
+      {
+        "text": "总是",
+        "score": 5
+      }
+    ]
+  }
+]

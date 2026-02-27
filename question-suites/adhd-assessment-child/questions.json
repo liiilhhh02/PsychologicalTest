@@ -1,0 +1,704 @@
+[
+  {
+    "id": 1,
+    "dimension": "attention_behavior",
+    "text": "在课堂或做作业时，孩子是否容易被周围的事物分散注意力？",
+    "options": [
+      {
+        "text": "从不",
+        "score": 1
+      },
+      {
+        "text": "很少",
+        "score": 2
+      },
+      {
+        "text": "有时",
+        "score": 3
+      },
+      {
+        "text": "经常",
+        "score": 4
+      },
+      {
+        "text": "总是",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "dimension": "attention_behavior",
+    "text": "孩子在完成家庭作业时，会多频繁地粗心犯错或遗漏细节？",
+    "options": [
+      {
+        "text": "从不",
+        "score": 1
+      },
+      {
+        "text": "很少",
+        "score": 2
+      },
+      {
+        "text": "有时",
+        "score": 3
+      },
+      {
+        "text": "经常",
+        "score": 4
+      },
+      {
+        "text": "总是",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "dimension": "attention_behavior",
+    "text": "孩子在需要持续听讲或完成任务时，是否难以保持专注？",
+    "options": [
+      {
+        "text": "从不",
+        "score": 1
+      },
+      {
+        "text": "很少",
+        "score": 2
+      },
+      {
+        "text": "有时",
+        "score": 3
+      },
+      {
+        "text": "经常",
+        "score": 4
+      },
+      {
+        "text": "总是",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "dimension": "attention_behavior",
+    "text": "孩子是否经常忘记带作业本、书本或其他需要的物品？",
+    "options": [
+      {
+        "text": "从不",
+        "score": 1
+      },
+      {
+        "text": "很少",
+        "score": 2
+      },
+      {
+        "text": "有时",
+        "score": 3
+      },
+      {
+        "text": "经常",
+        "score": 4
+      },
+      {
+        "text": "总是",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "dimension": "attention_behavior",
+    "text": "孩子完成任务时，是否需要多次提醒才能收尾？",
+    "options": [
+      {
+        "text": "从不",
+        "score": 1
+      },
+      {
+        "text": "很少",
+        "score": 2
+      },
+      {
+        "text": "有时",
+        "score": 3
+      },
+      {
+        "text": "经常",
+        "score": 4
+      },
+      {
+        "text": "总是",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "dimension": "attention_behavior",
+    "text": "孩子在需要排队或等待时，是否表现出焦躁或不耐烦？",
+    "options": [
+      {
+        "text": "从不",
+        "score": 1
+      },
+      {
+        "text": "很少",
+        "score": 2
+      },
+      {
+        "text": "有时",
+        "score": 3
+      },
+      {
+        "text": "经常",
+        "score": 4
+      },
+      {
+        "text": "总是",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "dimension": "attention_behavior",
+    "text": "在课堂或安静场合，孩子是否会不停地晃动或坐不住？",
+    "options": [
+      {
+        "text": "从不",
+        "score": 1
+      },
+      {
+        "text": "很少",
+        "score": 2
+      },
+      {
+        "text": "有时",
+        "score": 3
+      },
+      {
+        "text": "经常",
+        "score": 4
+      },
+      {
+        "text": "总是",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "dimension": "attention_behavior",
+    "text": "孩子在需要保持安静时，是否会不自觉地发出声音或说话？",
+    "options": [
+      {
+        "text": "从不",
+        "score": 1
+      },
+      {
+        "text": "很少",
+        "score": 2
+      },
+      {
+        "text": "有时",
+        "score": 3
+      },
+      {
+        "text": "经常",
+        "score": 4
+      },
+      {
+        "text": "总是",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "dimension": "attention_behavior",
+    "text": "孩子是否经常丢三落四，找不到自己的文具、玩具或衣物？",
+    "options": [
+      {
+        "text": "从不",
+        "score": 1
+      },
+      {
+        "text": "很少",
+        "score": 2
+      },
+      {
+        "text": "有时",
+        "score": 3
+      },
+      {
+        "text": "经常",
+        "score": 4
+      },
+      {
+        "text": "总是",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "dimension": "attention_behavior",
+    "text": "孩子在与他人互动时，是否容易打断别人或插话？",
+    "options": [
+      {
+        "text": "从不",
+        "score": 1
+      },
+      {
+        "text": "很少",
+        "score": 2
+      },
+      {
+        "text": "有时",
+        "score": 3
+      },
+      {
+        "text": "经常",
+        "score": 4
+      },
+      {
+        "text": "总是",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "dimension": "attention_behavior",
+    "text": "孩子是否经常在作业或活动中跳过步骤、缺乏条理？",
+    "options": [
+      {
+        "text": "从不",
+        "score": 1
+      },
+      {
+        "text": "很少",
+        "score": 2
+      },
+      {
+        "text": "有时",
+        "score": 3
+      },
+      {
+        "text": "经常",
+        "score": 4
+      },
+      {
+        "text": "总是",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "dimension": "attention_behavior",
+    "text": "孩子在完成一项任务前，会多频繁地转到另一项活动？",
+    "options": [
+      {
+        "text": "从不",
+        "score": 1
+      },
+      {
+        "text": "很少",
+        "score": 2
+      },
+      {
+        "text": "有时",
+        "score": 3
+      },
+      {
+        "text": "经常",
+        "score": 4
+      },
+      {
+        "text": "总是",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "dimension": "attention_behavior",
+    "text": "孩子是否容易情绪化，在小事上出现明显的情绪波动？",
+    "options": [
+      {
+        "text": "从不",
+        "score": 1
+      },
+      {
+        "text": "很少",
+        "score": 2
+      },
+      {
+        "text": "有时",
+        "score": 3
+      },
+      {
+        "text": "经常",
+        "score": 4
+      },
+      {
+        "text": "总是",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "dimension": "attention_behavior",
+    "text": "孩子在需要听从指示时，是否显得没有在听或心不在焉？",
+    "options": [
+      {
+        "text": "从不",
+        "score": 1
+      },
+      {
+        "text": "很少",
+        "score": 2
+      },
+      {
+        "text": "有时",
+        "score": 3
+      },
+      {
+        "text": "经常",
+        "score": 4
+      },
+      {
+        "text": "总是",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "dimension": "attention_behavior",
+    "text": "孩子是否会难以控制冲动，如未经允许就行动或发言？",
+    "options": [
+      {
+        "text": "从不",
+        "score": 1
+      },
+      {
+        "text": "很少",
+        "score": 2
+      },
+      {
+        "text": "有时",
+        "score": 3
+      },
+      {
+        "text": "经常",
+        "score": 4
+      },
+      {
+        "text": "总是",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "dimension": "attention_behavior",
+    "text": "孩子是否会在游戏或活动中违反规则、难以遵守秩序？",
+    "options": [
+      {
+        "text": "从不",
+        "score": 1
+      },
+      {
+        "text": "很少",
+        "score": 2
+      },
+      {
+        "text": "有时",
+        "score": 3
+      },
+      {
+        "text": "经常",
+        "score": 4
+      },
+      {
+        "text": "总是",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "dimension": "attention_behavior",
+    "text": "孩子是否经常需要外界提醒才能继续完成一个任务？",
+    "options": [
+      {
+        "text": "从不",
+        "score": 1
+      },
+      {
+        "text": "很少",
+        "score": 2
+      },
+      {
+        "text": "有时",
+        "score": 3
+      },
+      {
+        "text": "经常",
+        "score": 4
+      },
+      {
+        "text": "总是",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "dimension": "attention_behavior",
+    "text": "孩子在与同伴相处时，是否容易因冲动引起冲突？",
+    "options": [
+      {
+        "text": "从不",
+        "score": 1
+      },
+      {
+        "text": "很少",
+        "score": 2
+      },
+      {
+        "text": "有时",
+        "score": 3
+      },
+      {
+        "text": "经常",
+        "score": 4
+      },
+      {
+        "text": "总是",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "dimension": "attention_behavior",
+    "text": "孩子在安静阅读或看书时，能否持续专注？",
+    "options": [
+      {
+        "text": "从不",
+        "score": 1
+      },
+      {
+        "text": "很少",
+        "score": 2
+      },
+      {
+        "text": "有时",
+        "score": 3
+      },
+      {
+        "text": "经常",
+        "score": 4
+      },
+      {
+        "text": "总是",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "dimension": "attention_behavior",
+    "text": "孩子是否会因为情绪失控而发脾气或哭闹？",
+    "options": [
+      {
+        "text": "从不",
+        "score": 1
+      },
+      {
+        "text": "很少",
+        "score": 2
+      },
+      {
+        "text": "有时",
+        "score": 3
+      },
+      {
+        "text": "经常",
+        "score": 4
+      },
+      {
+        "text": "总是",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "dimension": "attention_behavior",
+    "text": "孩子在团队活动中，是否能等待轮到自己？",
+    "options": [
+      {
+        "text": "从不",
+        "score": 1
+      },
+      {
+        "text": "很少",
+        "score": 2
+      },
+      {
+        "text": "有时",
+        "score": 3
+      },
+      {
+        "text": "经常",
+        "score": 4
+      },
+      {
+        "text": "总是",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "dimension": "attention_behavior",
+    "text": "孩子是否会多任务切换，导致事情难以完成？",
+    "options": [
+      {
+        "text": "从不",
+        "score": 1
+      },
+      {
+        "text": "很少",
+        "score": 2
+      },
+      {
+        "text": "有时",
+        "score": 3
+      },
+      {
+        "text": "经常",
+        "score": 4
+      },
+      {
+        "text": "总是",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "dimension": "attention_behavior",
+    "text": "孩子是否需要家长多次催促才能按时完成日常准备？",
+    "options": [
+      {
+        "text": "从不",
+        "score": 1
+      },
+      {
+        "text": "很少",
+        "score": 2
+      },
+      {
+        "text": "有时",
+        "score": 3
+      },
+      {
+        "text": "经常",
+        "score": 4
+      },
+      {
+        "text": "总是",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "dimension": "attention_behavior",
+    "text": "孩子在面对批评时，是否容易出现情绪爆发或过度反应？",
+    "options": [
+      {
+        "text": "从不",
+        "score": 1
+      },
+      {
+        "text": "很少",
+        "score": 2
+      },
+      {
+        "text": "有时",
+        "score": 3
+      },
+      {
+        "text": "经常",
+        "score": 4
+      },
+      {
+        "text": "总是",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "dimension": "attention_behavior",
+    "text": "孩子是否容易忘记约定、家务或日常安排？",
+    "options": [
+      {
+        "text": "从不",
+        "score": 1
+      },
+      {
+        "text": "很少",
+        "score": 2
+      },
+      {
+        "text": "有时",
+        "score": 3
+      },
+      {
+        "text": "经常",
+        "score": 4
+      },
+      {
+        "text": "总是",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "dimension": "attention_behavior",
+    "text": "孩子在游戏或运动时，是否过度兴奋，以至于难以停下来？",
+    "options": [
+      {
+        "text": "从不",
+        "score": 1
+      },
+      {
+        "text": "很少",
+        "score": 2
+      },
+      {
+        "text": "有时",
+        "score": 3
+      },
+      {
+        "text": "经常",
+        "score": 4
+      },
+      {
+        "text": "总是",
+        "score": 5
+      }
+    ]
+  }
+]

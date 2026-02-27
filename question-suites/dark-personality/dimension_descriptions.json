@@ -1,0 +1,52 @@
+[
+  {
+    "key": "sadism",
+    "name": "日常施虐倾向",
+    "description": "在关系与互动中从他人不适中获得快感的倾向。"
+  },
+  {
+    "key": "psychologicalEntitlement",
+    "name": "心理特权感",
+    "description": "认为自己应获得特殊待遇与优先权的倾向。"
+  },
+  {
+    "key": "moralDisengagement",
+    "name": "道德脱离",
+    "description": "在不当行为后通过合理化降低负罪感的倾向。"
+  },
+  {
+    "key": "psychopathy",
+    "name": "精神病态特征",
+    "description": "在冷漠、冲动与同理不足方面的特征倾向。"
+  },
+  {
+    "key": "selfCenteredness",
+    "name": "自我中心",
+    "description": "在决策中优先满足自身利益和观点的倾向。"
+  },
+  {
+    "key": "machiavellianism",
+    "name": "马基雅维利主义",
+    "description": "通过策略操控与功利计算达成目标的倾向。"
+  },
+  {
+    "key": "spitefulness",
+    "name": "恶意报复倾向",
+    "description": "为报复或让他人受损而牺牲自身利益的倾向。"
+  },
+  {
+    "key": "narcissism",
+    "name": "自恋倾向",
+    "description": "在自我评价膨胀、被关注需求方面的特征倾向。"
+  },
+  {
+    "key": "egoism",
+    "name": "利己倾向",
+    "description": "在资源分配与决策中优先考虑自我收益的倾向。"
+  },
+  {
+    "key": "greed",
+    "name": "贪婪倾向",
+    "description": "在资源、权力或收益追求上持续扩张的倾向。"
+  }
+]

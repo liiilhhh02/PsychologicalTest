@@ -1,0 +1,22 @@
+[
+  {
+    "key": "maturity",
+    "name": "成熟偏好",
+    "description": "在关系中偏好成熟稳定、长期导向互动的倾向。"
+  },
+  {
+    "key": "care",
+    "name": "照顾需求",
+    "description": "在关系中对被关怀、被照料与安全感支持的需求。"
+  },
+  {
+    "key": "guide",
+    "name": "引导欲望",
+    "description": "在关系中承担引导与规划角色的倾向。"
+  },
+  {
+    "key": "independence",
+    "name": "独立倾向",
+    "description": "在亲密关系中保持边界、空间与自主节奏的倾向。"
+  }
+]

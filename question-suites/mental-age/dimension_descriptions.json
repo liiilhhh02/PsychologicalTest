@@ -1,0 +1,27 @@
+[
+  {
+    "key": "resilience",
+    "name": "心理韧性",
+    "description": "面对压力与挫折时的恢复与反弹能力。"
+  },
+  {
+    "key": "emotionStability",
+    "name": "情绪稳定",
+    "description": "在情绪波动管理与持续稳定表达上的能力。"
+  },
+  {
+    "key": "socialFluency",
+    "name": "社交流畅",
+    "description": "在社交互动中的表达自然度与关系适配能力。"
+  },
+  {
+    "key": "cognitiveFlexibility",
+    "name": "认知灵活",
+    "description": "在观点切换、问题重构与适应变化上的倾向。"
+  },
+  {
+    "key": "responsibilitySense",
+    "name": "责任感",
+    "description": "在承诺兑现、角色担当与自我管理上的倾向。"
+  }
+]

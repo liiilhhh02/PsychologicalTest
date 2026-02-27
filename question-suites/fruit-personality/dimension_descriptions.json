@@ -1,0 +1,27 @@
+[
+  {
+    "key": "influence",
+    "name": "影响力",
+    "description": "在社交表达、主导沟通与外向驱动上的倾向。"
+  },
+  {
+    "key": "execution",
+    "name": "执行力",
+    "description": "在行动推进、计划落实与任务闭环上的倾向。"
+  },
+  {
+    "key": "values",
+    "name": "价值稳定",
+    "description": "在价值判断、原则坚持与责任感上的倾向。"
+  },
+  {
+    "key": "innovation",
+    "name": "创新开放",
+    "description": "在新事物接受、创意尝试与灵活思维上的倾向。"
+  },
+  {
+    "key": "empathy",
+    "name": "共情协同",
+    "description": "在情绪感知、关系共鸣与协作支持上的倾向。"
+  }
+]

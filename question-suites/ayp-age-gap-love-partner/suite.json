@@ -1,0 +1,15 @@
+{
+  "id": "ayp-age-gap-love-partner",
+  "name": "AYP 恋爱风格倾向测评（伴侣观察40题）",
+  "version": "2026.02.27-ayp-partner",
+  "description": "40题伴侣视角评估，用于关系沟通与差异对齐。",
+  "source": "xuhuiai import 2026-02-27",
+  "adultContent": false,
+  "default": false,
+  "category": "relationship",
+  "priority": 70,
+  "tags": [
+    "关系沟通",
+    "伴侣视角"
+  ]
+}

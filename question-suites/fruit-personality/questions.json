@@ -1,0 +1,1152 @@
+[
+  {
+    "id": 1,
+    "dimension": "influence",
+    "text": "在社交场合中，我通常主动与人交流，成为焦点",
+    "options": [
+      {
+        "text": "非常认同",
+        "score": 4
+      },
+      {
+        "text": "比较认同",
+        "score": 3
+      },
+      {
+        "text": "一般认同",
+        "score": 2
+      },
+      {
+        "text": "不太认同",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "dimension": "execution",
+    "text": "面对挑战时，我会直接面对并立即采取行动",
+    "options": [
+      {
+        "text": "非常认同",
+        "score": 4
+      },
+      {
+        "text": "比较认同",
+        "score": 3
+      },
+      {
+        "text": "一般认同",
+        "score": 2
+      },
+      {
+        "text": "不太认同",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "dimension": "values",
+    "text": "我更倾向于独立完成工作，自主决策",
+    "options": [
+      {
+        "text": "非常认同",
+        "score": 4
+      },
+      {
+        "text": "比较认同",
+        "score": 3
+      },
+      {
+        "text": "一般认同",
+        "score": 2
+      },
+      {
+        "text": "不太认同",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "dimension": "influence",
+    "text": "在团队中，我通常扮演领导者的角色",
+    "options": [
+      {
+        "text": "非常认同",
+        "score": 4
+      },
+      {
+        "text": "比较认同",
+        "score": 3
+      },
+      {
+        "text": "一般认同",
+        "score": 2
+      },
+      {
+        "text": "不太认同",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "dimension": "innovation",
+    "text": "我做重要决定时相信直觉，快速做出决策",
+    "options": [
+      {
+        "text": "非常认同",
+        "score": 4
+      },
+      {
+        "text": "比较认同",
+        "score": 3
+      },
+      {
+        "text": "一般认同",
+        "score": 2
+      },
+      {
+        "text": "不太认同",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "dimension": "empathy",
+    "text": "周末时间我喜欢参加社交活动",
+    "options": [
+      {
+        "text": "非常认同",
+        "score": 4
+      },
+      {
+        "text": "比较认同",
+        "score": 3
+      },
+      {
+        "text": "一般认同",
+        "score": 2
+      },
+      {
+        "text": "不太认同",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "dimension": "influence",
+    "text": "他人对我的第一印象是自信且有魅力",
+    "options": [
+      {
+        "text": "非常认同",
+        "score": 4
+      },
+      {
+        "text": "比较认同",
+        "score": 3
+      },
+      {
+        "text": "一般认同",
+        "score": 2
+      },
+      {
+        "text": "不太认同",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "dimension": "execution",
+    "text": "面对压力时，我会积极寻找解决方案",
+    "options": [
+      {
+        "text": "非常认同",
+        "score": 4
+      },
+      {
+        "text": "比较认同",
+        "score": 3
+      },
+      {
+        "text": "一般认同",
+        "score": 2
+      },
+      {
+        "text": "不太认同",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "dimension": "empathy",
+    "text": "我更看重个人成就和他人认可",
+    "options": [
+      {
+        "text": "非常认同",
+        "score": 4
+      },
+      {
+        "text": "比较认同",
+        "score": 3
+      },
+      {
+        "text": "一般认同",
+        "score": 2
+      },
+      {
+        "text": "不太认同",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "dimension": "innovation",
+    "text": "学习新事物时，我能快速掌握并通过实践验证",
+    "options": [
+      {
+        "text": "非常认同",
+        "score": 4
+      },
+      {
+        "text": "比较认同",
+        "score": 3
+      },
+      {
+        "text": "一般认同",
+        "score": 2
+      },
+      {
+        "text": "不太认同",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "dimension": "empathy",
+    "text": "在人际关系中，我主动建立联系",
+    "options": [
+      {
+        "text": "非常认同",
+        "score": 4
+      },
+      {
+        "text": "比较认同",
+        "score": 3
+      },
+      {
+        "text": "一般认同",
+        "score": 2
+      },
+      {
+        "text": "不太认同",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "dimension": "influence",
+    "text": "我的沟通风格直接明确",
+    "options": [
+      {
+        "text": "非常认同",
+        "score": 4
+      },
+      {
+        "text": "比较认同",
+        "score": 3
+      },
+      {
+        "text": "一般认同",
+        "score": 2
+      },
+      {
+        "text": "不太认同",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "dimension": "execution",
+    "text": "面对冲突时，我选择直面解决问题",
+    "options": [
+      {
+        "text": "非常认同",
+        "score": 4
+      },
+      {
+        "text": "比较认同",
+        "score": 3
+      },
+      {
+        "text": "一般认同",
+        "score": 2
+      },
+      {
+        "text": "不太认同",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "dimension": "innovation",
+    "text": "我的思维方式更偏向宏观整体",
+    "options": [
+      {
+        "text": "非常认同",
+        "score": 4
+      },
+      {
+        "text": "比较认同",
+        "score": 3
+      },
+      {
+        "text": "一般认同",
+        "score": 2
+      },
+      {
+        "text": "不太认同",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "dimension": "values",
+    "text": "我对待规则的态度是遵守但保持变通",
+    "options": [
+      {
+        "text": "非常认同",
+        "score": 4
+      },
+      {
+        "text": "比较认同",
+        "score": 3
+      },
+      {
+        "text": "一般认同",
+        "score": 2
+      },
+      {
+        "text": "不太认同",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "dimension": "execution",
+    "text": "在追求目标时，我能够坚持不懈",
+    "options": [
+      {
+        "text": "非常认同",
+        "score": 4
+      },
+      {
+        "text": "比较认同",
+        "score": 3
+      },
+      {
+        "text": "一般认同",
+        "score": 2
+      },
+      {
+        "text": "不太认同",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "dimension": "influence",
+    "text": "我的能量主要来源于社交互动",
+    "options": [
+      {
+        "text": "非常认同",
+        "score": 4
+      },
+      {
+        "text": "比较认同",
+        "score": 3
+      },
+      {
+        "text": "一般认同",
+        "score": 2
+      },
+      {
+        "text": "不太认同",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "dimension": "innovation",
+    "text": "我更擅长战略规划工作",
+    "options": [
+      {
+        "text": "非常认同",
+        "score": 4
+      },
+      {
+        "text": "比较认同",
+        "score": 3
+      },
+      {
+        "text": "一般认同",
+        "score": 2
+      },
+      {
+        "text": "不太认同",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "dimension": "influence",
+    "text": "面对变化时，我欢迎新的挑战",
+    "options": [
+      {
+        "text": "非常认同",
+        "score": 4
+      },
+      {
+        "text": "比较认同",
+        "score": 3
+      },
+      {
+        "text": "一般认同",
+        "score": 2
+      },
+      {
+        "text": "不太认同",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "dimension": "values",
+    "text": "我认为成功意味着个人成就的实现",
+    "options": [
+      {
+        "text": "非常认同",
+        "score": 4
+      },
+      {
+        "text": "比较认同",
+        "score": 3
+      },
+      {
+        "text": "一般认同",
+        "score": 2
+      },
+      {
+        "text": "不太认同",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "dimension": "influence",
+    "text": "在群体中，我往往引人注目",
+    "options": [
+      {
+        "text": "非常认同",
+        "score": 4
+      },
+      {
+        "text": "比较认同",
+        "score": 3
+      },
+      {
+        "text": "一般认同",
+        "score": 2
+      },
+      {
+        "text": "不太认同",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "dimension": "values",
+    "text": "面对批评时，我能够理性接受",
+    "options": [
+      {
+        "text": "非常认同",
+        "score": 4
+      },
+      {
+        "text": "比较认同",
+        "score": 3
+      },
+      {
+        "text": "一般认同",
+        "score": 2
+      },
+      {
+        "text": "不太认同",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "dimension": "execution",
+    "text": "我的决策速度通常较快且果断",
+    "options": [
+      {
+        "text": "非常认同",
+        "score": 4
+      },
+      {
+        "text": "比较认同",
+        "score": 3
+      },
+      {
+        "text": "一般认同",
+        "score": 2
+      },
+      {
+        "text": "不太认同",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "dimension": "innovation",
+    "text": "我更倾向于冒险创新的方式",
+    "options": [
+      {
+        "text": "非常认同",
+        "score": 4
+      },
+      {
+        "text": "比较认同",
+        "score": 3
+      },
+      {
+        "text": "一般认同",
+        "score": 2
+      },
+      {
+        "text": "不太认同",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "dimension": "influence",
+    "text": "我的领导风格偏向指令明确型",
+    "options": [
+      {
+        "text": "非常认同",
+        "score": 4
+      },
+      {
+        "text": "比较认同",
+        "score": 3
+      },
+      {
+        "text": "一般认同",
+        "score": 2
+      },
+      {
+        "text": "不太认同",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "dimension": "innovation",
+    "text": "面对不确定性，我保持乐观态度",
+    "options": [
+      {
+        "text": "非常认同",
+        "score": 4
+      },
+      {
+        "text": "比较认同",
+        "score": 3
+      },
+      {
+        "text": "一般认同",
+        "score": 2
+      },
+      {
+        "text": "不太认同",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "dimension": "execution",
+    "text": "我的学习方式主要以实践操作为主",
+    "options": [
+      {
+        "text": "非常认同",
+        "score": 4
+      },
+      {
+        "text": "比较认同",
+        "score": 3
+      },
+      {
+        "text": "一般认同",
+        "score": 2
+      },
+      {
+        "text": "不太认同",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "dimension": "execution",
+    "text": "在压力环境下我能够更加专注",
+    "options": [
+      {
+        "text": "非常认同",
+        "score": 4
+      },
+      {
+        "text": "比较认同",
+        "score": 3
+      },
+      {
+        "text": "一般认同",
+        "score": 2
+      },
+      {
+        "text": "不太认同",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "dimension": "values",
+    "text": "我更重视真理和正义的价值",
+    "options": [
+      {
+        "text": "非常认同",
+        "score": 4
+      },
+      {
+        "text": "比较认同",
+        "score": 3
+      },
+      {
+        "text": "一般认同",
+        "score": 2
+      },
+      {
+        "text": "不太认同",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "dimension": "influence",
+    "text": "面对新环境，我能够快速适应",
+    "options": [
+      {
+        "text": "非常认同",
+        "score": 4
+      },
+      {
+        "text": "比较认同",
+        "score": 3
+      },
+      {
+        "text": "一般认同",
+        "score": 2
+      },
+      {
+        "text": "不太认同",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "dimension": "execution",
+    "text": "我的时间管理风格具有较强的计划性",
+    "options": [
+      {
+        "text": "非常认同",
+        "score": 4
+      },
+      {
+        "text": "比较认同",
+        "score": 3
+      },
+      {
+        "text": "一般认同",
+        "score": 2
+      },
+      {
+        "text": "不太认同",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "dimension": "influence",
+    "text": "在合作中，我注重目标的达成",
+    "options": [
+      {
+        "text": "非常认同",
+        "score": 4
+      },
+      {
+        "text": "比较认同",
+        "score": 3
+      },
+      {
+        "text": "一般认同",
+        "score": 2
+      },
+      {
+        "text": "不太认同",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "dimension": "innovation",
+    "text": "我的创造力主要表现在解决问题方面",
+    "options": [
+      {
+        "text": "非常认同",
+        "score": 4
+      },
+      {
+        "text": "比较认同",
+        "score": 3
+      },
+      {
+        "text": "一般认同",
+        "score": 2
+      },
+      {
+        "text": "不太认同",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "dimension": "empathy",
+    "text": "我的情绪表达方式较为直接",
+    "options": [
+      {
+        "text": "非常认同",
+        "score": 4
+      },
+      {
+        "text": "比较认同",
+        "score": 3
+      },
+      {
+        "text": "一般认同",
+        "score": 2
+      },
+      {
+        "text": "不太认同",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "dimension": "values",
+    "text": "面对失败时，我善于吸取经验教训",
+    "options": [
+      {
+        "text": "非常认同",
+        "score": 4
+      },
+      {
+        "text": "比较认同",
+        "score": 3
+      },
+      {
+        "text": "一般认同",
+        "score": 2
+      },
+      {
+        "text": "不太认同",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "dimension": "values",
+    "text": "我的价值观核心是自由和自主",
+    "options": [
+      {
+        "text": "非常认同",
+        "score": 4
+      },
+      {
+        "text": "比较认同",
+        "score": 3
+      },
+      {
+        "text": "一般认同",
+        "score": 2
+      },
+      {
+        "text": "不太认同",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "dimension": "values",
+    "text": "在解决问题时，我注重分析根本原因",
+    "options": [
+      {
+        "text": "非常认同",
+        "score": 4
+      },
+      {
+        "text": "比较认同",
+        "score": 3
+      },
+      {
+        "text": "一般认同",
+        "score": 2
+      },
+      {
+        "text": "不太认同",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "dimension": "innovation",
+    "text": "我的适应能力很强",
+    "options": [
+      {
+        "text": "非常认同",
+        "score": 4
+      },
+      {
+        "text": "比较认同",
+        "score": 3
+      },
+      {
+        "text": "一般认同",
+        "score": 2
+      },
+      {
+        "text": "不太认同",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 39,
+    "dimension": "values",
+    "text": "面对权威时，我保持尊重但追求平等",
+    "options": [
+      {
+        "text": "非常认同",
+        "score": 4
+      },
+      {
+        "text": "比较认同",
+        "score": 3
+      },
+      {
+        "text": "一般认同",
+        "score": 2
+      },
+      {
+        "text": "不太认同",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 40,
+    "dimension": "execution",
+    "text": "我具备较强的耐心品质",
+    "options": [
+      {
+        "text": "非常认同",
+        "score": 4
+      },
+      {
+        "text": "比较认同",
+        "score": 3
+      },
+      {
+        "text": "一般认同",
+        "score": 2
+      },
+      {
+        "text": "不太认同",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 41,
+    "dimension": "empathy",
+    "text": "在表达意见时，我采取直接坦诚的方式",
+    "options": [
+      {
+        "text": "非常认同",
+        "score": 4
+      },
+      {
+        "text": "比较认同",
+        "score": 3
+      },
+      {
+        "text": "一般认同",
+        "score": 2
+      },
+      {
+        "text": "不太认同",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "dimension": "innovation",
+    "text": "我的风险承受能力较高",
+    "options": [
+      {
+        "text": "非常认同",
+        "score": 4
+      },
+      {
+        "text": "比较认同",
+        "score": 3
+      },
+      {
+        "text": "一般认同",
+        "score": 2
+      },
+      {
+        "text": "不太认同",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 43,
+    "dimension": "execution",
+    "text": "面对细节工作，我能够仔细认真地完成",
+    "options": [
+      {
+        "text": "非常认同",
+        "score": 4
+      },
+      {
+        "text": "比较认同",
+        "score": 3
+      },
+      {
+        "text": "一般认同",
+        "score": 2
+      },
+      {
+        "text": "不太认同",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 44,
+    "dimension": "innovation",
+    "text": "我的直觉能力很强",
+    "options": [
+      {
+        "text": "非常认同",
+        "score": 4
+      },
+      {
+        "text": "比较认同",
+        "score": 3
+      },
+      {
+        "text": "一般认同",
+        "score": 2
+      },
+      {
+        "text": "不太认同",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 45,
+    "dimension": "empathy",
+    "text": "在人际关系中，我更看重真诚和信任",
+    "options": [
+      {
+        "text": "非常认同",
+        "score": 4
+      },
+      {
+        "text": "比较认同",
+        "score": 3
+      },
+      {
+        "text": "一般认同",
+        "score": 2
+      },
+      {
+        "text": "不太认同",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 46,
+    "dimension": "values",
+    "text": "我的责任感很强",
+    "options": [
+      {
+        "text": "非常认同",
+        "score": 4
+      },
+      {
+        "text": "比较认同",
+        "score": 3
+      },
+      {
+        "text": "一般认同",
+        "score": 2
+      },
+      {
+        "text": "不太认同",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 47,
+    "dimension": "values",
+    "text": "面对独处时，我能够享受充实的时光",
+    "options": [
+      {
+        "text": "非常认同",
+        "score": 4
+      },
+      {
+        "text": "比较认同",
+        "score": 3
+      },
+      {
+        "text": "一般认同",
+        "score": 2
+      },
+      {
+        "text": "不太认同",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 48,
+    "dimension": "influence",
+    "text": "我的竞争意识较强",
+    "options": [
+      {
+        "text": "非常认同",
+        "score": 4
+      },
+      {
+        "text": "比较认同",
+        "score": 3
+      },
+      {
+        "text": "一般认同",
+        "score": 2
+      },
+      {
+        "text": "不太认同",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 49,
+    "dimension": "innovation",
+    "text": "在团队中，我的主要贡献是提供创新想法",
+    "options": [
+      {
+        "text": "非常认同",
+        "score": 4
+      },
+      {
+        "text": "比较认同",
+        "score": 3
+      },
+      {
+        "text": "一般认同",
+        "score": 2
+      },
+      {
+        "text": "不太认同",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "id": 50,
+    "dimension": "influence",
+    "text": "我喜欢快节奏的生活方式",
+    "options": [
+      {
+        "text": "非常认同",
+        "score": 4
+      },
+      {
+        "text": "比较认同",
+        "score": 3
+      },
+      {
+        "text": "一般认同",
+        "score": 2
+      },
+      {
+        "text": "不太认同",
+        "score": 1
+      }
+    ]
+  }
+]

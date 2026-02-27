@@ -1,0 +1,15 @@
+{
+  "id": "animal-personality",
+  "name": "动物塑性格测评（60题）",
+  "version": "2026.02.27-animal",
+  "description": "60题人格细化测评，强化行为风格与社交互动特征识别。",
+  "source": "xuhuiai import 2026-02-27",
+  "adultContent": false,
+  "default": false,
+  "category": "personality",
+  "priority": 20,
+  "tags": [
+    "性格理解",
+    "行为模式"
+  ]
+}

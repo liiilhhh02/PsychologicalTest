@@ -1,0 +1,1152 @@
+[
+  {
+    "id": 1,
+    "dimension": "resilience",
+    "text": "当你遇到一个新环境时，你通常会？",
+    "options": [
+      {
+        "text": "A. 感到紧张不安，需要时间适应",
+        "score": 22
+      },
+      {
+        "text": "B. 既好奇又谨慎，逐步探索",
+        "score": 28
+      },
+      {
+        "text": "C. 兴奋期待，快速融入新环境",
+        "score": 34
+      },
+      {
+        "text": "D. 观察他人反应，跟随大家行动",
+        "score": 30
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "dimension": "emotionStability",
+    "text": "面对压力时，你更倾向于？",
+    "options": [
+      {
+        "text": "A. 感到焦虑，需要他人安慰",
+        "score": 22
+      },
+      {
+        "text": "B. 寻找解决方案，逐步解决问题",
+        "score": 28
+      },
+      {
+        "text": "C. 保持乐观，相信事情会好转",
+        "score": 34
+      },
+      {
+        "text": "D. 暂时逃避，稍后再处理",
+        "score": 30
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "dimension": "socialFluency",
+    "text": "在社交场合中，你通常是？",
+    "options": [
+      {
+        "text": "A. 安静观察，等待别人主动",
+        "score": 22
+      },
+      {
+        "text": "B. 与少数人深入交流",
+        "score": 28
+      },
+      {
+        "text": "C. 活跃气氛，与多人互动",
+        "score": 34
+      },
+      {
+        "text": "D. 跟随大家，避免突出自己",
+        "score": 30
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "dimension": "resilience",
+    "text": "对于未来规划，你倾向于？",
+    "options": [
+      {
+        "text": "A. 很少考虑长期未来",
+        "score": 22
+      },
+      {
+        "text": "B. 有大致方向，灵活调整",
+        "score": 28
+      },
+      {
+        "text": "C. 有详细计划并努力实现",
+        "score": 34
+      },
+      {
+        "text": "D. 顺其自然，随遇而安",
+        "score": 30
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "dimension": "emotionStability",
+    "text": "处理冲突时，你通常会？",
+    "options": [
+      {
+        "text": "A. 回避冲突，避免争执",
+        "score": 22
+      },
+      {
+        "text": "B. 表达感受但寻求和解",
+        "score": 28
+      },
+      {
+        "text": "C. 直接表达立场，坚持己见",
+        "score": 34
+      },
+      {
+        "text": "D. 寻求第三方帮助解决",
+        "score": 30
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "dimension": "resilience",
+    "text": "面对失败时，你的第一反应是？",
+    "options": [
+      {
+        "text": "A. 自我怀疑，感到沮丧",
+        "score": 22
+      },
+      {
+        "text": "B. 分析原因，吸取教训",
+        "score": 28
+      },
+      {
+        "text": "C. 快速调整，继续前进",
+        "score": 34
+      },
+      {
+        "text": "D. 找借口或归咎于外部因素",
+        "score": 30
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "dimension": "socialFluency",
+    "text": "在团队合作中，你更愿意扮演哪种角色？",
+    "options": [
+      {
+        "text": "A. 听从指示的执行者",
+        "score": 22
+      },
+      {
+        "text": "B. 协调沟通的中间人",
+        "score": 28
+      },
+      {
+        "text": "C. 制定方向的领导者",
+        "score": 34
+      },
+      {
+        "text": "D. 提供创意和建议的智囊",
+        "score": 30
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "dimension": "cognitiveFlexibility",
+    "text": "对于新知识的学习，你通常？",
+    "options": [
+      {
+        "text": "A. 需要反复练习才能掌握",
+        "score": 22
+      },
+      {
+        "text": "B. 按部就班，循序渐进",
+        "score": 28
+      },
+      {
+        "text": "C. 快速理解并应用",
+        "score": 34
+      },
+      {
+        "text": "D. 只学习感兴趣的部分",
+        "score": 30
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "dimension": "emotionStability",
+    "text": "面对批评时，你的态度是？",
+    "options": [
+      {
+        "text": "A. 感到受伤，难以接受",
+        "score": 22
+      },
+      {
+        "text": "B. 理性分析，有则改之",
+        "score": 28
+      },
+      {
+        "text": "C. 积极寻求改进方法",
+        "score": 34
+      },
+      {
+        "text": "D. 选择性听取，坚持己见",
+        "score": 30
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "dimension": "socialFluency",
+    "text": "在休闲时间，你更喜欢？",
+    "options": [
+      {
+        "text": "A. 独自休息或思考",
+        "score": 22
+      },
+      {
+        "text": "B. 与亲友共度时光",
+        "score": 28
+      },
+      {
+        "text": "C. 尝试新活动或冒险",
+        "score": 34
+      },
+      {
+        "text": "D. 按固定习惯放松",
+        "score": 30
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "dimension": "resilience",
+    "text": "做重要决定时，你主要依靠？",
+    "options": [
+      {
+        "text": "A. 直觉和感觉",
+        "score": 22
+      },
+      {
+        "text": "B. 逻辑和分析",
+        "score": 28
+      },
+      {
+        "text": "C. 他人建议和经验",
+        "score": 34
+      },
+      {
+        "text": "D. 多方权衡比较",
+        "score": 30
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "dimension": "cognitiveFlexibility",
+    "text": "面对不确定的情况，你通常会？",
+    "options": [
+      {
+        "text": "A. 感到焦虑，避免做决定",
+        "score": 22
+      },
+      {
+        "text": "B. 收集更多信息再决定",
+        "score": 28
+      },
+      {
+        "text": "C. 凭直觉快速做出选择",
+        "score": 34
+      },
+      {
+        "text": "D. 观望等待情况明朗",
+        "score": 30
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "dimension": "responsibilitySense",
+    "text": "对于金钱管理，你的态度是？",
+    "options": [
+      {
+        "text": "A. 随性花费，不太规划",
+        "score": 22
+      },
+      {
+        "text": "B. 有基本预算，适度消费",
+        "score": 28
+      },
+      {
+        "text": "C. 精打细算，严格储蓄",
+        "score": 34
+      },
+      {
+        "text": "D. 投资理财，追求增值",
+        "score": 30
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "dimension": "resilience",
+    "text": "面对挑战时，你的动力主要来自？",
+    "options": [
+      {
+        "text": "A. 避免失败或批评",
+        "score": 22
+      },
+      {
+        "text": "B. 个人成长和进步",
+        "score": 28
+      },
+      {
+        "text": "C. 竞争和获胜的欲望",
+        "score": 34
+      },
+      {
+        "text": "D. 他人的期待和认可",
+        "score": 30
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "dimension": "socialFluency",
+    "text": "在人际关系中，你更重视？",
+    "options": [
+      {
+        "text": "A. 深度和真诚",
+        "score": 22
+      },
+      {
+        "text": "B. 和谐与包容",
+        "score": 28
+      },
+      {
+        "text": "C. 互助和共赢",
+        "score": 34
+      },
+      {
+        "text": "D. 自由和独立",
+        "score": 30
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "dimension": "cognitiveFlexibility",
+    "text": "面对新技术，你的态度是？",
+    "options": [
+      {
+        "text": "A. 抵触改变，习惯旧方式",
+        "score": 22
+      },
+      {
+        "text": "B. 谨慎尝试，逐步适应",
+        "score": 28
+      },
+      {
+        "text": "C. 积极学习，快速掌握",
+        "score": 34
+      },
+      {
+        "text": "D. 选择性使用有用功能",
+        "score": 30
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "dimension": "emotionStability",
+    "text": "对于规则和制度，你的看法是？",
+    "options": [
+      {
+        "text": "A. 严格遵守，不敢违背",
+        "score": 22
+      },
+      {
+        "text": "B. 理解并合理遵守",
+        "score": 28
+      },
+      {
+        "text": "C. 必要时可以灵活变通",
+        "score": 34
+      },
+      {
+        "text": "D. 质疑不合理的规则",
+        "score": 30
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "dimension": "resilience",
+    "text": "当你感到情绪低落时，通常会？",
+    "options": [
+      {
+        "text": "A. 独自消化，不愿打扰他人",
+        "score": 22
+      },
+      {
+        "text": "B. 与信任的人倾诉",
+        "score": 28
+      },
+      {
+        "text": "C. 通过活动转移注意力",
+        "score": 34
+      },
+      {
+        "text": "D. 分析原因并解决问题",
+        "score": 30
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "dimension": "resilience",
+    "text": "对于生活中的变化，你的适应速度是？",
+    "options": [
+      {
+        "text": "A. 较慢，需要很长时间",
+        "score": 22
+      },
+      {
+        "text": "B. 适中，逐步调整",
+        "score": 28
+      },
+      {
+        "text": "C. 很快，能迅速适应",
+        "score": 34
+      },
+      {
+        "text": "D. 视变化性质而定",
+        "score": 30
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "dimension": "socialFluency",
+    "text": "在表达意见时，你倾向于？",
+    "options": [
+      {
+        "text": "A. 保留个人看法",
+        "score": 22
+      },
+      {
+        "text": "B. 委婉表达，顾及他人感受",
+        "score": 28
+      },
+      {
+        "text": "C. 直接坦诚地表达",
+        "score": 34
+      },
+      {
+        "text": "D. 选择性表达，看场合",
+        "score": 30
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "dimension": "cognitiveFlexibility",
+    "text": "面对他人的成功，你的感受是？",
+    "options": [
+      {
+        "text": "A. 羡慕或自卑",
+        "score": 22
+      },
+      {
+        "text": "B. 为他们高兴",
+        "score": 28
+      },
+      {
+        "text": "C. 受到激励，想要超越",
+        "score": 34
+      },
+      {
+        "text": "D. 分析其成功原因",
+        "score": 30
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "dimension": "socialFluency",
+    "text": "对于时间管理，你的习惯是？",
+    "options": [
+      {
+        "text": "A. 随性，经常拖延",
+        "score": 22
+      },
+      {
+        "text": "B. 有基本计划，但可调整",
+        "score": 28
+      },
+      {
+        "text": "C. 严格按计划执行",
+        "score": 34
+      },
+      {
+        "text": "D. 优先处理重要事项",
+        "score": 30
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "dimension": "emotionStability",
+    "text": "在解决问题时，你更注重？",
+    "options": [
+      {
+        "text": "A. 避免问题再次发生",
+        "score": 22
+      },
+      {
+        "text": "B. 快速有效的解决方案",
+        "score": 28
+      },
+      {
+        "text": "C. 根本原因的深入分析",
+        "score": 34
+      },
+      {
+        "text": "D. 多方利益的平衡",
+        "score": 30
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "dimension": "cognitiveFlexibility",
+    "text": "对于冒险和尝试新事物，你的态度是？",
+    "options": [
+      {
+        "text": "A. 尽量避免风险",
+        "score": 22
+      },
+      {
+        "text": "B. 适度尝试，控制风险",
+        "score": 28
+      },
+      {
+        "text": "C. 乐于冒险，追求刺激",
+        "score": 34
+      },
+      {
+        "text": "D. 权衡利弊后决定",
+        "score": 30
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "dimension": "socialFluency",
+    "text": "在团队中收到不同意见时，你通常会？",
+    "options": [
+      {
+        "text": "A. 顺从多数意见",
+        "score": 22
+      },
+      {
+        "text": "B. 尽量协调不同观点",
+        "score": 28
+      },
+      {
+        "text": "C. 坚持自己的看法",
+        "score": 34
+      },
+      {
+        "text": "D. 分析各种意见的优劣",
+        "score": 30
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "dimension": "cognitiveFlexibility",
+    "text": "面对复杂任务，你的处理方式是？",
+    "options": [
+      {
+        "text": "A. 感到不知所措，需要帮助",
+        "score": 22
+      },
+      {
+        "text": "B. 分解任务，逐步完成",
+        "score": 28
+      },
+      {
+        "text": "C. 全身心投入，一气呵成",
+        "score": 34
+      },
+      {
+        "text": "D. 寻求更简单的方法",
+        "score": 30
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "dimension": "cognitiveFlexibility",
+    "text": "对于个人成就，你的追求是？",
+    "options": [
+      {
+        "text": "A. 满足基本需求即可",
+        "score": 22
+      },
+      {
+        "text": "B. 稳步提升，不断进步",
+        "score": 28
+      },
+      {
+        "text": "C. 追求卓越，做到最好",
+        "score": 34
+      },
+      {
+        "text": "D. 平衡工作与生活",
+        "score": 30
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "dimension": "emotionStability",
+    "text": "面对批评和反对声音，你的反应是？",
+    "options": [
+      {
+        "text": "A. 容易动摇，自我怀疑",
+        "score": 22
+      },
+      {
+        "text": "B. 理性分析，有选择地接受",
+        "score": 28
+      },
+      {
+        "text": "C. 坚持己见，不受影响",
+        "score": 34
+      },
+      {
+        "text": "D. 寻求更多人的意见",
+        "score": 30
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "dimension": "responsibilitySense",
+    "text": "在人际关系出现问题时，你倾向于？",
+    "options": [
+      {
+        "text": "A. 回避问题，希望自然解决",
+        "score": 22
+      },
+      {
+        "text": "B. 主动沟通，寻求和解",
+        "score": 28
+      },
+      {
+        "text": "C. 明确表达自己的立场",
+        "score": 34
+      },
+      {
+        "text": "D. 给对方时间冷静",
+        "score": 30
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "dimension": "resilience",
+    "text": "对于长期目标，你的坚持程度是？",
+    "options": [
+      {
+        "text": "A. 容易放弃，缺乏毅力",
+        "score": 22
+      },
+      {
+        "text": "B. 有基本坚持，但可调整",
+        "score": 28
+      },
+      {
+        "text": "C. 非常坚持，不轻易改变",
+        "score": 34
+      },
+      {
+        "text": "D. 根据情况灵活调整目标",
+        "score": 30
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "dimension": "cognitiveFlexibility",
+    "text": "面对多个任务时，你的优先级排序基于？",
+    "options": [
+      {
+        "text": "A. 紧急程度",
+        "score": 22
+      },
+      {
+        "text": "B. 重要程度",
+        "score": 28
+      },
+      {
+        "text": "C. 个人兴趣",
+        "score": 34
+      },
+      {
+        "text": "D. 难易程度",
+        "score": 30
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "dimension": "emotionStability",
+    "text": "在学习和工作中，你的专注力表现为？",
+    "options": [
+      {
+        "text": "A. 容易分心，需要外部督促",
+        "score": 22
+      },
+      {
+        "text": "B. 可以保持基本专注",
+        "score": 28
+      },
+      {
+        "text": "C. 高度专注，不易受干扰",
+        "score": 34
+      },
+      {
+        "text": "D. 视任务兴趣而定",
+        "score": 30
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "dimension": "cognitiveFlexibility",
+    "text": "面对陌生人的求助，你的反应是？",
+    "options": [
+      {
+        "text": "A. 谨慎，保持距离",
+        "score": 22
+      },
+      {
+        "text": "B. 在能力范围内提供帮助",
+        "score": 28
+      },
+      {
+        "text": "C. 热心主动地提供帮助",
+        "score": 34
+      },
+      {
+        "text": "D. 评估情况后决定",
+        "score": 30
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "dimension": "socialFluency",
+    "text": "对于生活中的小确幸，你的感受是？",
+    "options": [
+      {
+        "text": "A. 不太在意，习以为常",
+        "score": 22
+      },
+      {
+        "text": "B. 能感受到并珍惜",
+        "score": 28
+      },
+      {
+        "text": "C. 主动创造快乐时刻",
+        "score": 34
+      },
+      {
+        "text": "D. 更关注大目标的实现",
+        "score": 30
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "dimension": "emotionStability",
+    "text": "面对他人的错误，你的态度是？",
+    "options": [
+      {
+        "text": "A. 严厉批评，难以容忍",
+        "score": 22
+      },
+      {
+        "text": "B. 理解并给予改正机会",
+        "score": 28
+      },
+      {
+        "text": "C. 帮助分析错误原因",
+        "score": 34
+      },
+      {
+        "text": "D. 视关系和情况而定",
+        "score": 30
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "dimension": "responsibilitySense",
+    "text": "在团队中，你更看重？",
+    "options": [
+      {
+        "text": "A. 和谐的工作氛围",
+        "score": 22
+      },
+      {
+        "text": "B. 明确的分工和责任",
+        "score": 28
+      },
+      {
+        "text": "C. 高效的执行力",
+        "score": 34
+      },
+      {
+        "text": "D. 创新的想法和方案",
+        "score": 30
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "dimension": "emotionStability",
+    "text": "面对个人缺点，你的态度是？",
+    "options": [
+      {
+        "text": "A. 回避，不愿面对",
+        "score": 22
+      },
+      {
+        "text": "B. 承认并尝试改进",
+        "score": 28
+      },
+      {
+        "text": "C. 将其视为个人特点",
+        "score": 34
+      },
+      {
+        "text": "D. 寻找互补的合作者",
+        "score": 30
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "dimension": "resilience",
+    "text": "对于未来的不确定性，你的感受是？",
+    "options": [
+      {
+        "text": "A. 焦虑和担忧",
+        "score": 22
+      },
+      {
+        "text": "B. 既担忧又期待",
+        "score": 28
+      },
+      {
+        "text": "C. 充满期待和好奇",
+        "score": 34
+      },
+      {
+        "text": "D. 专注于当下可控制的事",
+        "score": 30
+      }
+    ]
+  },
+  {
+    "id": 39,
+    "dimension": "responsibilitySense",
+    "text": "在表达爱和关怀时，你倾向于？",
+    "options": [
+      {
+        "text": "A. 通过行动而非言语",
+        "score": 22
+      },
+      {
+        "text": "B. 直接表达情感",
+        "score": 28
+      },
+      {
+        "text": "C. 创造特别的时刻",
+        "score": 34
+      },
+      {
+        "text": "D. 提供实际帮助和支持",
+        "score": 30
+      }
+    ]
+  },
+  {
+    "id": 40,
+    "dimension": "resilience",
+    "text": "面对生活中的挫折，你的恢复速度是？",
+    "options": [
+      {
+        "text": "A. 较慢，需要很长时间",
+        "score": 22
+      },
+      {
+        "text": "B. 需要一些时间调整",
+        "score": 28
+      },
+      {
+        "text": "C. 较快，能迅速恢复",
+        "score": 34
+      },
+      {
+        "text": "D. 视挫折的严重程度而定",
+        "score": 30
+      }
+    ]
+  },
+  {
+    "id": 41,
+    "dimension": "emotionStability",
+    "text": "在团队决策中，你更倾向于？",
+    "options": [
+      {
+        "text": "A. 听从权威或专家意见",
+        "score": 22
+      },
+      {
+        "text": "B. 寻求共识和妥协",
+        "score": 28
+      },
+      {
+        "text": "C. 坚持自己认为正确的",
+        "score": 34
+      },
+      {
+        "text": "D. 收集数据和分析后决定",
+        "score": 30
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "dimension": "socialFluency",
+    "text": "对于个人空间和时间，你的需求是？",
+    "options": [
+      {
+        "text": "A. 大量独处时间",
+        "score": 22
+      },
+      {
+        "text": "B. 适度的个人空间",
+        "score": 28
+      },
+      {
+        "text": "C. 更喜欢与人共处",
+        "score": 34
+      },
+      {
+        "text": "D. 视心情和状态而定",
+        "score": 30
+      }
+    ]
+  },
+  {
+    "id": 43,
+    "dimension": "responsibilitySense",
+    "text": "面对他人的成功建议，你的态度是？",
+    "options": [
+      {
+        "text": "A. 怀疑，需要验证",
+        "score": 22
+      },
+      {
+        "text": "B. 开放接受并尝试",
+        "score": 28
+      },
+      {
+        "text": "C. 选择性采纳适合的",
+        "score": 34
+      },
+      {
+        "text": "D. 更相信自己的经验",
+        "score": 30
+      }
+    ]
+  },
+  {
+    "id": 44,
+    "dimension": "responsibilitySense",
+    "text": "在追求目标时，你更注重？",
+    "options": [
+      {
+        "text": "A. 过程的体验和成长",
+        "score": 22
+      },
+      {
+        "text": "B. 最终结果的达成",
+        "score": 28
+      },
+      {
+        "text": "C. 效率和速度",
+        "score": 34
+      },
+      {
+        "text": "D. 方法的正确性",
+        "score": 30
+      }
+    ]
+  },
+  {
+    "id": 45,
+    "dimension": "cognitiveFlexibility",
+    "text": "面对生活中的选择，你的决策风格是？",
+    "options": [
+      {
+        "text": "A. 犹豫不决，需要建议",
+        "score": 22
+      },
+      {
+        "text": "B. 权衡利弊后决定",
+        "score": 28
+      },
+      {
+        "text": "C. 凭直觉快速决定",
+        "score": 34
+      },
+      {
+        "text": "D. 收集充分信息后决定",
+        "score": 30
+      }
+    ]
+  },
+  {
+    "id": 46,
+    "dimension": "responsibilitySense",
+    "text": "对于个人价值观，你的坚持程度是？",
+    "options": [
+      {
+        "text": "A. 容易受环境影响而改变",
+        "score": 22
+      },
+      {
+        "text": "B. 有核心坚持，但可调整",
+        "score": 28
+      },
+      {
+        "text": "C. 非常坚持，不易改变",
+        "score": 34
+      },
+      {
+        "text": "D. 根据情况灵活应用",
+        "score": 30
+      }
+    ]
+  },
+  {
+    "id": 47,
+    "dimension": "responsibilitySense",
+    "text": "面对新技术和社会变化，你的适应能力？",
+    "options": [
+      {
+        "text": "A. 较慢，需要很长时间",
+        "score": 22
+      },
+      {
+        "text": "B. 一般，能逐步适应",
+        "score": 28
+      },
+      {
+        "text": "C. 很快，能迅速跟上",
+        "score": 34
+      },
+      {
+        "text": "D. 选择性适应有用变化",
+        "score": 30
+      }
+    ]
+  },
+  {
+    "id": 48,
+    "dimension": "socialFluency",
+    "text": "在人际关系中，你的信任建立方式是？",
+    "options": [
+      {
+        "text": "A. 很慢，需要长时间考验",
+        "score": 22
+      },
+      {
+        "text": "B. 需要一定时间和经历",
+        "score": 28
+      },
+      {
+        "text": "C. 较快，愿意先信任",
+        "score": 34
+      },
+      {
+        "text": "D. 视对方行为和表现而定",
+        "score": 30
+      }
+    ]
+  },
+  {
+    "id": 49,
+    "dimension": "responsibilitySense",
+    "text": "对于生活中的责任，你的承担态度是？",
+    "options": [
+      {
+        "text": "A. 尽量避免额外责任",
+        "score": 22
+      },
+      {
+        "text": "B. 承担应尽的责任",
+        "score": 28
+      },
+      {
+        "text": "C. 主动承担更多责任",
+        "score": 34
+      },
+      {
+        "text": "D. 选择性承担有价值责任",
+        "score": 30
+      }
+    ]
+  },
+  {
+    "id": 50,
+    "dimension": "responsibilitySense",
+    "text": "面对个人成长，你的追求是？",
+    "options": [
+      {
+        "text": "A. 满足现状，不愿改变",
+        "score": 22
+      },
+      {
+        "text": "B. 持续学习和改进",
+        "score": 28
+      },
+      {
+        "text": "C. 追求卓越和突破",
+        "score": 34
+      },
+      {
+        "text": "D. 平衡成长与舒适",
+        "score": 30
+      }
+    ]
+  }
+]

@@ -5,5 +5,11 @@
   "description": "100题详细版，强调边界协商、情境差异与复盘能力。",
   "source": "local upgraded suite",
   "adultContent": true,
-  "default": false
+  "default": false,
+  "category": "adult",
+  "priority": 120,
+  "tags": [
+    "成人主题",
+    "麋鹿系列"
+  ]
 }

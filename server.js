@@ -14,6 +14,30 @@ function readJson(filePath) {
   return JSON.parse(fs.readFileSync(filePath, 'utf8'));
 }
 
+function normalizePriority(value, fallback = 999) {
+  const n = Number(value);
+  if (!Number.isFinite(n)) {
+    return fallback;
+  }
+  return Math.round(n);
+}
+
+function questionScoreBounds(question) {
+  const options = Array.isArray(question?.options) ? question.options : [];
+  const scores = options
+    .map((item) => Number(item?.score))
+    .filter((value) => Number.isFinite(value));
+
+  if (!scores.length) {
+    return { minScore: 1, maxScore: 5 };
+  }
+
+  return {
+    minScore: Math.min(...scores),
+    maxScore: Math.max(...scores),
+  };
+}
+
 function levelFromPercentage(percentage) {
   if (percentage <= 24) {
     return '低偏好';
@@ -1007,15 +1031,24 @@ function loadSuites() {
     const dimensionOrder = [...new Set(questions.map((item) => item.dimension))];
 
     const dimensionMeta = dimensionOrder.map((key) => {
-      const count = questions.filter((item) => item.dimension === key).length;
+      const scopedQuestions = questions.filter((item) => item.dimension === key);
+      const count = scopedQuestions.length;
       const detail = dimensionMap.get(key) || {};
+      const bounds = scopedQuestions.reduce((acc, question) => {
+        const { minScore, maxScore } = questionScoreBounds(question);
+        return {
+          minScore: acc.minScore + minScore,
+          maxScore: acc.maxScore + maxScore,
+        };
+      }, { minScore: 0, maxScore: 0 });
+
       return {
         key,
         name: detail.name || key,
         questionCount: count,
         description: detail.description || '暂无维度说明。',
-        minScore: count,
-        maxScore: count * 5,
+        minScore: bounds.minScore,
+        maxScore: bounds.maxScore,
       };
     });
 
@@ -1025,6 +1058,9 @@ function loadSuites() {
       version: suiteMeta.version || '0.0.0',
       description: suiteMeta.description || '',
       source: suiteMeta.source || '',
+      category: suiteMeta.category || 'other',
+      priority: normalizePriority(suiteMeta.priority, 999),
+      tags: Array.isArray(suiteMeta.tags) ? suiteMeta.tags : [],
       adultContent: Boolean(suiteMeta.adultContent),
       isDefault: Boolean(suiteMeta.default),
       questions,
@@ -1041,6 +1077,13 @@ function loadSuites() {
   if (suites.length === 0) {
     throw new Error(`未检测到可用套题，请检查 ${SUITES_DIR}`);
   }
+
+  suites.sort((a, b) => {
+    if (a.priority !== b.priority) {
+      return a.priority - b.priority;
+    }
+    return a.id.localeCompare(b.id);
+  });
 
   const defaultSuite = suites.find((suite) => suite.isDefault) || suites[0];
   const suiteMap = new Map(suites.map((suite) => [suite.id, suite]));
@@ -1168,6 +1211,9 @@ function getSuiteSummary(suite) {
     version: suite.version,
     description: suite.description,
     source: suite.source,
+    category: suite.category,
+    priority: suite.priority,
+    tags: suite.tags,
     adultContent: suite.adultContent,
     totalQuestions: suite.totalQuestions,
     dimensionCount: suite.dimensionCount,
@@ -1198,8 +1244,15 @@ function calculateResult(suite, answers) {
     if (!suite.questionMap.has(subjectId)) {
       throw new Error(`题目ID不存在: ${subjectId}`);
     }
-    if (!Number.isInteger(score) || score < 1 || score > 5) {
-      throw new Error(`题目 ${subjectId} 的分值必须为1-5整数`);
+    const question = suite.questionMap.get(subjectId);
+    const allowedScores = new Set(
+      (question.options || [])
+        .map((option) => Number(option.score))
+        .filter((value) => Number.isFinite(value))
+    );
+
+    if (!Number.isInteger(score) || (allowedScores.size > 0 && !allowedScores.has(score))) {
+      throw new Error(`题目 ${subjectId} 的分值不在可选范围内`);
     }
 
     answerMap.set(subjectId, score);
@@ -1228,9 +1281,10 @@ function calculateResult(suite, answers) {
     }
 
     const bucket = grouped.get(dim);
+    const { minScore, maxScore } = questionScoreBounds(question);
     bucket.score += score;
-    bucket.maxScore += 5;
-    bucket.minScore += 1;
+    bucket.maxScore += maxScore;
+    bucket.minScore += minScore;
     bucket.questionCount += 1;
   }
 

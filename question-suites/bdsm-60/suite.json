@@ -5,5 +5,11 @@
   "description": "60题专项版，覆盖捆绑、SP、K9、滴蜡、边缘控制、aftercare与安全协议。",
   "source": "local bdsm-specific suite",
   "adultContent": true,
-  "default": false
+  "default": false,
+  "category": "adult",
+  "priority": 130,
+  "tags": [
+    "成人主题",
+    "BDSM"
+  ]
 }

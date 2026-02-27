@@ -73,7 +73,57 @@ const adResult = document.getElementById('ad-result');
 
 let resizeTimer = null;
 let adScriptLoadPromise = null;
-const STATIC_SUITE_IDS = ['milu-basic', 'milu-pro-100', 'bdsm-60'];
+const STATIC_SUITE_IDS = [
+  'fruit-personality',
+  'animal-personality',
+  'mental-age',
+  'ayp-age-gap-love-self',
+  'adhd-assessment-adult',
+  'adhd-assessment-child',
+  'ayp-age-gap-love-partner',
+  'dark-personality',
+  'milu-basic',
+  'milu-pro-100',
+  'bdsm-60',
+];
+
+function suiteCategoryLabel(category) {
+  if (category === 'personality') {
+    return '性格理解';
+  }
+  if (category === 'relationship') {
+    return '关系沟通';
+  }
+  if (category === 'screening') {
+    return '筛查工具';
+  }
+  if (category === 'sensitive') {
+    return '扩展主题';
+  }
+  if (category === 'adult') {
+    return '成人主题';
+  }
+  return '综合测评';
+}
+
+function normalizePriority(priority, fallback = 999) {
+  const value = Number(priority);
+  if (!Number.isFinite(value)) {
+    return fallback;
+  }
+  return Math.round(value);
+}
+
+function sortSuitesByPriority(suites) {
+  return [...suites].sort((a, b) => {
+    const pa = normalizePriority(a.priority, 999);
+    const pb = normalizePriority(b.priority, 999);
+    if (pa !== pb) {
+      return pa - pb;
+    }
+    return String(a.id || '').localeCompare(String(b.id || ''));
+  });
+}
 
 function showView(target) {
   homeView.classList.add('hidden');
@@ -182,6 +232,9 @@ async function loadStaticSuites() {
         version: suiteMeta.version || '0.0.0',
         description: suiteMeta.description || '',
         source: suiteMeta.source || 'static local mode',
+        category: suiteMeta.category || 'other',
+        priority: normalizePriority(suiteMeta.priority, 999),
+        tags: Array.isArray(suiteMeta.tags) ? suiteMeta.tags : [],
         adultContent: Boolean(suiteMeta.adultContent),
         totalQuestions: questions.length,
         dimensionCount: dimensionMeta.length,
@@ -266,6 +319,21 @@ function makeStaticAnalysis(dim, percentage) {
   };
 }
 
+function questionScoreBounds(question) {
+  const scores = (question.options || [])
+    .map((item) => Number(item.score))
+    .filter((value) => Number.isFinite(value));
+
+  if (!scores.length) {
+    return { minScore: 1, maxScore: 5 };
+  }
+
+  return {
+    minScore: Math.min(...scores),
+    maxScore: Math.max(...scores),
+  };
+}
+
 function buildStaticPersona(sortedDims) {
   const top = sortedDims.slice(0, 3);
   const low = [...sortedDims].reverse().slice(0, 2).reverse();
@@ -313,9 +381,10 @@ function computeStaticResult() {
     }
 
     const bucket = grouped.get(question.dimension);
+    const bounds = questionScoreBounds(question);
     bucket.score += score;
-    bucket.maxScore += 5;
-    bucket.minScore += 1;
+    bucket.maxScore += bounds.maxScore;
+    bucket.minScore += bounds.minScore;
   });
 
   const dimensions = [...grouped.values()].map((item) => {
@@ -374,7 +443,7 @@ async function fetchSuites() {
   try {
     const payload = await fetchJson('api/suites');
     state.runtimeMode = 'server';
-    state.suites = payload.data || [];
+    state.suites = sortSuitesByPriority(payload.data || []);
 
     if (!state.suites.length) {
       throw new Error('未发现可用套题');
@@ -392,7 +461,7 @@ async function fetchSuites() {
   } catch (error) {
     console.warn('API 不可用，已切换静态模式。', error);
     state.runtimeMode = 'static';
-    state.suites = await loadStaticSuites();
+    state.suites = sortSuitesByPriority(await loadStaticSuites());
   }
 
   const qs = new URLSearchParams(window.location.search);
@@ -426,7 +495,7 @@ function populateSuiteSelect() {
   state.suites.forEach((suite) => {
     const option = document.createElement('option');
     option.value = suite.id;
-    option.textContent = `${suite.name} (${suite.totalQuestions}题)`;
+    option.textContent = `${suiteCategoryLabel(suite.category)} · ${suite.name} (${suite.totalQuestions}题)`;
     if (suite.id === state.suiteId) {
       option.selected = true;
     }
@@ -460,6 +529,9 @@ async function loadSuiteData(suiteId) {
         version: suite.version,
         description: suite.description,
         source: suite.source,
+        category: suite.category,
+        priority: suite.priority,
+        tags: suite.tags,
         adultContent: suite.adultContent,
         totalQuestions: suite.totalQuestions,
         dimensionCount: suite.dimensionCount,

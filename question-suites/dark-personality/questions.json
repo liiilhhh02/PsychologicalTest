@@ -1,0 +1,1892 @@
+[
+  {
+    "id": 1,
+    "dimension": "sadism",
+    "text": "当我烦恼的时候，折磨别人能让我感觉好点。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "dimension": "psychologicalEntitlement",
+    "text": "我并不在意拥有控制别人的权力。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "dimension": "moralDisengagement",
+    "text": "凡事皆有终了的时候。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "dimension": "psychopathy",
+    "text": "如果邻居抱怨我放音乐的声音太大了，尽管会不情愿，但我仍旧会把音乐声音调小。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "dimension": "selfCenteredness",
+    "text": "我尽量先为自己着想，即便这意味着让别人的日子不好过。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "dimension": "psychopathy",
+    "text": "伤害别人会让我很不舒服。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "dimension": "machiavellianism",
+    "text": "我并不享受操纵别人的情感。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "dimension": "machiavellianism",
+    "text": "即便是为了保护那些你在意的人，你也不应该撒布谣言。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "dimension": "machiavellianism",
+    "text": "关于诚实和善良的故事只会让人感到困惑、变得愚蠢。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "dimension": "psychopathy",
+    "text": "我并不同情其他人或者他们的遭遇。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "dimension": "moralDisengagement",
+    "text": "赚钱之道不分对错，只分难易。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "dimension": "spitefulness",
+    "text": "和我作对的人必定会后悔。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "dimension": "machiavellianism",
+    "text": "为了得到我想要的东西，我愿意说任何话。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "dimension": "machiavellianism",
+    "text": "保留一些日后可以用来对付别人的信息是非常明智的。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "dimension": "moralDisengagement",
+    "text": "不管法律如何妨碍一个人的雄心壮志，他/她也应该遵守法律。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "dimension": "spitefulness",
+    "text": "报复很难给人带来慰藉。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "dimension": "spitefulness",
+    "text": "我倾向于原谅自己受过的委屈。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "dimension": "psychopathy",
+    "text": "如果我曾经折磨过别人，我将会非常后悔。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "dimension": "sadism",
+    "text": "看到我的对手失败，我并不会很开心。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "dimension": "narcissism",
+    "text": "我绝对容忍不了除我以外的另一个人成为被关注的焦点。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "dimension": "egoism",
+    "text": "有时候付出一些代价帮助别人是值得的。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "dimension": "moralDisengagement",
+    "text": "粗鲁地对待像人渣一样的人是可以的。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "dimension": "moralDisengagement",
+    "text": "用别人的主意来邀功请赏是绝对不对的。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "dimension": "spitefulness",
+    "text": "我愿意用自己被打一拳来换取我讨厌的人被打两拳。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "dimension": "spitefulness",
+    "text": "如果有机会，我很乐意付一小笔钱来换取我讨厌的那个同学考试挂科。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "dimension": "greed",
+    "text": "不管我拥有多少，我从来都不满足。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "dimension": "sadism",
+    "text": "我避免羞辱别人。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "dimension": "sadism",
+    "text": "让其他人觉得我很糟糕并不会让我感觉良好。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "dimension": "spitefulness",
+    "text": "报复需要快而狠。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "dimension": "egoism",
+    "text": "我愿意帮助那些需要帮助的人。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "dimension": "narcissism",
+    "text": "大部分人从某种意义上来讲都是失败者。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "dimension": "spitefulness",
+    "text": "添油加醋的复仇更让人有成就感。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "dimension": "moralDisengagement",
+    "text": "如果你的交易在账单上有一个错误，但这个错误对你有利，那么你不告诉对方也没有关系，因为这是他们的过失。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "dimension": "moralDisengagement",
+    "text": "如果一个通往成功的捷径是违法的，那么采取它就是不明智的。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "dimension": "greed",
+    "text": "不管我拥有多少，我总是想得到更多。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "dimension": "machiavellianism",
+    "text": "明智的人总是知道如何在合适的时间对合适的人说合适的话，以此来击败那些曾经冒犯过自己的人。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "dimension": "psychologicalEntitlement",
+    "text": "事情不可能总按照我想要的方式发展。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "dimension": "psychologicalEntitlement",
+    "text": "大部分人都值得被尊重。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 39,
+    "dimension": "psychopathy",
+    "text": "我不忍心看到别人遭遇不幸。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 40,
+    "dimension": "spitefulness",
+    "text": "有时候，为了惩罚那些应该被惩罚的人，我宁愿自己受点小伤害。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 41,
+    "dimension": "psychologicalEntitlement",
+    "text": "如果在泰坦尼克号上，我不觉得自己比其他人更具有上第一艘救生船的优先权。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "dimension": "psychologicalEntitlement",
+    "text": "人人生而平等。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 43,
+    "dimension": "sadism",
+    "text": "我难以想象，残忍地对待别人居然能带来快感。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 44,
+    "dimension": "sadism",
+    "text": "我不想让别人害怕我本人或者我的念头。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 45,
+    "dimension": "machiavellianism",
+    "text": "即便在被抓的概率很小的情况下，我也不会欺骗别人。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 46,
+    "dimension": "psychopathy",
+    "text": "伤害我的人休想得到我的怜悯。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 47,
+    "dimension": "egoism",
+    "text": "在追求目标的过程中，我会尽量避免伤害别人。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 48,
+    "dimension": "psychologicalEntitlement",
+    "text": "我不追求权力。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 49,
+    "dimension": "spitefulness",
+    "text": "就算我得和某些人共同下地狱，我也要让他们受苦受难。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 50,
+    "dimension": "machiavellianism",
+    "text": "我相信为了保持比别人更具竞争性，撒谎是有必要的。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 51,
+    "dimension": "psychopathy",
+    "text": "我痛恨看到别人受伤害。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 52,
+    "dimension": "narcissism",
+    "text": "我不介意和别人分享舞台。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 53,
+    "dimension": "moralDisengagement",
+    "text": "受到不公平对待的人往往会做一些事情让他们陷入不公正对待的恶性循环中。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 54,
+    "dimension": "moralDisengagement",
+    "text": "如果不处处抄近路，一个人就很难获得优势。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 55,
+    "dimension": "sadism",
+    "text": "如果我反对选举一个候选官员，即使这个人落选对我的社区不利，看到他/她落选我仍旧很开心。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 56,
+    "dimension": "moralDisengagement",
+    "text": "大部分人本性都是善良的。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 57,
+    "dimension": "psychologicalEntitlement",
+    "text": "我并不比别人值得拥有更多的东西。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 58,
+    "dimension": "egoism",
+    "text": "做好事会让我由衷地感到开心。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 59,
+    "dimension": "machiavellianism",
+    "text": "一个人应该利用所有能够利用的条件来增强自己的优势，但要确保不要让别人发现。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 60,
+    "dimension": "egoism",
+    "text": "做好事不求回报，只会让被帮助的人变得凄惨和懒惰。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 61,
+    "dimension": "machiavellianism",
+    "text": "永远不要告诉任何人你做一件事情的真正原因，除非这么做是有用的。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 62,
+    "dimension": "sadism",
+    "text": "我会考虑用骚扰别人的方式来获取快乐。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 63,
+    "dimension": "narcissism",
+    "text": "总而言之，做一个谦虚诚实的人比做一个自大而不诚实的人更好。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 64,
+    "dimension": "psychopathy",
+    "text": "如果我做的事情让人难过，我会感到很抱歉。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 65,
+    "dimension": "selfCenteredness",
+    "text": "如果我想要的东西会给别人带来麻烦，那我就会放弃它。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 66,
+    "dimension": "selfCenteredness",
+    "text": "我都没有人关心，为什么要关心别人？",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 67,
+    "dimension": "moralDisengagement",
+    "text": "我并不在意那些失败的人，因为胜者为王，败者为寇。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 68,
+    "dimension": "egoism",
+    "text": "你要确保你的计划只会让你受益，而不会让其他人受益。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 69,
+    "dimension": "greed",
+    "text": "事实上，我有点贪婪。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 70,
+    "dimension": "egoism",
+    "text": "我的快乐是最重要的。",
+    "options": [
+      {
+        "text": "非常不同意",
+        "score": 1
+      },
+      {
+        "text": "不同意",
+        "score": 2
+      },
+      {
+        "text": "中立",
+        "score": 3
+      },
+      {
+        "text": "同意",
+        "score": 4
+      },
+      {
+        "text": "非常同意",
+        "score": 5
+      }
+    ]
+  }
+]

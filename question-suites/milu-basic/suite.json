@@ -5,5 +5,11 @@
   "description": "50题快速版，覆盖23维度，适合首次测评与偏好概览。",
   "source": "local upgraded suite",
   "adultContent": true,
-  "default": true
+  "default": false,
+  "category": "adult",
+  "priority": 110,
+  "tags": [
+    "成人主题",
+    "麋鹿系列"
+  ]
 }
